@@ -1,0 +1,33 @@
+@layer base {
+	$roboto-font-path: "../fonts/roboto";
+
+	// Light - 300
+	@font-face {
+		font-family: "Roboto";
+		src: url("#{$roboto-font-path}/roboto-light.woff2") format("woff2"), url("#{$roboto-font-path}/roboto-light.woff") format("woff");
+		font-weight: 300;
+		font-style: normal;
+		font-stretch: normal;
+		font-display: swap;
+	}
+
+	// Regular - 400
+	@font-face {
+		font-family: "Roboto";
+		src: url("#{$roboto-font-path}/roboto-regular.woff2") format("woff2"), url("#{$roboto-font-path}/roboto-regular.woff") format("woff");
+		font-weight: 400;
+		font-style: normal;
+		font-stretch: normal;
+		font-display: swap;
+	}
+
+	// Medium - 500
+	@font-face {
+		font-family: "Roboto";
+		src: url("#{$roboto-font-path}/roboto-medium.woff2") format("woff2"), url("#{$roboto-font-path}/roboto-medium.woff") format("woff");
+		font-weight: 500;
+		font-style: normal;
+		font-stretch: normal;
+		font-display: swap;
+	}
+}

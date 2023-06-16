@@ -1,0 +1,35 @@
+@layer components {
+	@import "~dropzone/src/dropzone.scss";
+
+	.dropzone {
+		@apply rounded
+            border
+            border-dashed
+            border-light-500
+            p-4
+            text-center
+            text-muted
+            hover:bg-light-100/50
+            dark:border-dark-300
+            dark:hover:bg-dark-200/50;
+
+		.dz-message {
+			@apply text-md;
+		}
+
+		.dz-preview {
+			.dz-image {
+				@apply rounded;
+			}
+
+			&.dz-image-preview {
+				@apply rounded-md
+				 	border
+					border-light-200
+					bg-transparent
+					p-1
+					dark:border-dark-200;
+			}
+		}
+	}
+}

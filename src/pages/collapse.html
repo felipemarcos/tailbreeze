@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en" data-page="components-collapse">
+	<include src="./partials/_head.html">{ "pageTitle": "Collapse" }</include>
+
+	<body>
+		<include src="./partials/_page-loader.html"></include>
+
+		<include src="./partials/_header.html"></include>
+
+		<include src="./partials/_sidebar.html"></include>
+
+		<div id="content">
+			<div class="content-header px-5">
+				<div class="flex flex-shrink-0 items-center text-heading">
+					<i class="icon mr-2">grid_view</i>
+					<div class="font-bold">Collapse</div>
+				</div>
+
+				<ol class="ml-5 hidden items-center text-md text-muted md:flex">
+					<li><a href="#" class="rounded p-1 transition-colors hover:text-body">Tailbreeze</a></li>
+					<li class="icon mx-1 text-xs">chevron_right</li>
+					<li><a href="#" class="rounded p-1 transition-colors hover:text-body">Miscellaneous</a></li>
+					<li class="icon mx-1 text-xs">chevron_right</li>
+					<li class="rounded p-1">Components</li>
+				</ol>
+			</div>
+
+			<div class="p-5" data-simplebar>
+				<div class="mx-auto max-w-5xl">
+					<div class="card mb-5 p-5">
+						<h5 class="mb-2 text-lg font-bold leading-none text-heading">Basic example</h5>
+						<div class="mb-5">
+							Responsive Collapse built with Tailwind CSS. Collapse is a vertically collapsing element that allows you to show and hide
+							information. Free download.
+						</div>
+
+						<div data-tb-collapse>
+							<button
+								class="btn bg-blue-600/90 text-white hover:bg-blue-600"
+								type="button"
+								data-tb-collapse-toggle="#collapse-basic-1"
+								aria-expanded="true"
+							>
+								Click to show/hide
+							</button>
+							<div id="collapse-basic-1" class="hidden" data-tb-collapse-item>
+								<div class="pt-5">
+									Aliquip incididunt pariatur fugiat non velit velit. Reprehenderit laboris fugiat Lorem velit est esse magna est mollit
+									consequat dolore laboris. Adipisicing ex quis duis consequat consectetur elit ullamco cupidatat exercitation. Aute in
+									occaecat dolor ut nulla ad deserunt. Reprehenderit mollit sunt sit consectetur exercitation ullamco aliqua et nostrud aliqua
+									mollit. Labore non culpa nostrud velit laborum Lorem et eiusmod laboris id tempor reprehenderit voluptate exercitation. Esse
+									aute consectetur commodo adipisicing nisi consectetur aliquip consectetur aliquip ea ex nulla quis.
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="card mb-5 p-5">
+						<h5 class="mb-2 text-lg font-bold leading-none text-heading">Multiple triggers</h5>
+						<div class="mb-5">You can use multiple trigger elements to hide/show the collapse content.</div>
+
+						<div data-tb-collapse>
+							<button
+								class="btn mr-2 bg-blue-600/90 text-white hover:bg-blue-600"
+								type="button"
+								data-tb-collapse-toggle="#collapse-basic-2"
+								aria-expanded="true"
+							>
+								Trigger 1
+							</button>
+
+							<button
+								class="btn mr-2 bg-blue-600/90 text-white hover:bg-blue-600"
+								type="button"
+								data-tb-collapse-toggle="#collapse-basic-2"
+								aria-expanded="true"
+							>
+								Trigger 2
+							</button>
+
+							<button
+								class="btn mr-2 bg-blue-600/90 text-white hover:bg-blue-600"
+								type="button"
+								data-tb-collapse-toggle="#collapse-basic-2"
+								aria-expanded="true"
+							>
+								Trigger 3
+							</button>
+
+							<div id="collapse-basic-2" class="hidden" data-tb-collapse-item>
+								<div class="pt-5">
+									Aliquip incididunt pariatur fugiat non velit velit. Reprehenderit laboris fugiat Lorem velit est esse magna est mollit
+									consequat dolore laboris. Adipisicing ex quis duis consequat consectetur elit ullamco cupidatat exercitation. Aute in
+									occaecat dolor ut nulla ad deserunt. Reprehenderit mollit sunt sit consectetur exercitation ullamco aliqua et nostrud aliqua
+									mollit. Labore non culpa nostrud velit laborum Lorem et eiusmod laboris id tempor reprehenderit voluptate exercitation. Esse
+									aute consectetur commodo adipisicing nisi consectetur aliquip consectetur aliquip ea ex nulla quis.
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="card mb-5 p-5">
+						<h5 class="mb-2 text-lg font-bold leading-none text-heading">Visible content</h5>
+						<div class="mb-5">
+							Make the collapse content visible by default by removing the <code">hidden</code> class from the collapse
+						</div>
+
+						<div data-tb-collapse>
+							<button
+								class="btn bg-blue-600/90 text-white hover:bg-blue-600"
+								type="button"
+								data-tb-collapse-toggle="#collapse-basic-3"
+								aria-expanded="true"
+							>
+								Click to show/hide
+							</button>
+							<div id="collapse-basic-3" data-tb-collapse-item>
+								<div class="pt-5">
+									Aliquip incididunt pariatur fugiat non velit velit. Reprehenderit laboris fugiat Lorem velit est esse magna est mollit
+									consequat dolore laboris. Adipisicing ex quis duis consequat consectetur elit ullamco cupidatat exercitation. Aute in
+									occaecat dolor ut nulla ad deserunt. Reprehenderit mollit sunt sit consectetur exercitation ullamco aliqua et nostrud aliqua
+									mollit. Labore non culpa nostrud velit laborum Lorem et eiusmod laboris id tempor reprehenderit voluptate exercitation. Esse
+									aute consectetur commodo adipisicing nisi consectetur aliquip consectetur aliquip ea ex nulla quis.
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<include src="./partials/_scripts.html"></include>
+	</body>
+</html>

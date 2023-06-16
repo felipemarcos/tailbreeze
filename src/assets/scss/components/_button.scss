@@ -1,0 +1,39 @@
+@layer components {
+	button {
+		@apply focus:shadow-none;
+	}
+
+	.btn {
+		@apply inline-flex
+			h-8
+			flex-shrink-0
+			cursor-pointer
+			items-center
+			rounded
+			px-3
+			transition-colors
+			duration-200
+			focus:shadow-none;
+
+		& > .icon {
+			@apply -ml-[2px];
+		}
+
+		&.icon {
+			@apply h-8
+            w-8
+            justify-center
+            px-0;
+		}
+	}
+
+	.btn-close {
+		@apply h-6
+			w-6
+			rounded-full
+			bg-[image:var(--close-bg)]
+			bg-[length:9px_9px]
+			bg-center
+			bg-no-repeat;
+	}
+}

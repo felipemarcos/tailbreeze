@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en" data-page="components-spinners">
+	<include src="./partials/_head.html">{ "pageTitle": "Spinners" }</include>
+
+	<body>
+		<include src="./partials/_page-loader.html"></include>
+
+		<include src="./partials/_header.html"></include>
+
+		<include src="./partials/_sidebar.html"></include>
+
+		<div id="content">
+			<div class="content-header px-5">
+				<div class="flex flex-shrink-0 items-center text-heading">
+					<i class="icon mr-2">grid_view</i>
+					<div class="font-bold">Spinners</div>
+				</div>
+
+				<ol class="ml-5 hidden items-center text-md text-muted md:flex">
+					<li><a href="#" class="rounded p-1 transition-colors hover:text-body">Tailbreeze</a></li>
+					<li class="icon mx-1 text-xs">chevron_right</li>
+					<li><a href="#" class="rounded p-1 transition-colors hover:text-body">Miscellaneous</a></li>
+					<li class="icon mx-1 text-xs">chevron_right</li>
+					<li class="rounded p-1">Components</li>
+				</ol>
+			</div>
+
+			<div class="p-5" data-simplebar>
+				<div class="mx-auto max-w-5xl">
+					<div class="card mb-5 p-5">
+						<h5 class="mb-2 text-lg font-bold leading-none text-heading">Border Spinner</h5>
+						<div class="mb-5">Use the border spinners for a lightweight loading indicator.</div>
+
+						<div class="inline-block h-8 w-8 animate-spin rounded-full border-2 border-current border-r-transparent" role="status">
+							<span class="sr-only">Loading...</span>
+						</div>
+					</div>
+
+					<div class="card mb-5 p-5">
+						<h5 class="mb-2 text-lg font-bold leading-none text-heading">Colors</h5>
+						<div class="mb-5">Change the colors of the spinner element using the fill and color utility classes.</div>
+
+						<div class="flex flex-wrap gap-2">
+							<div
+								class="inline-block h-8 w-8 animate-spin rounded-full border-2 border-current border-r-transparent text-blue-500"
+								role="status"
+							>
+								<span class="sr-only">Loading...</span>
+							</div>
+
+							<div
+								class="inline-block h-8 w-8 animate-spin rounded-full border-2 border-current border-r-transparent text-teal-500"
+								role="status"
+							>
+								<span class="sr-only">Loading...</span>
+							</div>
+
+							<div class="inline-block h-8 w-8 animate-spin rounded-full border-2 border-current border-r-transparent text-red-500" role="status">
+								<span class="sr-only">Loading...</span>
+							</div>
+
+							<div
+								class="inline-block h-8 w-8 animate-spin rounded-full border-2 border-current border-r-transparent text-amber-500"
+								role="status"
+							>
+								<span class="sr-only">Loading...</span>
+							</div>
+
+							<div
+								class="cyan inline-block h-8 w-8 animate-spin rounded-full border-2 border-current border-r-transparent text-muted"
+								role="status"
+							>
+								<span class="sr-only">Loading...</span>
+							</div>
+						</div>
+					</div>
+
+					<div class="card mb-5 p-5">
+						<h5 class="mb-2 text-lg font-bold leading-none text-heading">Size</h5>
+						<div class="mb-5">Spinners can be resized using width and height utility classes.</div>
+
+						<div class="flex flex-wrap gap-2">
+							<div class="inline-block h-4 w-4 animate-spin rounded-full border border-current border-r-transparent" role="status">
+								<span class="sr-only">Loading...</span>
+							</div>
+
+							<div class="inline-block h-6 w-6 animate-spin rounded-full border-[1.5px] border-current border-r-transparent" role="status">
+								<span class="sr-only">Loading...</span>
+							</div>
+
+							<div class="inline-block h-8 w-8 animate-spin rounded-full border-2 border-current border-r-transparent" role="status">
+								<span class="sr-only">Loading...</span>
+							</div>
+
+							<div class="inline-block h-10 w-10 animate-spin rounded-full border-2 border-current border-r-transparent" role="status">
+								<span class="sr-only">Loading...</span>
+							</div>
+						</div>
+					</div>
+
+					<div class="card mb-5 p-5">
+						<h5 class="mb-2 text-lg font-bold leading-none text-heading">Buttons</h5>
+						<div class="mb-5">
+							Use spinners within buttons to indicate an action is currently processing or taking place. You may also swap the text out of the
+							spinner element and utilize button text as needed.
+						</div>
+
+						<button type="button" class="btn bg-blue-600/90 text-md text-white hover:bg-blue-600">
+							<span class="mr-2 inline-block h-4 w-4 animate-spin rounded-full border border-current border-r-transparent" role="status"></span>
+							Loading...
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<include src="./partials/_scripts.html"></include>
+	</body>
+</html>

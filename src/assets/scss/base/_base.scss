@@ -1,0 +1,18 @@
+@layer base {
+	*,
+	*:focus {
+		@apply outline-none;
+	}
+
+	body {
+		@apply grid
+            h-screen
+            grid-rows-[auto_1fr]
+            overflow-hidden
+            bg-body
+            font-sans
+            text-base
+            text-body
+            antialiased;
+	}
+}

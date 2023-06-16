@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en" data-page="components-tooltips">
+	<include src="./partials/_head.html">{ "pageTitle": "Tooltips" }</include>
+
+	<body>
+		<include src="./partials/_page-loader.html"></include>
+
+		<include src="./partials/_header.html"></include>
+
+		<include src="./partials/_sidebar.html"></include>
+
+		<div id="content">
+			<div class="content-header px-5">
+				<div class="flex flex-shrink-0 items-center text-heading">
+					<i class="icon mr-2">grid_view</i>
+					<div class="font-bold">Tooltips</div>
+				</div>
+
+				<ol class="ml-5 hidden items-center text-md text-muted md:flex">
+					<li><a href="#" class="rounded p-1 transition-colors hover:text-body">Tailbreeze</a></li>
+					<li class="icon mx-1 text-xs">chevron_right</li>
+					<li><a href="#" class="rounded p-1 transition-colors hover:text-body">Miscellaneous</a></li>
+					<li class="icon mx-1 text-xs">chevron_right</li>
+					<li class="rounded p-1">Components</li>
+				</ol>
+			</div>
+
+			<div class="p-5" data-simplebar>
+				<div class="mx-auto max-w-5xl">
+					<div class="card mb-5 p-5">
+						<h5 class="mb-2 text-lg font-bold leading-none text-heading">Basic example</h5>
+						<div class="mb-5">
+							In the following example you can see the button that will trigger the tooltip element to be shown when hovered or focused.
+						</div>
+
+						<div>
+							Hover the link to see the
+							<a href="#" class="text-link" data-tippy-content="Hi! I'm tooltip" data-tippy-delay="[0, 5000000000]">tooltip</a>
+						</div>
+					</div>
+
+					<div class="card mb-5 p-5">
+						<h5 class="mb-2 text-lg font-bold leading-none text-heading">Placements</h5>
+						<div class="mb-5">Tooltip can be triiggered on any sides using the <code>placement</code> attribute.</div>
+
+						<button type="button" class="btn mr-1 mt-1 bg-blue-600/90 text-md text-white hover:bg-blue-600" data-tippy-content="Tooltip on top">
+							Top
+						</button>
+						<button
+							type="button"
+							class="btn mr-1 mt-1 bg-blue-600/90 text-md text-white hover:bg-blue-600"
+							data-tippy-content="Tooltip on top-start"
+							data-tippy-placement="top-start"
+						>
+							Top start
+						</button>
+						<button
+							type="button"
+							class="btn mr-1 mt-1 bg-blue-600/90 text-md text-white hover:bg-blue-600"
+							data-tippy-content="Tooltip on top-end"
+							data-tippy-placement="top-end"
+						>
+							Top end
+						</button>
+
+						<div class="my-3 border-b border-light-200 dark:border-dark-200"></div>
+
+						<button
+							type="button"
+							class="btn mr-1 mt-1 bg-blue-600/90 text-md text-white hover:bg-blue-600"
+							data-tippy-content="Tooltip on bottom"
+							data-tippy-placement="bottom"
+						>
+							Bottom
+						</button>
+						<button
+							type="button"
+							class="btn mr-1 mt-1 bg-blue-600/90 text-md text-white hover:bg-blue-600"
+							data-tippy-content="Tooltip on bottom-start"
+							data-tippy-placement="bottom-start"
+						>
+							Bottom start
+						</button>
+						<button
+							type="button"
+							class="btn mr-1 mt-1 bg-blue-600/90 text-md text-white hover:bg-blue-600"
+							data-tippy-content="Tooltip on bottom-end"
+							data-tippy-placement="bottom-end"
+						>
+							Bottom end
+						</button>
+
+						<div class="my-3 border-b border-light-200 dark:border-dark-200"></div>
+
+						<button
+							type="button"
+							class="btn mr-1 mt-1 bg-blue-600/90 text-md text-white hover:bg-blue-600"
+							data-tippy-content="Tooltip on left"
+							data-tippy-placement="left"
+						>
+							Left
+						</button>
+						<button
+							type="button"
+							class="btn mr-1 mt-1 h-12 bg-blue-600/90 text-md text-white hover:bg-blue-600"
+							data-tippy-content="Tooltip on left-start"
+							data-tippy-placement="left-start"
+						>
+							Left start
+						</button>
+						<button
+							type="button"
+							class="btn mr-1 mt-1 h-12 bg-blue-600/90 text-md text-white hover:bg-blue-600"
+							data-tippy-content="Tooltip on left-end"
+							data-tippy-placement="left-end"
+						>
+							Left end
+						</button>
+
+						<div class="my-3 border-b border-light-200 dark:border-dark-200"></div>
+
+						<button
+							type="button"
+							class="btn mr-1 mt-1 bg-blue-600/90 text-md text-white hover:bg-blue-600"
+							data-tippy-content="Tooltip on right"
+							data-tippy-placement="right"
+						>
+							Right
+						</button>
+						<button
+							type="button"
+							class="btn mr-1 mt-1 h-12 bg-blue-600/90 text-md text-white hover:bg-blue-600"
+							data-tippy-content="Tooltip on right-start"
+							data-tippy-placement="right-start"
+						>
+							Right start
+						</button>
+						<button
+							type="button"
+							class="btn mr-1 mt-1 h-12 bg-blue-600/90 text-md text-white hover:bg-blue-600"
+							data-tippy-content="Tooltip on right-end"
+							data-tippy-placement="right-end"
+						>
+							Right end
+						</button>
+					</div>
+
+					<div class="card mb-5 p-5">
+						<h5 class="mb-2 text-lg font-bold leading-none text-heading">With custom HTML</h5>
+						<div class="mb-5">Tooltips can contain any arbitrary HTML, Angular bindings and even directives.</div>
+
+						<button
+							type="button"
+							class="btn mr-1 mt-1 bg-blue-600/90 text-md text-white hover:bg-blue-600"
+							data-tippy-allowhtml="true"
+							data-tippy-content="<em>Tooltip</em> <u>with</u> <b>HTML</b>"
+						>
+							Tooltip with HTML
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<include src="./partials/_scripts.html"></include>
+	</body>
+</html>

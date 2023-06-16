@@ -1,0 +1,73 @@
+@layer components {
+	#sidebar {
+		@apply fixed
+			z-[19]
+			h-full
+			w-[var(--sidebar-width)]
+			-translate-x-[var(--sidebar-width)]
+			overflow-hidden
+			bg-body
+			pt-16
+			text-heading
+			hover:w-[var(--sidebar-width)]
+			dark:border-0
+			print:hidden
+			xl:translate-x-0;
+
+		// Content with a wider view
+		// e.g file-manager
+		&.sidebar-min {
+			&:not(:hover) {
+				@apply xl:w-[var(--sidebar-min-width)];
+
+				.menu-title {
+					@apply xl:text-transparent
+						xl:before:opacity-100;
+				}
+
+				.menu-text {
+					@apply xl:opacity-0;
+				}
+
+				.footer-text,
+				.sub-menu-active {
+					@apply hidden;
+				}
+			}
+
+			&:hover {
+				@apply border-r
+				border-light-300
+				shadow-xl
+				shadow-black/10
+				dark:border-0
+				dark:shadow-black/30;
+			}
+		}
+	}
+
+	// Mobile sidebar
+	.sidebar-toggled {
+		#sidebar {
+			@apply translate-x-0
+				shadow-xl
+				shadow-black/10
+				dark:shadow-black/50;
+		}
+	}
+
+	// Menu title
+	.menu-title {
+		&:before {
+			@apply xl:absolute
+			xl:-top-2.5
+			xl:text-xl
+			xl:font-bold
+			xl:text-muted
+			xl:opacity-0
+			xl:transition-all
+			xl:duration-100
+			xl:content-["..."];
+		}
+	}
+}

@@ -1,0 +1,68 @@
+<div class="content-header px-5">
+	<div id="photos-header" class="flex w-full items-center">
+		<a data-toggle="sidebar" class="icon btn -ml-2 mr-2 hover:bg-light-200 dark:hover:bg-dark-100 md:hidden" href="">west</a>
+
+		<div class="flex-shrink-0 font-bold text-heading">All Photos</div>
+
+		<i class="ml-auto"></i>
+
+		<nav class="-mr-2 ml-3 hidden items-center text-heading md:flex">
+			<a class="icon btn hidden hover:bg-light-200 dark:hover:bg-dark-100 sm:flex" href="">help_outline</a>
+			<a class="icon btn hidden hover:bg-light-200 dark:hover:bg-dark-100 sm:flex" href="">info</a>
+			<a class="icon btn hidden hover:bg-light-200 dark:hover:bg-dark-100 sm:flex" href="">settings</a>
+		</nav>
+
+		<button type="button" class="btn ml-4 h-8 border-[1.5px] border-theme text-md font-bold text-theme hover:bg-theme/10">
+			<i class="icon mr-1">file_upload</i>
+			Upload
+		</button>
+	</div>
+
+	<div id="photos-actions" class="flex hidden w-full items-center">
+		<button type="button" id="photos-clear" class="icon btn -ml-2 mr-2 hover:bg-light-200 dark:hover:bg-dark-100">west</button>
+
+		<div class="font-bold text-heading">
+			<span id="photos-amount"></span>
+			Selected
+		</div>
+
+		<nav class="-mr-1 ml-auto flex items-center text-heading">
+			<a class="icon btn hidden hover:bg-light-200 dark:hover:bg-dark-100 sm:flex" href="">share</a>
+			<a class="icon btn hidden hover:bg-light-200 dark:hover:bg-dark-100 sm:flex" href="">add_circle_outline</a>
+			<a class="icon btn hidden hover:bg-light-200 dark:hover:bg-dark-100 sm:flex" href="">delete</a>
+			<div class="relative" data-tb-dropdown>
+				<button
+					type="button"
+					data-tb-dropdown-toggle
+					aria-expanded="false"
+					class="icon btn hover:bg-light-200 dark:hover:bg-dark-100 sm:flex [&.show]:bg-light-200 dark:[&.show]:bg-dark-100"
+				>
+					more_vert
+				</button>
+
+				<div class="dropdown-menu p-1" data-tb-dropdown-menu>
+					<a href="" class="flex items-center" data-tb-dropdown-item>
+						<i class="icon mr-2">file_download</i>
+						Download
+					</a>
+					<a href="" class="flex items-center" data-tb-dropdown-item>
+						<i class="icon mr-2">favorite_border</i>
+						Favorite
+					</a>
+					<a href="" class="flex items-center" data-tb-dropdown-item>
+						<i class="icon mr-2">schedule </i>
+						Edit Date and Time
+					</a>
+					<a href="" class="flex items-center" data-tb-dropdown-item>
+						<i class="icon mr-2">explore</i>
+						Edit Location
+					</a>
+					<a href="" class="flex items-center" data-tb-dropdown-item>
+						<i class="icon mr-2">archive</i>
+						Archive
+					</a>
+				</div>
+			</div>
+		</nav>
+	</div>
+</div>

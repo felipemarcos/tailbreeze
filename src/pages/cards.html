@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en" data-page="components-cards">
+	<include src="./partials/_head.html">{ "pageTitle": "Cards" }</include>
+
+	<body>
+		<include src="./partials/_page-loader.html"></include>
+
+		<include src="./partials/_header.html"></include>
+
+		<include src="./partials/_sidebar.html"></include>
+
+		<div id="content">
+			<div class="content-header px-5">
+				<div class="flex flex-shrink-0 items-center text-heading">
+					<i class="icon mr-2">grid_view</i>
+					<div class="font-bold">Cards</div>
+				</div>
+
+				<ol class="ml-5 hidden items-center text-md text-muted md:flex">
+					<li><a href="#" class="rounded p-1 transition-colors hover:text-body">Tailbreeze</a></li>
+					<li class="icon mx-1 text-xs">chevron_right</li>
+					<li><a href="#" class="rounded p-1 transition-colors hover:text-body">Miscellaneous</a></li>
+					<li class="icon mx-1 text-xs">chevron_right</li>
+					<li class="rounded p-1">Components</li>
+				</ol>
+			</div>
+
+			<div class="p-5" data-simplebar>
+				<div class="mx-auto max-w-lg">
+					<div class="mb-10">
+						<h5 class="mb-2 text-lg font-bold leading-none text-heading">Simple card</h5>
+						<div class="mb-5">Use the following simple card component with a title and description.</div>
+
+						<div class="card p-5">
+							<h4 class="mb-4 font-bold leading-none text-heading">Card title</h4>
+							<p class="mb-5">
+								Nulla mollit reprehenderit ex incididunt exercitation adipisicing proident culpa cupidatat. Ipsum fugiat sit tempor veniam. Ex
+								reprehenderit id irure adipisicing et in. Laborum commodo incididunt laborum qui non ipsum amet fugiat est occaecat. Consectetur
+								labore enim magna aliquip adipisicing proident pariatur sint do mollit aliquip ipsum commodo excepteur.
+							</p>
+							<button type="button" class="btn bg-blue-600/90 text-md text-white hover:bg-blue-600">Button</button>
+						</div>
+					</div>
+
+					<div class="mb-10">
+						<h5 class="mb-2 text-lg font-bold leading-none text-heading">Card with image</h5>
+						<div class="mb-5">You can use the following example of a card element with an image for blog posts, user cards, and many more.</div>
+
+						<div class="card">
+							<div class="m-0.5">
+								<img src="../assets/img/gallery/1.jpg" class="h-40 w-full rounded object-cover lg:h-60" alt="" />
+							</div>
+							<div class="p-5">
+								<h4 class="mb-4 font-bold leading-none text-heading">Card title</h4>
+								<p class="mb-5">
+									Nulla mollit reprehenderit ex incididunt exercitation adipisicing proident culpa cupidatat. Ipsum fugiat sit tempor veniam.
+									Ex reprehenderit id irure adipisicing et in. Laborum commodo incididunt laborum qui non ipsum amet fugiat est occaecat.
+									Consectetur labore enim magna aliquip adipisicing proident pariatur sint do mollit aliquip ipsum commodo excepteur.
+								</p>
+								<button type="button" class="btn bg-blue-600/90 text-md text-white hover:bg-blue-600">Button</button>
+							</div>
+						</div>
+					</div>
+
+					<div class="mb-10">
+						<h5 class="mb-2 text-lg font-bold leading-none text-heading">Header and Footer</h5>
+						<div class="mb-5">Add optional header and footer sections to the card.</div>
+
+						<div class="card">
+							<div class="flex items-center border-b border-light-100 px-5 py-2.5 text-muted dark:border-dark-200">
+								Featured post
+
+								<i class="icon ml-auto text-2xl">more_horiz</i>
+							</div>
+							<div class="p-5">
+								<h4 class="mb-4 font-bold leading-none text-heading">Card title</h4>
+								<p class="mb-5">
+									Nulla mollit reprehenderit ex incididunt exercitation adipisicing proident culpa cupidatat. Ipsum fugiat sit tempor veniam.
+									Ex reprehenderit id irure adipisicing et in. Laborum commodo incididunt laborum qui non ipsum amet fugiat est occaecat.
+									Consectetur labore enim magna aliquip adipisicing proident pariatur sint do mollit aliquip ipsum commodo excepteur.
+								</p>
+								<button type="button" class="btn bg-blue-600/90 text-md text-white hover:bg-blue-600">Button</button>
+							</div>
+							<div class="border-t border-light-100 px-5 py-3 text-muted dark:border-dark-200">2 days ago</div>
+						</div>
+					</div>
+
+					<div class="mb-5">
+						<h5 class="mb-2 text-lg font-bold leading-none text-heading">Horizontal</h5>
+						<div class="mb-5">Use card which has its child elements aligned horizontally.</div>
+
+						<div class="card sm:flex">
+							<div class="flex-shrink-0 p-0.5">
+								<img src="../assets/img/gallery/1.jpg" class="h-full rounded object-cover sm:w-40" alt="" />
+							</div>
+							<div class="p-5">
+								<h4 class="mb-4 font-bold leading-none text-heading">Card title</h4>
+								<p class="mb-5">
+									Nulla mollit reprehenderit ex incididunt exercitation adipisicing proident culpa cupidatat. Ipsum fugiat sit tempor veniam.
+									Ex reprehenderit id irure adipisicing et in. Laborum commodo incididunt laborum qui non ipsum amet fugiat est occaecat.
+									Consectetur labore enim magna aliquip adipisicing proident pariatur sint do mollit aliquip ipsum commodo excepteur.
+								</p>
+								<button type="button" class="btn bg-blue-600/90 text-md text-white hover:bg-blue-600">Button</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<include src="./partials/_scripts.html"></include>
+	</body>
+</html>

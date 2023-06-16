@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en" data-page="components-accordion">
+	<include src="./partials/_head.html">{ "pageTitle": "Accordion" }</include>
+
+	<body>
+		<include src="./partials/_page-loader.html"></include>
+
+		<include src="./partials/_header.html"></include>
+
+		<include src="./partials/_sidebar.html"></include>
+
+		<div id="content">
+			<div class="content-header px-5">
+				<div class="flex flex-shrink-0 items-center text-heading">
+					<i class="icon mr-2">grid_view</i>
+					<div class="font-bold">Accordion</div>
+				</div>
+
+				<ol class="ml-5 hidden items-center text-md text-muted md:flex">
+					<li><a href="#" class="rounded p-1 transition-colors hover:text-body">Tailbreeze</a></li>
+					<li class="icon mx-1 text-xs">chevron_right</li>
+					<li><a href="#" class="rounded p-1 transition-colors hover:text-body">Miscellaneous</a></li>
+					<li class="icon mx-1 text-xs">chevron_right</li>
+					<li class="rounded p-1">Components</li>
+				</ol>
+			</div>
+
+			<div class="p-5" data-simplebar>
+				<div class="mx-auto max-w-5xl">
+					<div class="card mb-5 p-5">
+						<h5 class="mb-2 text-lg font-bold leading-none text-heading">Basic example</h5>
+						<div class="mb-5">Click the accordions below to expand/collapse the accordion content.</div>
+
+						<div data-tb-collapse class="rounded-md border border-light-200 px-1 pt-1 dark:border-dark-200">
+							<div>
+								<button
+									class="mb-1 block w-full rounded bg-light-100 px-3 py-2 text-left text-md font-bold text-heading hover:bg-light-200 dark:bg-dark-200 dark:hover:bg-dark-300/50"
+									type="button"
+									data-tb-collapse-toggle="#accordion-basic-1"
+									aria-expanded="true"
+								>
+									Accordion Item #1
+								</button>
+								<div id="accordion-basic-1" data-tb-collapse-item>
+									<div class="p-4 py-3">
+										Aliquip incididunt pariatur fugiat non velit velit. Reprehenderit laboris fugiat Lorem velit est esse magna est mollit
+										consequat dolore laboris. Adipisicing ex quis duis consequat consectetur elit ullamco cupidatat exercitation. Aute in
+										occaecat dolor ut nulla ad deserunt. Reprehenderit mollit sunt sit consectetur exercitation ullamco aliqua et nostrud
+										aliqua mollit. Labore non culpa nostrud velit laborum Lorem et eiusmod laboris id tempor reprehenderit voluptate
+										exercitation. Esse aute consectetur commodo adipisicing nisi consectetur aliquip consectetur aliquip ea ex nulla quis.
+									</div>
+								</div>
+							</div>
+							<div>
+								<button
+									class="mb-1 block w-full rounded bg-light-100 px-3 py-2 text-left text-md font-bold text-heading hover:bg-light-200 dark:bg-dark-200 dark:hover:bg-dark-300/50"
+									type="button"
+									data-tb-collapse-toggle="#accordion-basic-2"
+									aria-expanded="false"
+								>
+									Accordion Item #2
+								</button>
+								<div id="accordion-basic-2" class="hidden" data-tb-collapse-item>
+									<div class="p-4 py-3">
+										Nostrud labore nostrud sunt do labore voluptate culpa ullamco nisi sit consequat et aliquip. Eu consectetur laborum in
+										magna reprehenderit in quis sunt in sint excepteur voluptate Lorem voluptate. Voluptate aute nisi irure amet officia ea
+										voluptate minim deserunt dolor. Nisi cupidatat officia sunt incididunt nulla enim cillum reprehenderit Lorem incididunt
+										fugiat occaecat. Consectetur nostrud Lorem incididunt nisi minim ipsum minim consequat ipsum ut ad veniam id. Dolore
+										magna qui voluptate quis ipsum commodo proident dolor ad occaecat ullamco esse. Aliqua dolor aute est elit.
+									</div>
+								</div>
+							</div>
+							<div>
+								<button
+									class="mb-1 block w-full rounded bg-light-100 px-3 py-2 text-left text-md font-bold text-heading hover:bg-light-200 dark:bg-dark-200 dark:hover:bg-dark-300/50"
+									type="button"
+									data-tb-collapse-toggle="#accordion-basic-3"
+									aria-expanded="false"
+								>
+									Accordion Item #3
+								</button>
+								<div id="accordion-basic-3" class="hidden" data-tb-collapse-item>
+									<div class="p-4 py-3">
+										Velit do non Lorem aliquip occaecat enim minim ad dolore aliqua. Nisi esse commodo amet ullamco incididunt Lorem
+										proident culpa non. Proident sint adipisicing fugiat id in consequat nisi reprehenderit sit cupidatat.
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="card mb-5 p-5">
+						<h5 class="mb-2 text-lg font-bold leading-none text-heading">Flush</h5>
+						<div class="mb-5">Accordion without the default background color, borders and rounded corners.</div>
+
+						<div data-tb-collapse>
+							<div>
+								<button
+									class="block w-full py-2 text-left text-md font-bold text-heading"
+									type="button"
+									data-tb-collapse-toggle="#accordion-flush-1"
+									aria-expanded="true"
+								>
+									Accordion Item #1
+								</button>
+								<div id="accordion-flush-1" data-tb-collapse-item>
+									<div class="mb-2 py-1">
+										Aliquip incididunt pariatur fugiat non velit velit. Reprehenderit laboris fugiat Lorem velit est esse magna est mollit
+										consequat dolore laboris. Adipisicing ex quis duis consequat consectetur elit ullamco cupidatat exercitation. Aute in
+										occaecat dolor ut nulla ad deserunt. Reprehenderit mollit sunt sit consectetur exercitation ullamco aliqua et nostrud
+										aliqua mollit. Labore non culpa nostrud velit laborum Lorem et eiusmod laboris id tempor reprehenderit voluptate
+										exercitation. Esse aute consectetur commodo adipisicing nisi consectetur aliquip consectetur aliquip ea ex nulla quis.
+									</div>
+								</div>
+							</div>
+							<div>
+								<button
+									class="block w-full py-2 text-left text-md font-bold text-heading"
+									type="button"
+									data-tb-collapse-toggle="#accordion-flush-2"
+									aria-expanded="false"
+								>
+									Accordion Item #2
+								</button>
+								<div id="accordion-flush-2" class="!visible hidden" data-tb-collapse-item>
+									<div class="mb-2 py-1">
+										Nostrud labore nostrud sunt do labore voluptate culpa ullamco nisi sit consequat et aliquip. Eu consectetur laborum in
+										magna reprehenderit in quis sunt in sint excepteur voluptate Lorem voluptate. Voluptate aute nisi irure amet officia ea
+										voluptate minim deserunt dolor. Nisi cupidatat officia sunt incididunt nulla enim cillum reprehenderit Lorem incididunt
+										fugiat occaecat. Consectetur nostrud Lorem incididunt nisi minim ipsum minim consequat ipsum ut ad veniam id. Dolore
+										magna qui voluptate quis ipsum commodo proident dolor ad occaecat ullamco esse. Aliqua dolor aute est elit.
+									</div>
+								</div>
+							</div>
+							<div>
+								<button
+									class="block w-full py-2 text-left text-md font-bold text-heading"
+									type="button"
+									data-tb-collapse-toggle="#accordion-flush-3"
+									aria-expanded="false"
+								>
+									Accordion Item #3
+								</button>
+								<div id="accordion-flush-3" class="!visible hidden" data-tb-collapse-item>
+									<div class="py-1">
+										Velit do non Lorem aliquip occaecat enim minim ad dolore aliqua. Nisi esse commodo amet ullamco incididunt Lorem
+										proident culpa non. Proident sint adipisicing fugiat id in consequat nisi reprehenderit sit cupidatat.
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="card mb-5 p-5">
+						<h5 class="mb-2 text-lg font-bold leading-none text-heading">Always open</h5>
+						<div class="mb-5">Accordions can also configure to stay open when another item is opened.</div>
+
+						<div data-tb-collapse="always" class="rounded-md border border-light-200 px-1 pt-1 dark:border-dark-200">
+							<div>
+								<button
+									class="mb-1 block w-full rounded bg-light-100 px-3 py-2 text-left text-md font-bold text-heading hover:bg-light-200 dark:bg-dark-200 dark:hover:bg-dark-300/50"
+									type="button"
+									data-tb-collapse-toggle="#accordion-open-1"
+									aria-expanded="true"
+								>
+									Accordion Item #1
+								</button>
+								<div id="accordion-open-1" data-tb-collapse-item>
+									<div class="p-4 py-3">
+										Aliquip incididunt pariatur fugiat non velit velit. Reprehenderit laboris fugiat Lorem velit est esse magna est mollit
+										consequat dolore laboris. Adipisicing ex quis duis consequat consectetur elit ullamco cupidatat exercitation. Aute in
+										occaecat dolor ut nulla ad deserunt. Reprehenderit mollit sunt sit consectetur exercitation ullamco aliqua et nostrud
+										aliqua mollit. Labore non culpa nostrud velit laborum Lorem et eiusmod laboris id tempor reprehenderit voluptate
+										exercitation. Esse aute consectetur commodo adipisicing nisi consectetur aliquip consectetur aliquip ea ex nulla quis.
+									</div>
+								</div>
+							</div>
+							<div>
+								<button
+									class="mb-1 block w-full rounded bg-light-100 px-3 py-2 text-left text-md font-bold text-heading hover:bg-light-200 dark:bg-dark-200 dark:hover:bg-dark-300/50"
+									type="button"
+									data-tb-collapse-toggle="#accordion-open-2"
+									aria-expanded="false"
+								>
+									Accordion Item #2
+								</button>
+								<div id="accordion-open-2" class="hidden" data-tb-collapse-item>
+									<div class="p-4 py-3">
+										Nostrud labore nostrud sunt do labore voluptate culpa ullamco nisi sit consequat et aliquip. Eu consectetur laborum in
+										magna reprehenderit in quis sunt in sint excepteur voluptate Lorem voluptate. Voluptate aute nisi irure amet officia ea
+										voluptate minim deserunt dolor. Nisi cupidatat officia sunt incididunt nulla enim cillum reprehenderit Lorem incididunt
+										fugiat occaecat. Consectetur nostrud Lorem incididunt nisi minim ipsum minim consequat ipsum ut ad veniam id. Dolore
+										magna qui voluptate quis ipsum commodo proident dolor ad occaecat ullamco esse. Aliqua dolor aute est elit.
+									</div>
+								</div>
+							</div>
+							<div>
+								<button
+									class="mb-1 block w-full rounded bg-light-100 px-3 py-2 text-left text-md font-bold text-heading hover:bg-light-200 dark:bg-dark-200 dark:hover:bg-dark-300/50"
+									type="button"
+									data-tb-collapse-toggle="#accordion-open-3"
+									aria-expanded="false"
+								>
+									Accordion Item #3
+								</button>
+								<div id="accordion-open-3" class="hidden" data-tb-collapse-item>
+									<div class="p-4 py-3">
+										Velit do non Lorem aliquip occaecat enim minim ad dolore aliqua. Nisi esse commodo amet ullamco incididunt Lorem
+										proident culpa non. Proident sint adipisicing fugiat id in consequat nisi reprehenderit sit cupidatat.
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<include src="./partials/_scripts.html"></include>
+	</body>
+</html>

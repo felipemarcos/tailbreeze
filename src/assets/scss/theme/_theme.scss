@@ -1,0 +1,67 @@
+// Light mode theme colors
+$theme-blue: 17 130 238;
+$theme-green: 16 185 129;
+$theme-indigo: 99 102 241;
+$theme-orange: 251 146 60;
+$theme-purple: 168 85 247;
+$theme-red: 248 113 113;
+$theme-cyan: 6 182 212;
+$theme-teal: 20 184 166;
+
+$theme-colors: (
+	blue: #{$theme-blue},
+	green: #{$theme-green},
+	indigo: #{$theme-indigo},
+	orange: #{$theme-orange},
+	purple: #{$theme-purple},
+	red: #{$theme-red},
+	cyan: #{$theme-cyan},
+	teal: #{$theme-teal},
+);
+
+@each $color, $value in $theme-colors {
+	:root {
+		&:not([data-theme="dark"]) {
+			&[data-theme-color="#{'' + $color}"] {
+				--theme-color-light: #{$value};
+				--theme-radio-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='2.5' fill='rgb(#{$value})'/%3e%3c/svg%3e");
+			}
+		}
+	}
+}
+
+// Dark/Light property values.
+// Each variable has 2 values, first one is for light mode and the other one is for dark mode.
+$css-theme-variables: (
+	--theme-color: var(--theme-color-light)
+		(
+			17 130 238,
+		),
+	// Body
+	--body-bg: var(--body-light-bg) var(--body-dark-bg),
+	--body-color: #37507f #a1c3d8,
+	// Text
+	--text-heading: #23416f #c8e0ef,
+	--text-muted: #627da7 #6a8ca3,
+	// Widgets
+	--chart-previous-data-start-fill: rgba(#b6d8f5, 0.2) rgba(#45677f, 0.2),
+	--chart-previous-data-end-fill: rgba(#b6d8f5, 0) rgba(#45677f, 0),
+	--chart-previous-data-border-fill: #b6d8f5 #45677f,
+	--widget-session-country-initial-fill: #ffedd1 rgba(192, 202, 51, 0.17),
+	--widget-session-country-active-fill: #ffc107 #c0ca33,
+	--widget-active-visitor-initial-fill: #e0f2fe rgba(7, 89, 133, 0.75),
+	--widget-active-visitor-active-fill: #38bdf8 #0ea5e9,
+	--widget-sales-region-initial-fill: #dcfce7 rgba(74, 222, 128, 0.15),
+	--widget-sales-region-active-fill: #4ade80 #31b963,
+	--chart-pie-border: #fff rgb(var(--theme-dark-100)),
+	// Close
+	--close-bg:
+		url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%2337507f'><path d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z'/></svg>")
+		url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23a1c3d8'><path d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z'/></svg>"),
+	// Scrollbar
+	--scrollbar-thumb-bg: #d4e5f5 #bad2e8,
+	--radio-checked-bg: var(--theme-radio-bg)
+		url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='2' fill='%231182ee' /%3e%3c/svg%3e"),
+);
+
+@include theme-switch($css-theme-variables);

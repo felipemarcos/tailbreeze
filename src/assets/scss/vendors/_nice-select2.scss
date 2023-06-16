@@ -1,0 +1,125 @@
+@layer components {
+	select.custom-select {
+		@apply hidden;
+	}
+
+	.custom-select {
+		&.nice-select {
+			@include form-control();
+
+			@apply float-none
+            flex
+            items-center
+            text-md
+			transition-none;
+
+			&:hover,
+			&.open,
+			&:active,
+			&:focus {
+				@apply border-light-400
+					dark:border-dark-300;
+			}
+
+			&.open {
+				@apply border-0;
+			}
+
+			&:after {
+				@apply right-4
+                h-1.5
+                w-1.5
+                border-b
+                border-r
+                border-current
+                opacity-70;
+			}
+
+			.nice-select-dropdown {
+				@apply top-0
+					mt-0
+                    w-full
+                    overflow-hidden
+                    rounded-md
+					border
+                    border-light-300
+					bg-white
+					shadow-lg
+					shadow-black/5
+					transition-none
+					dark:border-dark-200
+					dark:bg-dark-200;
+			}
+
+			.option {
+				@apply mb-px
+                    rounded
+					py-2
+                    px-3
+                    text-md
+                    font-bold
+                    leading-normal
+                    text-body;
+
+				&:not(.disabled) {
+					@apply hover:bg-light-100
+                        hover:text-body
+                        dark:hover:bg-dark-300/50;
+				}
+
+				&.disabled {
+					@apply font-normal;
+
+					&,
+					&:hover,
+					&:focus {
+						@apply cursor-default
+                            text-muted
+                            opacity-70;
+					}
+				}
+
+				&.focus,
+				&.selected,
+				&.selected.focus {
+					@apply relative
+                        flex
+                        items-center
+						bg-light-100
+						font-bold
+						text-heading
+                        dark:bg-dark-300/50;
+				}
+
+				&.selected {
+					&:after {
+						@apply ml-auto
+							font-icon
+							content-['\e876'];
+					}
+				}
+			}
+
+			.list {
+				@apply p-1;
+			}
+
+			.nice-select-search-box {
+				@apply p-0;
+			}
+
+			.nice-select-search {
+				@apply m-0
+                    h-6
+                    rounded-none
+                    border-0
+                    border-light-200
+					bg-transparent
+					px-4
+					text-md
+					text-body
+                    placeholder:text-muted;
+			}
+		}
+	}
+}

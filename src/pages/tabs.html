@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en" data-page="components-tabs">
+	<include src="./partials/_head.html">{ "pageTitle": "Tabs" }</include>
+
+	<body>
+		<include src="./partials/_page-loader.html"></include>
+
+		<include src="./partials/_header.html"></include>
+
+		<include src="./partials/_sidebar.html"></include>
+
+		<div id="content">
+			<div class="content-header px-5">
+				<div class="flex flex-shrink-0 items-center text-heading">
+					<i class="icon mr-2">grid_view</i>
+					<div class="font-bold">Tabs</div>
+				</div>
+
+				<ol class="ml-5 hidden items-center text-md text-muted md:flex">
+					<li><a href="#" class="rounded p-1 transition-colors hover:text-body">Tailbreeze</a></li>
+					<li class="icon mx-1 text-xs">chevron_right</li>
+					<li><a href="#" class="rounded p-1 transition-colors hover:text-body">Miscellaneous</a></li>
+					<li class="icon mx-1 text-xs">chevron_right</li>
+					<li class="rounded p-1">Components</li>
+				</ol>
+			</div>
+
+			<div class="p-5" data-simplebar>
+				<div class="mx-auto max-w-5xl">
+					<div class="card mb-5 p-5">
+						<h5 class="mb-2 text-lg font-bold leading-none text-heading">Basic example</h5>
+						<div class="mb-5">
+							With the basic example of tabs component you can navigate between groups of content that are related and at the same level of
+							hierarchy.
+						</div>
+
+						<nav class="nav-scroll -mx-5 px-5 font-bold" role="tablist" data-tb-tab-nav>
+							<a href="" id="tabs-home" role="tab" aria-selected="true">Home</a>
+							<a href="" id="tabs-profile" role="tab" aria-selected="false">Profile</a>
+							<a href="" id="tabs-messages" role="tab" aria-selected="false">Messages</a>
+							<a href="" id="tabs-contact" role="tab" aria-selected="false">Contact</a>
+						</nav>
+						<div class="mx-3 mt-1 border-t border-light-100 pt-3" data-tb-tab-content>
+							<div role="tabpanel" aria-labelledby="tabs-home">
+								Proident quis occaecat enim aliqua est minim aute ullamco ullamco eu labore nulla proident. Reprehenderit et labore esse
+								incididunt excepteur nulla veniam voluptate consequat amet. Amet qui nostrud consequat qui ullamco officia dolore laborum nisi.
+								Labore sit reprehenderit elit minim ea ullamco.
+							</div>
+							<div class="hidden" role="tabpanel" aria-labelledby="tabs-profile">
+								Do elit velit occaecat ut esse eiusmod. Incididunt deserunt quis aute fugiat. Nostrud eu ipsum dolor amet. Ea sint aute est
+								nulla aliqua enim cupidatat ipsum labore exercitation pariatur ipsum consequat adipisicing. Qui elit pariatur enim nisi sit
+								ullamco. Lorem anim fugiat tempor reprehenderit dolor laborum sunt amet tempor voluptate esse laboris dolor duis.
+							</div>
+							<div class="hidden" role="tabpanel" aria-labelledby="tabs-messages">
+								Adipisicing enim aliqua culpa fugiat do tempor incididunt consectetur aliquip. Ex ea ad ipsum do occaecat enim laboris deserunt
+								elit. Veniam commodo dolor ea consequat do irure consectetur ipsum nostrud. Tempor ullamco sint qui consequat esse ullamco.
+							</div>
+							<div class="hidden" role="tabpanel" aria-labelledby="tabs-contact">
+								Deserunt officia quis nulla sunt. Eu sit esse deserunt reprehenderit Lorem ullamco sint. Tempor aliquip irure ipsum ex voluptate
+								aute occaecat laborum consectetur eu magna aute pariatur. Minim aute magna ad amet aute aliquip deserunt minim magna ad. Velit
+								do proident commodo laborum laboris reprehenderit aute anim veniam id enim. Exercitation ipsum consequat consectetur ex
+								voluptate ut dolore dolore consectetur ipsum mollit. Occaecat ea proident nisi consectetur amet nostrud laboris elit
+								exercitation ea ipsum sunt qui ex.
+							</div>
+						</div>
+					</div>
+
+					<div class="card mb-5 p-5">
+						<h5 class="mb-2 text-lg font-bold leading-none text-heading">Fill</h5>
+						<div class="mb-5">Stretch the tab list to fit the container.</div>
+
+						<nav class="nav-scroll -mx-5 justify-evenly px-5 font-bold" role="tablist" data-tb-tab-nav>
+							<a class="w-full" href="" id="tabs-fill-home" role="tab" aria-selected="true">Home</a>
+							<a class="w-full" href="" id="tabs-fill-profile" role="tab" aria-selected="false">Profile</a>
+							<a class="w-full" href="" id="tabs-fill-messages" role="tab" aria-selected="false">Messages</a>
+							<a class="w-full" href="" id="tabs-fill-contact" role="tab" aria-selected="false">Contact</a>
+						</nav>
+						<div class="mx-3 mt-1 border-t border-light-100 pt-3" data-tb-tab-content>
+							<div aria-labelledby="tabs-fill-home" role="tabpanel">
+								Proident quis occaecat enim aliqua est minim aute ullamco ullamco eu labore nulla proident. Reprehenderit et labore esse
+								incididunt excepteur nulla veniam voluptate consequat amet. Amet qui nostrud consequat qui ullamco officia dolore laborum nisi.
+								Labore sit reprehenderit elit minim ea ullamco.
+							</div>
+							<div class="hidden" aria-labelledby="tabs-fill-profile" role="tabpanel">
+								Do elit velit occaecat ut esse eiusmod. Incididunt deserunt quis aute fugiat. Nostrud eu ipsum dolor amet. Ea sint aute est
+								nulla aliqua enim cupidatat ipsum labore exercitation pariatur ipsum consequat adipisicing. Qui elit pariatur enim nisi sit
+								ullamco. Lorem anim fugiat tempor reprehenderit dolor laborum sunt amet tempor voluptate esse laboris dolor duis.
+							</div>
+							<div class="hidden" aria-labelledby="tabs-fill-messages" role="tabpanel">
+								Adipisicing enim aliqua culpa fugiat do tempor incididunt consectetur aliquip. Ex ea ad ipsum do occaecat enim laboris deserunt
+								elit. Veniam commodo dolor ea consequat do irure consectetur ipsum nostrud. Tempor ullamco sint qui consequat esse ullamco.
+							</div>
+							<div class="hidden" aria-labelledby="tabs-fill-contact" role="tabpanel">
+								Deserunt officia quis nulla sunt. Eu sit esse deserunt reprehenderit Lorem ullamco sint. Tempor aliquip irure ipsum ex voluptate
+								aute occaecat laborum consectetur eu magna aute pariatur. Minim aute magna ad amet aute aliquip deserunt minim magna ad. Velit
+								do proident commodo laborum laboris reprehenderit aute anim veniam id enim. Exercitation ipsum consequat consectetur ex
+								voluptate ut dolore dolore consectetur ipsum mollit. Occaecat ea proident nisi consectetur amet nostrud laboris elit
+								exercitation ea ipsum sunt qui ex.
+							</div>
+						</div>
+					</div>
+
+					<div class="card mb-5 p-5">
+						<h5 class="mb-2 text-lg font-bold leading-none text-heading">Disabled tab</h5>
+						<div class="mb-5">Disable a tab by adding the <code>aria-disabled="true"</code> attribute.</div>
+
+						<nav class="nav-scroll -mx-5 px-5 font-bold" role="tablist" data-tb-tab-nav>
+							<a href="" id="tabs-disabled-home" role="tab" aria-selected="true"> Home </a>
+							<a href="" id="tabs-disabled-profile" role="tab" aria-selected="false"> Profile </a>
+							<a href="" id="tabs-disabled-messages" role="tab" aria-selected="false"> Messages </a>
+							<a
+								href=""
+								class="cursor-default text-muted opacity-50"
+								id="tabs-disabled-contact"
+								role="tab"
+								aria-selected="false"
+								aria-disabled="true"
+							>
+								Contact
+							</a>
+						</nav>
+						<div class="mx-3 mt-1 border-t border-light-100 pt-3" data-tb-tab-content>
+							<div aria-labelledby="tabs-disabled-home" role="tabpanel">
+								Proident quis occaecat enim aliqua est minim aute ullamco ullamco eu labore nulla proident. Reprehenderit et labore esse
+								incididunt excepteur nulla veniam voluptate consequat amet. Amet qui nostrud consequat qui ullamco officia dolore laborum nisi.
+								Labore sit reprehenderit elit minim ea ullamco.
+							</div>
+							<div class="hidden" aria-labelledby="tabs-disabled-profile" role="tabpanel">
+								Do elit velit occaecat ut esse eiusmod. Incididunt deserunt quis aute fugiat. Nostrud eu ipsum dolor amet. Ea sint aute est
+								nulla aliqua enim cupidatat ipsum labore exercitation pariatur ipsum consequat adipisicing. Qui elit pariatur enim nisi sit
+								ullamco. Lorem anim fugiat tempor reprehenderit dolor laborum sunt amet tempor voluptate esse laboris dolor duis.
+							</div>
+							<div class="hidden" aria-labelledby="tabs-disabled-messages" role="tabpanel">
+								Adipisicing enim aliqua culpa fugiat do tempor incididunt consectetur aliquip. Ex ea ad ipsum do occaecat enim laboris deserunt
+								elit. Veniam commodo dolor ea consequat do irure consectetur ipsum nostrud. Tempor ullamco sint qui consequat esse ullamco.
+							</div>
+							<div class="hidden" aria-labelledby="tabs-disabled-contact" role="tabpanel">
+								Deserunt officia quis nulla sunt. Eu sit esse deserunt reprehenderit Lorem ullamco sint. Tempor aliquip irure ipsum ex voluptate
+								aute occaecat laborum consectetur eu magna aute pariatur. Minim aute magna ad amet aute aliquip deserunt minim magna ad. Velit
+								do proident commodo laborum laboris reprehenderit aute anim veniam id enim. Exercitation ipsum consequat consectetur ex
+								voluptate ut dolore dolore consectetur ipsum mollit. Occaecat ea proident nisi consectetur amet nostrud laboris elit
+								exercitation ea ipsum sunt qui ex.
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<include src="./partials/_scripts.html"></include>
+	</body>
+</html>

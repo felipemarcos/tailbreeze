@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Add automatic underline offset for underline classes */
+.underline,
+.hover\:underline:hover {
+	@apply underline-offset-2;
+}

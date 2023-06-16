@@ -1,0 +1,84 @@
+<div data-tb-modal-window id="modal-todo-list" tabindex="-1">
+	<div data-tb-modal-dialog class="max-w-3xl">
+		<div class="mb-3 flex items-start rounded-t-md bg-light-100 p-5 dark:bg-dark-200">
+			<input type="checkbox" class="checkbox peer mr-3 mt-px rounded-full" />
+			<div class="flex-1 peer-checked:line-through">
+				<div class="mb-1 font-bold text-heading">Labore fugiat laboris veniam aliqua anim magna enim</div>
+				<div class="mb-3">Exercitation consectetur proident enim cillum qui Lorem tempor. Deserunt officia eiusmod elit anim laboris esse labore.</div>
+
+				<div class="flex items-center gap-1 text-heading">
+					<button
+						type="button"
+						class="btn flex h-8 items-center border border-light-300 bg-white text-sm leading-none dark:border-dark-300 dark:bg-dark-100"
+					>
+						<i class="icon -mt-[2px] mr-1 text-base">calendar_today</i>
+						<span class="font-bold">02/02/2024</span>
+					</button>
+
+					<button
+						type="button"
+						class="btn flex h-8 items-center border border-light-300 bg-white text-sm leading-none dark:border-dark-300 dark:bg-dark-100"
+					>
+						<i class="icon -mt-px mr-1 text-base">schedule</i>
+						<span class="font-bold">09:30</span>
+					</button>
+
+					<button
+						type="button"
+						class="btn hidden h-8 items-center border border-light-300 bg-white text-sm leading-none dark:border-dark-300 dark:bg-dark-100 md:flex"
+					>
+						<i class="icon -mt-px mr-1 text-base">label</i>
+						<span class="font-bold">Production</span>
+					</button>
+				</div>
+			</div>
+
+			<button type="button" class="btn-close -mr-1 -mt-1 hover:bg-light-200 dark:hover:bg-dark-300" data-tb-modal-dismiss></button>
+		</div>
+
+		<nav class="nav-scroll mb-3 pl-9 pr-5 font-bold" role="tablist" data-tb-tab-nav>
+			<a href="#channel-tasks-tab" id="channel-tasks-tab" role="tab" aria-selected="true">Sub Tasks</a>
+			<a href="#channel-attachements-tab" id="channel-attachements-tab" role="tab" aria-selected="false">Attachements</a>
+			<a href="#channel-members-tab" id="channel-members-tab" role="tab" aria-selected="false">Comments</a>
+			<a href="#channel-files-tab" id="channel-files-tab" role="tab" aria-selected="false">Activity</a>
+		</nav>
+
+		<div class="px-12 pb-6" data-tb-tab-content>
+			<div aria-labelledby="channel-tasks-tab" role="tabpanel">
+				<div class="mb-2 text-sm text-muted">Total 5 sub tasks</div>
+				<div id="todo-sub-tasks">
+					<!-- Content will load from "js/template/todoLists.js" -->
+				</div>
+				<div class="flex items-center border-t border-light-100 py-3 dark:border-dark-200">
+					<i class="icon w-7 text-xl text-muted">add</i>
+					<input type="text" placeholder="Add Task" class="bg-transparent placeholder:text-muted" />
+				</div>
+			</div>
+			<div class="hidden" aria-labelledby="channel-attachements-tab" role="tabpanel">
+				<div class="mb-2 border-b border-light-200 pb-2 text-sm text-muted dark:border-dark-200">Total 23 files</div>
+				<div id="todo-attachements" class="-ml-3">
+					<!-- Content will load from "js/template/todoLists.js" -->
+				</div>
+				<button
+					type="button"
+					class="mt-3 flex w-full items-center border-t border-light-200 py-3 text-md text-muted hover:text-body dark:border-dark-200"
+				>
+					<i class="icon w-7 text-xl text-muted">add</i>
+					Add files
+				</button>
+			</div>
+			<div class="hidden" aria-labelledby="channel-members-tab" role="tabpanel">
+				<div class="rounded border border-light-100 py-6 text-center dark:border-dark-200">
+					<img class="mb-4 inline-block w-16" src="../assets/img/misc/coming-soon.svg" alt="Coming Soon" />
+					<div class="font-bold text-heading">Coming Soon!</div>
+				</div>
+			</div>
+			<div class="hidden" aria-labelledby="channel-files-tab" role="tabpanel">
+				<div class="rounded border border-light-100 py-6 text-center dark:border-dark-200">
+					<img class="mb-4 inline-block w-16" src="../assets/img/misc/coming-soon.svg" alt="Coming Soon" />
+					<div class="font-bold text-heading">Coming Soon!</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

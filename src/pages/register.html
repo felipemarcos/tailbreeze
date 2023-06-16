@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+	<include src="./partials/_head.html">{ "pageTitle": "Creat an Account" }</include>
+
+	<body>
+		<div class="flex h-screen overflow-y-auto p-5">
+			<div class="card m-auto w-full max-w-sm p-8">
+				<h3 class="mb-1 text-lg font-bold text-heading">Create an account</h3>
+				<div class="mb-5 text-muted">Please fill all the input and submite the form</div>
+
+				<form class="mb-3">
+					<div class="form-control mb-2 flex items-center px-2.5">
+						<i class="icon mr-2 flex-shrink-0">account_circle</i>
+						<input type="text" class="h-9 w-full bg-transparent" placeholder="Username" />
+					</div>
+
+					<div class="form-control mb-2 flex items-center px-2.5">
+						<i class="icon mr-2 flex-shrink-0">mail</i>
+						<input type="email" class="h-9 w-full bg-transparent" placeholder="Email" />
+					</div>
+
+					<div class="form-control mb-2 flex items-center px-2.5">
+						<i class="icon mr-2 flex-shrink-0">lock</i>
+						<input type="password" class="h-9 w-full bg-transparent" placeholder="Password" />
+					</div>
+
+					<div class="form-control mb-5 flex items-center px-2.5">
+						<i class="icon mr-2 flex-shrink-0">lock</i>
+						<input type="password" class="h-9 w-full bg-transparent" placeholder="Confirm Password" />
+					</div>
+
+					<button type="submit" class="h-9 w-full justify-center rounded bg-blue-500 font-bold text-white hover:bg-blue-600">Creat Account</button>
+				</form>
+
+				<div class="text-center text-sm text-muted">
+					<a href="login.html" class="block hover:text-body">Already have an account?</a>
+				</div>
+			</div>
+		</div>
+
+		<include src="./partials/_scripts.html"></include>
+	</body>
+</html>

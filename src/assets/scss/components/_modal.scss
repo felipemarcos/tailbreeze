@@ -1,0 +1,38 @@
+@layer components {
+	[data-tb-modal-window] {
+		@apply fixed
+        left-0 
+        top-0
+        z-[9999]
+        hidden
+        h-full
+        w-full
+        place-content-center
+        overflow-hidden
+        bg-black/20
+        p-5
+        opacity-0
+        transition-opacity
+        duration-300;
+	}
+
+	[data-tb-modal-dialog] {
+		@apply m-auto
+            w-full
+            max-w-lg
+            flex-shrink-0
+            scale-95
+            overflow-y-auto
+            rounded-md
+            bg-white
+            transition-transform
+            duration-300
+            dark:bg-dark-100;
+	}
+
+	[data-tb-modal-dismiss] {
+		& > * {
+			@apply pointer-events-none;
+		}
+	}
+}

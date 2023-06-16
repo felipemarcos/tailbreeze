@@ -1,0 +1,44 @@
+// Custom scrollbar
+.scrollbar {
+	scrollbar-color: rgb(var(--theme-light-300)) transparent;
+	scrollbar-width: thin;
+
+	@apply overflow-auto;
+
+	&::-webkit-scrollbar {
+		@apply h-[9px] w-[9px];
+	}
+
+	&::-webkit-scrollbar-track {
+		@apply bg-transparent;
+	}
+
+	&::-webkit-scrollbar-thumb {
+		@apply rounded-lg
+			border-2
+			border-solid
+			border-transparent
+			bg-light-300
+			bg-clip-content
+			dark:bg-dark-300;
+	}
+}
+
+:root {
+	&[data-theme="dark"] {
+		.scrollbar {
+			scrollbar-color: rgb(var(--theme-dark-300)) transparent;
+		}
+	}
+}
+
+// Hide scrollbar but make it scrollable
+.hide-scrollbar {
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+	overflow-y: scroll;
+
+	&::-webkit-scrollbar {
+		display: none;
+	}
+}

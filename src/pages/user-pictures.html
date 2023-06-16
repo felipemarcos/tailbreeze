@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" data-page="user-pictures">
+	<include src="./partials/_head.html">{ "pageTitle": "User | Pictures" }</include>
+
+	<body>
+		<include src="./partials/_page-loader.html"></include>
+
+		<include src="./partials/_header.html"></include>
+		<include src="./partials/_sidebar.html"></include>
+
+		<div id="content">
+			<include src="./partials/user/_header.html">{ "title": "Pictures" }</include>
+
+			<div class="p-5" data-simplebar>
+				<div class="mx-auto w-full max-w-5xl">
+					<include src="./partials/user/_menu.html">{ "picturesActive": "active" }</include>
+
+					<div class="card">
+						<div class="mb-2 flex px-5 pt-3.5 font-bold">
+							<div class="text-headings flex flex-1 items-center gap-2 text-lg">
+								Pictures
+								<div class="inline-block rounded bg-light-100 px-2 py-1 text-sm font-bold text-body dark:bg-dark-200">562</div>
+							</div>
+							<nav class="text-muted">
+								<a href="" class="hover:underline">Add Photos/Videos</a>
+							</nav>
+						</div>
+
+						<div class="items-center md:flex">
+							<div class="nav-scroll px-2 font-bold">
+								<a href="" class="active">All Pictures</a>
+								<a href="">Uploaded</a>
+								<a href="">Videos</a>
+								<a href="">Albums</a>
+								<a href="">GIFs</a>
+							</div>
+
+							<div class="ml-auto px-5 py-2">
+								<div class="relative w-full flex-shrink-0 md:w-64 lg:w-96">
+									<include src="./partials/misc/_search-icon.html"> { "classlist": "absolute inset-y-0 left-3.5 my-auto w-3" }</include>
+									<input type="text" placeholder="Search Pictures" class="form-control !pl-8" />
+								</div>
+							</div>
+						</div>
+
+						<div class="grid grid-cols-4 gap-2 p-5 md:grid-cols-6" id="user-pictures">
+							<!-- Data will load from /js/template/user/pictures.js -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<include src="./partials/_scripts.html"></include>
+	</body>
+</html>

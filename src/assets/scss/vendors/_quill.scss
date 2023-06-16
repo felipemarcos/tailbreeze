@@ -1,0 +1,166 @@
+@layer components {
+	$toolbar-icons: (
+		bold: "\e238",
+		italic: "\e23f",
+		underline: "\e249",
+		link: "\e157",
+		image: "\e3f4",
+	);
+
+	.text-editor {
+		@apply grid;
+
+		.ql-snow {
+			&.ql-toolbar {
+				@apply rounded-tl-md
+					rounded-tr-md
+					border-0
+					bg-white
+					p-2
+					dark:bg-dark-100;
+
+				.ql-formats {
+					@apply mr-2;
+				}
+
+				button {
+					@apply icon
+                    m-px
+                    grid
+                    h-6
+                    w-6
+                    place-content-center
+                    rounded
+                    p-0
+                    text-lg
+                    text-body
+                    hover:bg-light-100
+					hover:text-body
+                    dark:hover:bg-dark-100;
+
+					& > svg {
+						@apply hidden;
+					}
+
+					&.ql-active {
+						@apply bg-light-200
+						text-heading
+						dark:bg-dark-100;
+					}
+				}
+			}
+
+			&.ql-container {
+				@apply min-h-[3rem]
+					rounded-bl-md
+					rounded-br-md
+					border-0
+					bg-white
+					dark:bg-dark-100;
+			}
+
+			.ql-editor {
+				@apply font-sans
+                text-md;
+
+				&::before {
+					@apply text-md
+                    not-italic
+					text-muted;
+				}
+			}
+
+			.ql-tooltip {
+				@apply m-0
+                rounded-full
+                border
+                p-1
+                pr-1.5
+                shadow-[shadow:var(--dropdown-menu-shadow)]
+                before:content-[""];
+
+				@apply left-2
+                -top-3 #{!important};
+
+				&:not(.ql-hidden) {
+					@apply flex;
+				}
+
+				a.ql-action,
+				a.ql-remove {
+					@apply icon
+                    text-muted
+                    hover:text-heading;
+				}
+
+				a.ql-remove {
+					@apply text-2xl
+                    before:m-0
+                    before:content-["\e888"];
+				}
+
+				a.ql-action {
+					@apply mr-1
+                    text-lg
+                    after:m-0
+                    after:border-0
+                    after:p-0
+                    after:content-["\e3c9"];
+				}
+
+				&[data-mode="link"]:before {
+					@apply hidden;
+				}
+
+				&.ql-editing {
+					input[type="text"] {
+						@apply w-40
+                        border-0
+                        bg-transparent
+                        px-3
+                        font-sans
+                        text-body;
+					}
+
+					a.ql-action {
+						@apply text-2xl
+                        after:content-["\e92d"];
+					}
+				}
+
+				.ql-preview {
+					@apply mr-3
+                    w-32
+                    text-sm
+                    text-link;
+				}
+			}
+		}
+
+		@each $button, $glyph in $toolbar-icons {
+			.ql-#{$button} {
+				& > svg {
+					@apply hidden;
+				}
+
+				&:before {
+					content: $glyph;
+				}
+			}
+		}
+
+		.ql-list {
+			&[value="ordered"] {
+				&:before {
+					content: "\e242";
+				}
+			}
+
+			&[value="bullet"] {
+				&:before {
+					content: "\e241";
+				}
+			}
+		}
+	}
+}

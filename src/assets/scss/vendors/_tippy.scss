@@ -1,0 +1,23 @@
+@layer components {
+	[data-tippy-root] {
+		.tippy-box {
+			@apply bg-[--tooltip-bg];
+		}
+
+		.tippy-content {
+			@apply px-3
+                py-2
+                text-sm
+                leading-normal
+                text-[--tooltip-text];
+		}
+
+		.tippy-arrow {
+			@apply text-[--tooltip-bg];
+
+			&:before {
+				@apply scale-75;
+			}
+		}
+	}
+}

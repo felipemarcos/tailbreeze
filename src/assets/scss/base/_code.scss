@@ -1,0 +1,15 @@
+@layer base {
+	code {
+		@apply text-md
+                  text-pink-500;
+	}
+
+	.pre {
+		@apply overflow-x-auto
+			rounded-md
+            bg-light-100
+            p-4
+            text-md
+			dark:bg-dark-200;
+	}
+}

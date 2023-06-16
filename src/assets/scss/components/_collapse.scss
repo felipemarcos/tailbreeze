@@ -1,0 +1,7 @@
+@layer components {
+	[data-tb-collapse-item] {
+		@apply overflow-hidden
+            transition-[height]
+            duration-300;
+	}
+}

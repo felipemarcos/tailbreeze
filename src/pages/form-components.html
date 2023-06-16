@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en" data-page="forms-components">
+	<include src="./partials/_head.html">{ "pageTitle": "Form Components" }</include>
+
+	<body>
+		<include src="./partials/_page-loader.html"></include>
+
+		<include src="./partials/_header.html"></include>
+
+		<include src="./partials/_sidebar.html"></include>
+
+		<div id="content">
+			<div class="content-header px-5">
+				<div class="flex flex-shrink-0 items-center text-heading">
+					<i class="icon mr-2">list_alt</i>
+					<div class="font-bold">Form Components</div>
+				</div>
+
+				<ol class="ml-5 hidden items-center text-md text-muted md:flex">
+					<li><a href="#" class="rounded p-1 transition-colors hover:text-body">Tailbreeze</a></li>
+					<li class="icon mx-1 text-xs">chevron_right</li>
+					<li><a href="#" class="rounded p-1 transition-colors hover:text-body">Miscellaneous</a></li>
+					<li class="icon mx-1 text-xs">chevron_right</li>
+					<li class="rounded p-1">Forms</li>
+				</ol>
+			</div>
+
+			<div class="p-5" data-simplebar>
+				<div class="mx-auto max-w-5xl">
+					<div class="card mb-5 p-5">
+						<h5 class="mb-2 text-lg font-bold leading-none text-heading">Autosize Textarea</h5>
+						<div class="mb-5">Automatically adjust textarea height based on the content.</div>
+
+						<textarea data-autosize class="form-control flex" placeholder="What's on your mind, Malinda Hollaway?"></textarea>
+					</div>
+
+					<div class="card mb-5 p-5">
+						<h5 class="mb-2 text-lg font-bold leading-none text-heading">Input Mask</h5>
+						<div class="mb-5">Automatically adjust textarea height based on the content.</div>
+
+						<div class="grid gap-4 sm:grid-cols-3">
+							<div>
+								<label for="mask-date" class="mb-2 block">
+									<span class="font-bold text-heading">Date:</span>
+									<span class="block text-sm text-muted">in range [01.01.1990 - 01.01.2100]</span>
+								</label>
+								<input type="text" class="form-control" id="mask-date" placeholder="DD.MM.YYYY" />
+							</div>
+							<div>
+								<label for="mask-time" class="mb-2 block">
+									<span class="font-bold text-heading">Time:</span>
+									<span class="block text-sm text-muted">in range [0-23 : 0-59]</span>
+								</label>
+								<input type="text" class="form-control" id="mask-time" placeholder="HH:MM" />
+							</div>
+							<div>
+								<label for="mask-number" class="mb-2 block">
+									<span class="font-bold text-heading">Number:</span>
+									<span class="block text-sm text-muted">in range [-10000, 10000]</span>
+								</label>
+								<input type="text" class="form-control" id="mask-number" />
+							</div>
+							<div>
+								<label for="mask-us-phone" class="mb-2 block">
+									<span class="font-bold text-heading">US Phone Number:</span>
+									<span class="block text-sm text-muted">e.g: 1-541-754-3010</span>
+								</label>
+								<input type="text" class="form-control" id="mask-us-phone" />
+							</div>
+							<div>
+								<label for="mask-money" class="mb-2 block">
+									<span class="font-bold text-heading">Money ($):</span>
+									<span class="block text-sm text-muted">e.g: $4,500</span>
+								</label>
+								<input type="text" class="form-control" id="mask-money" />
+							</div>
+							<div>
+								<label for="mask-ip" class="mb-2 block">
+									<span class="font-bold text-heading">Money ($):</span>
+									<span class="block text-sm text-muted">e.g: 192.168.1.1</span>
+								</label>
+								<input type="text" class="form-control" id="mask-ip" />
+							</div>
+						</div>
+					</div>
+
+					<div class="card mb-5 p-5">
+						<h5 class="mb-2 text-lg font-bold leading-none text-heading">Custom Select</h5>
+						<div class="mb-5">A lightweight vanilla javascript library that replaces native select elements with customizable dropdowns.</div>
+
+						<div class="grid gap-4 sm:grid-cols-3">
+							<div>
+								<label for="mask-ip" class="mb-2 block font-bold text-heading">Basic example</label>
+								<select class="custom-select" id="custom-select-basic">
+									<option value="1">First Option</option>
+									<option value="2">Second Option</option>
+									<option value="3">Third Option</option>
+									<option value="4">Fourth Option</option>
+									<option value="5">Fifth Option</option>
+								</select>
+							</div>
+
+							<div>
+								<label for="mask-ip" class="mb-2 block font-bold text-heading">Multiple</label>
+								<select class="custom-select" id="custom-select-multiple" multiple>
+									<option value="1">First Option</option>
+									<option value="2">Second Option</option>
+									<option value="3">Third Option</option>
+									<option value="4">Fourth Option</option>
+									<option value="5">Fifth Option</option>
+								</select>
+							</div>
+
+							<div>
+								<label for="mask-ip" class="mb-2 block font-bold text-heading">Searchable</label>
+								<select class="custom-select" id="custom-select-searchable">
+									<option value="1">First Option</option>
+									<option value="2">Second Option</option>
+									<option value="3">Third Option</option>
+									<option value="4">Fourth Option</option>
+									<option value="5">Fifth Option</option>
+								</select>
+							</div>
+						</div>
+					</div>
+
+					<div class="card mb-5 p-5">
+						<h5 class="mb-2 text-lg font-bold leading-none text-heading">Drag and Drop file upload</h5>
+						<div class="mb-5">Simple JavaScript library that helps you add file drag and drop functionality to your web forms.</div>
+
+						<form id="drag-drop-upload" class="dropzone" action="/" enctype="multipart/form-data" method="post">
+							<div class="dz-message">
+								<i class="icon -mt-3 inline-block text-4xl font-light">cloud_upload</i>
+								<div data-dz-message>Drag and drop files here to upload</div>
+							</div>
+						</form>
+					</div>
+
+					<div class="card mb-5 p-5">
+						<h5 class="mb-2 text-lg font-bold leading-none text-heading">Datepicker</h5>
+						<div class="mb-5">A lightweight vanilla javascript library that replaces native select elements with customizable dropdowns.</div>
+
+						<div class="grid gap-4 sm:grid-cols-3">
+							<div class="relative">
+								<label for="datepicker-basic" class="mb-2 block font-bold text-heading">Basic datepicker</label>
+								<input id="datepicker-basic" type="text" class="form-control date-picker" />
+							</div>
+
+							<div class="relative">
+								<label for="datepicker-lg" class="mb-2 block font-bold text-heading">With icon indicator</label>
+								<div class="form-control mb-4 flex items-center px-0">
+									<span class="icon border-r border-light-400 px-2 dark:border-dark-300">today</span>
+									<input id="datepicker-lg" type="text" class="date-picker h-full flex-1 bg-transparent px-3" />
+								</div>
+							</div>
+
+							<div class="relative">
+								<label class="mb-2 block font-bold text-heading">Range</label>
+								<div class="date-range-picker relative flex items-center">
+									<input type="text" name="start" class="form-control" />
+									<i class="icon mx-2 text-base">east</i>
+									<input type="text" name="end" class="form-control" />
+								</div>
+							</div>
+						</div>
+
+						<div class="relative">
+							<label class="mb-2 block font-bold text-heading">Inline</label>
+							<div class="w-64 rounded border border-light-200 px-4 py-3 dark:border-dark-200">
+								<div class="date-picker"></div>
+							</div>
+						</div>
+					</div>
+
+					<div class="card mb-5 p-5">
+						<h5 class="mb-2 text-lg font-bold leading-none text-heading">Color Picker</h5>
+						<div class="mb-5">A tiny framework agnostic color picker.</div>
+
+						<div class="grid gap-5 sm:grid-cols-3">
+							<div>
+								<div class="mb-2 block font-bold text-heading">HEX</div>
+								<hex-color-picker class="color-picker mb-4" color="#3c7a79"></hex-color-picker>
+								<input type="text" class="form-control" readonly value="#3c7a79" id="hex-input" />
+							</div>
+
+							<div>
+								<div class="mb-2 block font-bold text-heading">HSL</div>
+								<hsl-string-color-picker class="color-picker mb-4" color="hsl(190, 34%, 36%)"></hsl-string-color-picker>
+								<input type="text" class="form-control" readonly value="hsl(190, 34%, 36%)" id="hsl-input" />
+							</div>
+
+							<div>
+								<div class="mb-2 block font-bold text-heading">RGBA</div>
+								<rgba-string-color-picker class="color-picker mb-4" color="rgba(52, 99, 99, 0.8)"></rgba-string-color-picker>
+								<input type="text" class="form-control" readonly value="rgba(52, 99, 99, 0.8)" id="rgba-input" />
+							</div>
+						</div>
+					</div>
+
+					<div class="card mb-5 p-5">
+						<h5 class="mb-2 text-lg font-bold leading-none text-heading">Rich Text Editor</h5>
+						<div class="mb-5">
+							WYSIWYG editor for rich text contents which support for embedded attachments, and outputs terse and consistent HTML.
+						</div>
+
+						<div class="text-editor rounded border border-light-300 dark:border-dark-300">
+							<div class="quill" data-placeholder="Message #Product Releases..."></div>
+						</div>
+					</div>
+
+					<div class="card mb-5 p-5">
+						<h5 class="mb-2 text-lg font-bold leading-none text-heading">Range Slider</h5>
+						<div class="mb-5">Lightweight JavaScript range slider with full touch support.</div>
+
+						<div class="grid gap-5 sm:grid-cols-2">
+							<div>
+								<div class="mb-4 block font-bold text-heading">Basic example</div>
+								<div class="input-slider mb-6" id="slider-basic"></div>
+
+								<input type="text" class="form-control w-6/12" id="slider-basic-input" />
+							</div>
+
+							<div>
+								<div class="mb-4 block font-bold text-heading">Range</div>
+								<div class="input-slider mb-6" id="slider-range"></div>
+
+								<div class="grid grid-cols-2 gap-4">
+									<input type="text" class="form-control" id="slider-range-upper-input" />
+									<input type="text" class="form-control" id="slider-range-lower-input" />
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<include src="./partials/_scripts.html"></include>
+	</body>
+</html>

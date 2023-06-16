@@ -1,0 +1,34 @@
+<div class="card mb-4 inline-block w-full p-5">
+	<div class="mb-4 flex items-start">
+		<h4 class="font-bold leading-none text-heading">Total Orders</h4>
+
+		<nav class="ml-auto -mt-2.5 -mr-2.5 flex items-center">
+			<a class="icon btn hover:bg-light-100 dark:hover:bg-dark-200" href="">info</a>
+		</nav>
+	</div>
+
+	<div class="mb-5 h-52">
+		<canvas id="chart-total-orders">
+			<!-- Chart will load from "js/widgets/e-commerce/totalOrders.js" -->
+		</canvas>
+	</div>
+
+	<div class="mb-5 grid grid-cols-3 gap-4 leading-none">
+		<div class="rounded-md border border-light-200 p-3.5 dark:border-dark-200">
+			<div class="mb-2 text-lg font-bold text-heading">$233.99</div>
+			<div class="text-md text-muted">Orders Today</div>
+		</div>
+
+		<div class="rounded-md border border-light-200 p-3.5 dark:border-dark-200">
+			<div class="mb-2 text-lg font-bold text-heading">$720.25</div>
+			<div class="text-md text-muted">Last Week</div>
+		</div>
+
+		<div class="rounded-md border border-light-200 p-3.5 dark:border-dark-200">
+			<div class="mb-2 text-lg font-bold text-heading">$2002.50</div>
+			<div class="text-md text-muted">Last Month</div>
+		</div>
+	</div>
+
+	<div id="total-orders-list" class="-mb-2"></div>
+</div>

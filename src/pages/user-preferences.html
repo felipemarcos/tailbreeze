@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en" data-page="user-preferences">
+	<include src="./partials/_head.html">{ "pageTitle": "User | Preferences" }</include>
+
+	<body>
+		<include src="./partials/_page-loader.html"></include>
+
+		<include src="./partials/_header.html"></include>
+		<include src="./partials/_sidebar.html"></include>
+
+		<div id="content">
+			<include src="./partials/user/_header.html">{ "title": "Preferences" }</include>
+
+			<div class="p-5" data-simplebar>
+				<div class="mx-auto max-w-2xl">
+					<div class="card md:flex">
+						<div class="flex-shrink-0 overflow-hidden px-2 md:w-48">
+							<h3 class="mx-4 my-6 mb-4 hidden text-lg font-bold leading-none text-heading md:block">Preferences</h3>
+							<ul class="nav-scroll my-2 font-bold md:h-auto md:flex-col" role="tablist" data-tb-tab-nav>
+								<li role="presentation" class="w-full">
+									<a href="" id="pref-account" role="tab" aria-selected="true" class="flex items-center">
+										<i class="icon mr-2">admin_panel_settings</i>
+										Account Details
+									</a>
+								</li>
+								<li role="presentation" class="w-full">
+									<a href="" id="pref-info" role="tab" aria-selected="false" class="flex items-center">
+										<i class="icon mr-2">account_circle</i>
+										Personal Information
+									</a>
+								</li>
+								<li role="presentation" class="w-full">
+									<a href="" id="pref-contact" role="tab" aria-selected="false" class="flex items-center">
+										<i class="icon mr-2">call</i>
+										Contact Details
+									</a>
+								</li>
+								<li role="presentation" class="w-full">
+									<a href="" id="pref-payment" role="tab" aria-selected="false" class="flex items-center">
+										<i class="icon mr-2">paid</i>
+										Payment
+									</a>
+								</li>
+							</ul>
+						</div>
+
+						<div class="p-6 pb-8" data-tb-tab-content>
+							<form role="tabpanel" aria-labelledby="pref-account">
+								<h3 class="mb-2 text-lg font-bold leading-none text-heading">Account Details</h3>
+								<div class="mb-5 text-md text-muted">Change username, email address, password and other details related to your account</div>
+
+								<div class="mb-4">
+									<label for="pref-username" class="mb-1 block">Account Username</label>
+									<input id="pref-username" type="text" class="form-control mb-1" />
+									<div class="text-sm text-muted">
+										Your username must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special
+										characters, or emoji.
+									</div>
+								</div>
+
+								<div class="mb-4">
+									<label for="pref-email" class="mb-1 block">Email Address</label>
+									<input id="pref-email" type="email" class="form-control" />
+								</div>
+
+								<div class="mb-4">
+									<label for="pref-password" class="mb-1 block">Password</label>
+									<input id="pref-password" type="password" class="form-control" />
+								</div>
+
+								<div class="mb-6">
+									<label for="pref-confirm" class="mb-1 block">Confirm Password</label>
+									<input id="pref-confirm" type="password" class="form-control" />
+								</div>
+
+								<button type="button" class="btn bg-blue-500 text-white">Update Account Details</button>
+							</form>
+
+							<form class="hidden" role="tabpanel" aria-labelledby="pref-info">
+								<h3 class="mb-2 text-lg font-bold leading-none text-heading">Personal Information</h3>
+								<div class="mb-5 text-md text-muted">Upload a profile picture, change your name or date of birth.</div>
+
+								<div class="mb-4">
+									<div class="relative mb-1 inline-block">
+										<img class="w-40 rounded" src="../assets/img/misc/avatar-default.svg" alt="" />
+										<div
+											class="absolute bottom-2 right-2 flex h-8 w-8 items-center justify-center rounded-full bg-white/40 hover:bg-white/75"
+										>
+											<i class="icon pointer-events-none text-lg">photo_camera</i>
+											<input id="pref-avatar" type="file" class="absolute bottom-0 left-0 h-full w-full opacity-0" />
+										</div>
+									</div>
+									<div class="text-sm text-muted">
+										Profile photo must be a square jpg or png image with the size of not more than 2mb. Lorem ipsum dolor sit amet
+										consectetur adipiscing elitunc tincidunt ornare.
+									</div>
+								</div>
+
+								<div class="mb-4">
+									<label for="pref-email" class="mb-1 block">First Name</label>
+									<input id="pref-email" type="text" class="form-control" />
+								</div>
+
+								<div class="mb-4">
+									<label for="pref-email" class="mb-1 block">Last Name</label>
+									<input id="pref-email" type="text" class="form-control" />
+								</div>
+
+								<div class="mb-4">
+									<label for="pref-email" class="mb-1 block">Date of Birth</label>
+									<input id="pref-email" type="text" class="form-control" placeholder="YYYY-MM-DD" />
+								</div>
+
+								<div class="mb-6">
+									<label for="pref-email" class="mb-1 block">About</label>
+									<textarea class="form-control h-20"></textarea>
+								</div>
+
+								<button type="button" class="btn bg-blue-500 text-white">Update Personal Information</button>
+							</form>
+
+							<form class="hidden" role="tabpanel" aria-labelledby="pref-contact">
+								<h3 class="mb-2 text-lg font-bold leading-none text-heading">Contact Details</h3>
+								<div class="mb-5 text-md text-muted">Add or update your contact details such as phone number, address etc.</div>
+
+								<div class="mb-4">
+									<label for="pref-mobile" class="mb-1 block">Mobile Phone</label>
+									<input id="pref-mobile" type="text" class="form-control mb-1" />
+									<div class="text-sm text-muted">Lorem ipsum dolor sit amet consectetur adipiscing elitunc tincidunt ornare.</div>
+								</div>
+
+								<div class="mb-4">
+									<label for="pref-home" class="mb-1 block">Home Phone</label>
+									<input id="pref-home" type="text" class="form-control" />
+								</div>
+
+								<div class="mb-6">
+									<label for="pref-email" class="mb-1 block">Address</label>
+									<textarea class="form-control h-20"></textarea>
+								</div>
+
+								<button type="button" class="btn bg-blue-500 text-white">Update Contact Details</button>
+							</form>
+
+							<form class="hidden" role="tabpanel" aria-labelledby="pref-payment">
+								<h3 class="mb-2 text-lg font-bold leading-none text-heading">Payment</h3>
+								<div class="mb-5 text-md text-muted">Add or update your credit card information for payment queries.</div>
+
+								<div class="mb-5">
+									Vivamus at tellus bibendum, placerat elit ac, lacinia nisi. Ut eget magna at orci maximus molestie tempus nec elit. Proin
+									urna augue, rhoncus ut ipsum ac, placerat suscipit sapien.
+								</div>
+
+								<div class="mb-4">
+									<label for="pref-card-name" class="mb-1 block">Name on Card</label>
+									<input id="pref-card-name" type="text" class="form-control mb-1" />
+								</div>
+
+								<div class="mb-4">
+									<label for="pref-bill-address" class="mb-1 block">Billing Address</label>
+									<input id="pref-bill-address" type="text" class="form-control" />
+								</div>
+
+								<div class="mb-6">
+									<label for="pref-card-number" class="mb-1 block">Card Number</label>
+									<input id="pref-card-number" type="text" class="form-control mb-1" />
+									<div class="text-sm text-muted">Lorem ipsum dolor sit amet consectetur adipiscing elitunc tincidunt ornare.</div>
+								</div>
+
+								<div class="mb-6 grid grid-cols-2 gap-4">
+									<div>
+										<label for="pref-expiry" class="mb-1 block">Expiry Date</label>
+										<input id="pref-expiry" type="text" class="form-control" placeholder="MM/YY" />
+									</div>
+									<div>
+										<label for="pref-cvv" class="mb-1 block">CVV</label>
+										<input id="pref-cvv" type="text" class="form-control" />
+									</div>
+								</div>
+
+								<button type="button" class="btn bg-blue-500 text-white">Update Payment Details</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<include src="./partials/_scripts.html"></include>
+	</body>
+</html>

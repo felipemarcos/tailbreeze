@@ -1,0 +1,25 @@
+@layer components {
+	.faq-header {
+		--faq-header-bg: url(/src/assets/img/misc/faq-header-bg.svg);
+
+		@apply relative
+        isolate
+        bg-[image:var(--faq-header-bg)]
+        bg-repeat-x;
+
+		&::before {
+			@apply pointer-events-none
+            absolute
+            bottom-0
+            left-0
+            -z-[1]
+            h-24
+            w-full
+            bg-gradient-to-b
+            from-transparent
+            to-[#f7fafe]
+            content-[""]
+            dark:to-[#22313a];
+		}
+	}
+}

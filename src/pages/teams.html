@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" data-page="sample-pages-teams">
+	<include src="./partials/_head.html">{ "pageTitle": "Teams" }</include>
+
+	<body>
+		<include src="./partials/_page-loader.html"></include>
+
+		<include src="./partials/_header.html"></include>
+
+		<include src="./partials/_sidebar.html"></include>
+
+		<div id="content">
+			<div class="content-header px-5">
+				<div class="flex flex-shrink-0 items-center text-heading">
+					<i class="icon mr-2">article</i>
+					<div class="font-bold">
+						Teams
+						<table></table>
+					</div>
+				</div>
+
+				<ol class="ml-5 hidden items-center text-md text-muted md:flex">
+					<li><a href="#" class="rounded p-1 transition-colors hover:text-body">Tailbreeze</a></li>
+					<li class="icon mx-1 text-xs">chevron_right</li>
+					<li><a href="#" class="rounded p-1 transition-colors hover:text-body">Miscellaneous</a></li>
+					<li class="icon mx-1 text-xs">chevron_right</li>
+					<li class="rounded p-1">Sample Pages</li>
+				</ol>
+
+				<button
+					type="button"
+					onclick="window.print()"
+					class="btn ml-auto h-8 border-[1.5px] border-theme text-md font-bold text-theme hover:bg-theme/10"
+				>
+					<i class="icon mr-1">add</i>
+					Create
+				</button>
+			</div>
+
+			<div class="p-5" data-simplebar>
+				<div class="mx-auto max-w-none md:max-w-7xl">
+					<div id="teams" class="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3"></div>
+				</div>
+			</div>
+		</div>
+
+		<include src="./partials/_scripts.html"></include>
+	</body>
+</html>

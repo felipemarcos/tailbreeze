@@ -1,0 +1,42 @@
+@layer components {
+	[data-simplebar] {
+		@apply h-full
+     		overflow-y-auto;
+
+		.simplebar-track {
+			&.simplebar-vertical {
+				@apply w-2;
+			}
+
+			&.simplebar-horizontal {
+				@apply h-2;
+			}
+		}
+
+		.simplebar-scrollbar {
+			&::before {
+				@apply rounded
+				bg-light-300
+				transition-opacity
+				duration-200
+				dark:bg-dark-200;
+			}
+
+			&.simplebar-visible {
+				&::before {
+					@apply opacity-100;
+				}
+			}
+
+			&.simplebar-hover {
+				&::before {
+					@apply opacity-100;
+				}
+			}
+		}
+
+		.simplebar-placeholder {
+			width: 100% !important;
+		}
+	}
+}

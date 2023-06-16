@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en" data-page="components-dropdown">
+	<include src="./partials/_head.html">{ "pageTitle": "Dropdown" }</include>
+
+	<body>
+		<include src="./partials/_page-loader.html"></include>
+
+		<include src="./partials/_header.html"></include>
+
+		<include src="./partials/_sidebar.html"></include>
+
+		<div id="content">
+			<div class="content-header px-5">
+				<div class="flex flex-shrink-0 items-center text-heading">
+					<i class="icon mr-2">grid_view</i>
+					<div class="font-bold">Dropdown</div>
+				</div>
+
+				<ol class="ml-5 hidden items-center text-md text-muted md:flex">
+					<li><a href="#" class="rounded p-1 transition-colors hover:text-body">Tailbreeze</a></li>
+					<li class="icon mx-1 text-xs">chevron_right</li>
+					<li><a href="#" class="rounded p-1 transition-colors hover:text-body">Miscellaneous</a></li>
+					<li class="icon mx-1 text-xs">chevron_right</li>
+					<li class="rounded p-1">Components</li>
+				</ol>
+			</div>
+
+			<div class="p-5" data-simplebar>
+				<div class="mx-auto max-w-5xl">
+					<div class="card mb-5 p-5">
+						<h5 class="mb-2 text-lg font-bold leading-none text-heading">Basic example</h5>
+						<div class="mb-5">Dropdown allow user to select one option from a list of choices. Use with <code>button</code> elements.</div>
+
+						<div class="relative" data-tb-dropdown>
+							<button
+								class="btn bg-blue-600/90 text-md text-white hover:bg-blue-600 aria-expanded:bg-blue-600"
+								type="button"
+								data-tb-dropdown-toggle
+								aria-expanded="false"
+							>
+								Dropdown button
+							</button>
+							<div class="p-1" data-tb-dropdown-menu>
+								<a href="#" data-tb-dropdown-item>First action</a>
+								<a href="#" data-tb-dropdown-item>Second action</a>
+								<a href="#" data-tb-dropdown-item>Another action</a>
+								<a href="#" data-tb-dropdown-item>Something else here</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="card mb-5 p-5">
+						<h5 class="mb-2 text-lg font-bold leading-none text-heading">Trigger using non-button elements</h5>
+						<div class="mb-5">Dropdown can also be used with <code>&lt;a&gt;</code>, <code>&lt;span&gt;</code> or any other tags.</div>
+
+						<div class="flex items-start gap-5">
+							<div class="relative" data-tb-dropdown>
+								<a class="" href="" data-tb-dropdown-toggle aria-expanded="false">I'm an anchor tag</a>
+								<div class="p-1" data-tb-dropdown-menu>
+									<a href="#" data-tb-dropdown-item>First action</a>
+									<a href="#" data-tb-dropdown-item>Second action</a>
+									<a href="#" data-tb-dropdown-item>Another action</a>
+									<a href="#" data-tb-dropdown-item>Something else here</a>
+								</div>
+							</div>
+
+							<div class="relative" data-tb-dropdown>
+								<span data-tb-dropdown-toggle aria-expanded="false">I'm a span tag</span>
+								<div class="p-1" data-tb-dropdown-menu>
+									<a href="#" data-tb-dropdown-item>First action</a>
+									<a href="#" data-tb-dropdown-item>Second action</a>
+									<a href="#" data-tb-dropdown-item>Another action</a>
+									<a href="#" data-tb-dropdown-item>Something else here</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="card mb-5 p-5">
+						<h5 class="mb-2 text-lg font-bold leading-none text-heading">Menu placement</h5>
+						<div class="mb-5">Dropdowns can be triggered in 4 different directions.</div>
+
+						<div class="relative mb-1 mr-1 inline-block" data-tb-dropdown>
+							<button
+								class="btn bg-blue-600/90 text-md text-white hover:bg-blue-600 aria-expanded:bg-blue-600"
+								type="button"
+								data-tb-dropdown-toggle
+								aria-expanded="false"
+							>
+								Top right
+							</button>
+							<div class="bottom-full top-auto p-1" data-tb-dropdown-menu>
+								<a href="#" data-tb-dropdown-item>First action</a>
+								<a href="#" data-tb-dropdown-item>Second action</a>
+								<a href="#" data-tb-dropdown-item>Another action</a>
+								<a href="#" data-tb-dropdown-item>Something else here</a>
+							</div>
+						</div>
+
+						<div class="relative mb-1 mr-1 inline-block" data-tb-dropdown>
+							<button
+								class="btn bg-blue-600/90 text-md text-white hover:bg-blue-600 aria-expanded:bg-blue-600"
+								type="button"
+								data-tb-dropdown-toggle
+								aria-expanded="false"
+							>
+								Top left
+							</button>
+							<div class="bottom-full right-0 top-auto p-1" data-tb-dropdown-menu>
+								<a href="#" data-tb-dropdown-item>First action</a>
+								<a href="#" data-tb-dropdown-item>Second action</a>
+								<a href="#" data-tb-dropdown-item>Another action</a>
+								<a href="#" data-tb-dropdown-item>Something else here</a>
+							</div>
+						</div>
+
+						<div class="relative mb-1 mr-1 inline-block" data-tb-dropdown>
+							<button
+								class="btn bg-blue-600/90 text-md text-white hover:bg-blue-600 aria-expanded:bg-blue-600"
+								type="button"
+								data-tb-dropdown-toggle
+								aria-expanded="false"
+							>
+								Bottom right
+							</button>
+							<div class="right-0 p-1" data-tb-dropdown-menu>
+								<a href="#" data-tb-dropdown-item>First action</a>
+								<a href="#" data-tb-dropdown-item>Second action</a>
+								<a href="#" data-tb-dropdown-item>Another action</a>
+								<a href="#" data-tb-dropdown-item>Something else here</a>
+							</div>
+						</div>
+
+						<div class="relative mb-1 mr-1 inline-block" data-tb-dropdown>
+							<button
+								class="btn bg-blue-600/90 text-md text-white hover:bg-blue-600 aria-expanded:bg-blue-600"
+								type="button"
+								data-tb-dropdown-toggle
+								aria-expanded="false"
+							>
+								Bottom left (default)
+							</button>
+							<div class="p-1" data-tb-dropdown-menu>
+								<a href="#" data-tb-dropdown-item>First action</a>
+								<a href="#" data-tb-dropdown-item>Second action</a>
+								<a href="#" data-tb-dropdown-item>Another action</a>
+								<a href="#" data-tb-dropdown-item>Something else here</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="card mb-5 p-5">
+						<h5 class="mb-2 text-lg font-bold leading-none text-heading">Menu item disable</h5>
+						<div class="mb-5">Utilize pointer-events and opacity classes to syle the disable menu item.</div>
+
+						<div class="relative" data-tb-dropdown>
+							<button
+								class="btn bg-blue-600/90 text-md text-white hover:bg-blue-600 aria-expanded:bg-blue-600"
+								type="button"
+								data-tb-dropdown-toggle
+								aria-expanded="false"
+							>
+								Dropdown button
+							</button>
+							<div class="p-1" data-tb-dropdown-menu>
+								<a href="#" data-tb-dropdown-item>First action</a>
+								<a class="pointer-events-none opacity-50" disabled href="#" data-tb-dropdown-item>Second action</a>
+								<a href="#" data-tb-dropdown-item>Another action</a>
+								<a href="#" data-tb-dropdown-item>Something else here</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="card mb-5 p-5">
+						<h5 class="mb-2 text-lg font-bold leading-none text-heading">Active menu item</h5>
+						<div class="mb-5">Highlight the active menu item using background color classes.</div>
+
+						<div class="relative" data-tb-dropdown>
+							<button
+								class="btn bg-blue-600/90 text-md text-white hover:bg-blue-600 aria-expanded:bg-blue-600"
+								type="button"
+								data-tb-dropdown-toggle
+								aria-expanded="false"
+							>
+								Dropdown button
+							</button>
+							<div class="p-1" data-tb-dropdown-menu>
+								<a href="#" data-tb-dropdown-item>First action</a>
+								<a class="bg-light-200 text-heading hover:bg-light-200 dark:bg-dark-300 dark:hover:bg-dark-300" href="#" data-tb-dropdown-item>
+									Second action
+								</a>
+								<a href="#" data-tb-dropdown-item>Another action</a>
+								<a href="#" data-tb-dropdown-item>Something else here</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<include src="./partials/_scripts.html"></include>
+	</body>
+</html>

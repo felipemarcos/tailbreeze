@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" data-page="sample-pages-search-results">
+	<include src="./partials/_head.html">{ "pageTitle": "Search Results" }</include>
+
+	<body>
+		<include src="./partials/_page-loader.html"></include>
+
+		<include src="./partials/_header.html"></include>
+
+		<include src="./partials/_sidebar.html">{ "sidebar": "sidebar-min" }</include>
+
+		<div id="content" class="content-alt">
+			<include src="./partials/search-results/_sidebar.html"></include>
+
+			<div data-content="body" class="content-body">
+				<include src="./partials/search-results/_header.html"></include>
+
+				<div class="p-5" data-simplebar>
+					<div class="mx-auto max-w-7xl">
+						<div class="mb-2 px-3 text-muted">A total of 78 results</div>
+
+						<div id="search-results" class="">
+							<!--  Content will load from "js/templates/searchResults.js" -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<include src="./partials/_scripts.html"></include>
+	</body>
+</html>

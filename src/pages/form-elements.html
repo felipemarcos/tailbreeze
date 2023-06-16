@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en" data-page="forms-form-elements">
+	<include src="./partials/_head.html">{ "pageTitle": "Form Elements" }</include>
+
+	<body>
+		<include src="./partials/_page-loader.html"></include>
+
+		<include src="./partials/_header.html"></include>
+
+		<include src="./partials/_sidebar.html"></include>
+
+		<div id="content">
+			<div class="content-header px-5">
+				<div class="flex flex-shrink-0 items-center text-heading">
+					<i class="icon mr-2">list_alt</i>
+					<div class="font-bold">Form Elements</div>
+				</div>
+
+				<ol class="ml-5 hidden items-center text-md text-muted md:flex">
+					<li><a href="#" class="rounded p-1 transition-colors hover:text-body">Tailbreeze</a></li>
+					<li class="icon mx-1 text-xs">chevron_right</li>
+					<li><a href="#" class="rounded p-1 transition-colors hover:text-body">Miscellaneous</a></li>
+					<li class="icon mx-1 text-xs">chevron_right</li>
+					<li class="rounded p-1">Forms</li>
+				</ol>
+			</div>
+
+			<div class="p-5" data-simplebar>
+				<div class="mx-auto max-w-5xl">
+					<div class="card mb-5 p-5">
+						<h5 class="mb-2 text-lg font-bold leading-none text-heading">Input</h5>
+						<div class="mb-5">
+							Input controls are styled with a mix of Sass and Tailwind classes, allowing them to adapt to color modes and support any
+							customization method.
+						</div>
+
+						<input type="text" class="form-control mb-3" placeholder="Textual input" />
+						<input type="email" class="form-control mb-3" placeholder="Email" />
+						<input type="password" class="form-control mb-6" placeholder="Password" />
+
+						<div class="mb-2 font-bold leading-none text-heading">Sizing</div>
+						<div class="mb-4">Using height, padding, and font-size utilities, you can easily change the size of an input.</div>
+
+						<input type="text" class="form-control mb-3 h-7 px-2 text-sm" placeholder="h-7 px-2 text-sm" />
+						<input type="text" class="form-control mb-3" placeholder="Default" />
+						<input type="text" class="form-control mb-3 h-11 text-md" placeholder="h-11 text-md" />
+						<input type="text" class="form-control mb-6 h-14 text-xl" placeholder="h-14 text-xl" />
+
+						<div class="mb-2 font-bold leading-none text-heading">Disabled</div>
+						<div class="mb-4">Use <code>disabled</code> attribute on a select to give it a grayed out appearance and remove pointer events.</div>
+
+						<input type="text" class="form-control mb-3" placeholder="Disabled input" disabled />
+					</div>
+
+					<div class="card mb-5 p-5">
+						<h5 class="mb-2 text-lg font-bold leading-none text-heading">Select</h5>
+						<div class="mb-5">Basic select component allows you to choose from a number of options.</div>
+
+						<div class="select mb-6">
+							<select class="form-control">
+								<option selected>Open this select menu</option>
+								<option value="1">One</option>
+								<option value="2">Two</option>
+								<option value="3">Three</option>
+							</select>
+						</div>
+
+						<div class="mb-2 font-bold leading-none text-heading">Disabled</div>
+						<div class="mb-4">Use <code>disabled</code> attribute on a select to give it a grayed out appearance and remove pointer events.</div>
+
+						<div class="select">
+							<select class="form-control" disabled>
+								<option selected>Open this select menu</option>
+								<option value="1">One</option>
+								<option value="2">Two</option>
+								<option value="3">Three</option>
+							</select>
+						</div>
+					</div>
+
+					<div class="card mb-5 p-5">
+						<h5 class="mb-2 text-lg font-bold leading-none text-heading">Textarea</h5>
+						<div class="mb-4">Textarea helps the user to input multi-line textual values.</div>
+
+						<textarea class="form-control mb-6" rows="3" placeholder="Sample Textarea"></textarea>
+
+						<div class="mb-2 font-bold leading-none text-heading">Disabled</div>
+						<div class="mb-4">Textarea helps the user to input multi-line textual values.</div>
+
+						<textarea class="form-control" rows="3" disabled>This is a disabled Textarea</textarea>
+					</div>
+
+					<div class="card mb-5 p-5">
+						<h5 class="mb-2 text-lg font-bold leading-none text-heading">Checkbox</h5>
+						<div class="mb-4">Checkboxes are used to let a user select one or more options of a limited number of choices.</div>
+
+						<div class="mb-3 flex items-center">
+							<input type="checkbox" id="cb-1" class="checkbox mr-2" />
+							<label for="cb-1">Default checkbox</label>
+						</div>
+						<div class="mb-3 flex items-center">
+							<input type="checkbox" id="cb-2" class="checkbox mr-2" checked />
+							<label for="cb-2">Checked checkbox</label>
+						</div>
+						<div class="flex items-center">
+							<input type="checkbox" id="cb-3" class="checkbox mr-2" disabled />
+							<label for="cb-3" class="text-muted">Disabled checkbox</label>
+						</div>
+					</div>
+
+					<div class="card mb-5 p-5">
+						<h5 class="mb-2 text-lg font-bold leading-none text-heading">Radio</h5>
+						<div class="mb-4">Radio buttons allow the user to select one option from a set.</div>
+
+						<div class="mb-3 flex items-center">
+							<input type="radio" name="rb" id="rb-1" class="radio mr-2" />
+							<label for="rb-1">Default checkbox</label>
+						</div>
+						<div class="mb-3 flex items-center">
+							<input type="radio" name="rb" id="rb-2" class="radio mr-2" checked />
+							<label for="rb-2">Another checkbox</label>
+						</div>
+						<div class="flex items-center">
+							<input type="radio" name="rb" id="rb-3" class="radio mr-2" disabled />
+							<label for="rb-3" class="text-muted">Disabled checkbox</label>
+						</div>
+					</div>
+
+					<div class="card mb-5 p-5">
+						<h5 class="mb-2 text-lg font-bold leading-none text-heading">Switch</h5>
+						<div class="mb-4">Switches toggle the state of a single setting on or off.</div>
+
+						<div class="switch mb-3 flex items-center">
+							<input id="switch-default" type="checkbox" class="switch-checkbox" />
+							<label for="switch-default" class="switch-label">Default switch input</label>
+						</div>
+
+						<div class="switch mb-3 flex items-center">
+							<input id="switch-checked" type="checkbox" class="switch-checkbox" checked />
+							<label for="switch-checked" class="switch-label">Checked switch input</label>
+						</div>
+
+						<div class="switch mb-3 flex items-center">
+							<input id="switch-disabled" type="checkbox" class="switch-checkbox" disabled />
+							<label for="switch-disabled" class="switch-label">Disabled switch input</label>
+						</div>
+
+						<div class="switch flex items-center">
+							<input id="switch-disabled-checked" type="checkbox" class="switch-checkbox" disabled checked />
+							<label for="switch-disabled-checked" class="switch-label">Disabled checked switch input</label>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<include src="./partials/_scripts.html"></include>
+	</body>
+</html>

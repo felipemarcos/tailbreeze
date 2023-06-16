@@ -1,0 +1,258 @@
+$fullcalendar-theme: (
+	--fc-border-color: rgb(var(--theme-light-200)) rgb(var(--theme-dark-100)),
+	--fc-button-hover-bg-color: rgb(var(--theme-light-200)) rgb(var(--theme-dark-100)),
+	--fc-button-active-bg-color: rgb(var(--theme-light-200)) rgb(var(--theme-dark-200)),
+	--fc-neutral-bg-color: rgb(var(--theme-light-200)) rgb(var(--theme-dark-100)),
+);
+
+@include theme-switch($fullcalendar-theme);
+
+@layer components {
+	$button-icons: (
+		today: "\e8b5",
+		prev: "\f1e6",
+		menu: "\f1e6",
+		next: "\f1df",
+		dayGridMonth: "\ebcc",
+		timeGridWeek: "\e916",
+		timeGridDay: "\e878",
+		listWeek: "\e241",
+	);
+
+	#calendar {
+		--fc-button-bg-color: transparent;
+		--fc-button-text-color: var(--text-heading);
+		--fc-today-bg-color: transparent;
+		--fc-event-border-color: transparent;
+		--fc-page-bg-color: transparent;
+
+		&.fc {
+			@apply bg-body;
+
+			table {
+				tr {
+					&:last-child {
+						td {
+							@apply border-b-0;
+						}
+					}
+				}
+
+				td,
+				th {
+					&:last-child {
+						@apply border-r-0;
+					}
+				}
+			}
+
+			.fc-scroller {
+				@apply scrollbar;
+			}
+
+			.fc-toolbar.fc-header-toolbar {
+				@apply sticky
+                top-0
+                z-[8]
+                mb-0
+                h-12
+                bg-body;
+			}
+
+			.fc-toolbar-chunk {
+				@apply flex
+				items-center;
+			}
+
+			.fc-toolbar-title {
+				@apply m-0
+                text-base
+				font-bold
+                text-heading;
+			}
+
+			.fc-view-harness {
+				@apply card
+				rounded-md;
+			}
+
+			.fc-button {
+				@apply h-8
+                rounded
+                border-0
+                p-0
+                px-2
+				text-[0]
+                focus:ring-0
+                active:ring-0;
+
+				&:before {
+					@apply icon
+					text-xl;
+				}
+
+				&:disabled {
+					@apply opacity-100;
+				}
+			}
+
+			.fc-icon {
+				@apply icon;
+			}
+
+			@each $button, $icon in $button-icons {
+				.fc-#{$button}-button {
+					&::before {
+						@apply content-["#{$icon}"];
+					}
+				}
+			}
+
+			.fc-next-button {
+				@apply mr-5;
+			}
+
+			.fc-scrollgrid {
+				@apply border-0;
+			}
+
+			.fc-col-header-cell,
+			th.fc-timegrid-axis {
+				@apply border-b-0;
+			}
+
+			.fc-col-header-cell {
+				@apply pt-2
+					text-sm
+					font-bold
+					uppercase
+					text-muted;
+			}
+
+			.fc-daygrid-day-top {
+				@apply justify-center
+            		text-heading;
+			}
+
+			.fc-day-other {
+				.fc-daygrid-day-top {
+					@apply text-muted
+                		opacity-70;
+				}
+			}
+
+			.fc-daygrid-day-number {
+				@apply my-2;
+			}
+
+			.fc-day-today {
+				.fc-daygrid-day-number {
+					@apply mb-0
+						grid
+						h-8
+						w-8
+						place-content-center
+						rounded-full
+						bg-theme
+						text-white;
+				}
+			}
+
+			.fc-h-event,
+			.fc-v-event {
+				@apply rounded
+				border-0
+				bg-theme
+				px-1.5
+				py-1
+				text-sm;
+			}
+
+			.fc-daygrid-dot-event {
+				@apply h-6
+				rounded
+				bg-light-200
+				py-0.5
+				dark:bg-dark-200;
+			}
+
+			.fc-daygrid-event-dot {
+				@apply h-3
+				w-1
+				border-0
+				bg-theme;
+			}
+
+			.fc-event-time {
+				@apply text-xs
+				font-bold;
+			}
+
+			.fc-event-title {
+				@apply font-normal;
+			}
+
+			.fc-event-main,
+			.fc-event-title {
+				@apply truncate;
+			}
+
+			.fc-timegrid-axis,
+			.fc-timegrid-slot-label {
+				@apply text-sm
+					font-bold
+					text-muted;
+			}
+
+			.fc-timegrid-divider {
+				@apply hidden;
+			}
+
+			.fc-daygrid-more-link {
+				@apply text-sm
+				text-muted
+				hover:text-heading;
+			}
+
+			.fc-popover {
+				@apply -m-px
+				rounded
+				shadow-md;
+			}
+
+			.fc-popover-header {
+				@apply bg-none
+				p-2
+				font-bold;
+			}
+
+			.fc-today-button {
+				@apply hidden
+				sm:block;
+			}
+
+			.fc-menu-button {
+				@apply -ml-2
+				mr-2
+				md:hidden;
+			}
+
+			.fc-daygrid-day-events {
+				@apply p-1;
+			}
+		}
+	}
+
+	#calendar-navigate {
+		.view-switch {
+			@apply pointer-events-none;
+		}
+
+		.datepicker-cell:not(.disabled):not(.selected):not(.today),
+		.prev-btn,
+		.next-btn {
+			@apply hover:bg-light-200
+				dark:hover:bg-dark-100;
+		}
+	}
+}

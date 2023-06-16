@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" data-page="charts-and-maps-maps">
+	<include src="./partials/_head.html">{ "pageTitle": "Maps" }</include>
+
+	<body>
+		<include src="./partials/_page-loader.html"></include>
+
+		<include src="./partials/_header.html"></include>
+
+		<include src="./partials/_sidebar.html"></include>
+
+		<div id="content">
+			<div class="content-header px-5">
+				<div class="flex flex-shrink-0 items-center text-heading">
+					<i class="icon mr-2">grid_view</i>
+					<div class="font-bold">Maps</div>
+				</div>
+
+				<ol class="ml-5 hidden items-center text-md text-muted md:flex">
+					<li><a href="#" class="rounded p-1 transition-colors hover:text-body">Tailbreeze</a></li>
+					<li class="icon mx-1 text-xs">chevron_right</li>
+					<li><a href="#" class="rounded p-1 transition-colors hover:text-body">Miscellaneous</a></li>
+					<li class="icon mx-1 text-xs">chevron_right</li>
+					<li class="rounded p-1">Charts and Maps</li>
+				</ol>
+			</div>
+
+			<div class="p-5" data-simplebar>
+				<div id="maps-wrapper" class="mx-auto grid max-w-7xl gap-4 pb-5 md:grid-cols-2"></div>
+			</div>
+		</div>
+
+		<include src="./partials/_scripts.html"></include>
+	</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" data-page="todo-lists">
+	<include src="./partials/_head.html">{ "pageTitle": "Todo Lists" }</include>
+
+	<body>
+		<include src="./partials/_page-loader.html"></include>
+
+		<include src="./partials/_header.html"></include>
+
+		<include src="./partials/_sidebar.html">{ "sidebar": "sidebar-min" }</include>
+
+		<div id="content" class="content-alt">
+			<include src="./partials/todo-lists/_sidebar.html"></include>
+
+			<div data-content="body" class="content-body">
+				<include src="./partials/todo-lists/_header.html"></include>
+
+				<div class="p-5" data-simplebar>
+					<div class="mx-auto max-w-7xl">
+						<div id="todo-lists">
+							<!-- Content will load from "js/template/todo-lists.js" -->
+						</div>
+						<div class="flex items-center py-3">
+							<i class="icon ml-6 w-7 text-xl text-muted">add</i>
+							<input type="text" placeholder="Type here to add a new task..." class="w-full bg-transparent placeholder:text-muted" />
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<include src="./partials/todo-lists/_todo-details.html"></include>
+		</div>
+
+		<include src="./partials/_scripts.html"></include>
+	</body>
+</html>

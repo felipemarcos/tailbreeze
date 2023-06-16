@@ -1,0 +1,135 @@
+<!-- Channel info modal -->
+<div id="channe-info" data-tb-modal-window tabindex="-1" aria-hidden="true">
+	<div data-tb-modal-dialog class="flex h-full flex-col">
+		<div class="rounded-tl-md rounded-tr-md bg-light-100 dark:bg-dark-200">
+			<div class="mb-1 flex items-center px-5 pt-3.5">
+				<h4 class="flex-1 font-bold leading-none text-heading">Product Releases</h4>
+				<button type="button" class="btn-close text-muted hover:bg-light-200 dark:hover:bg-dark-300" data-tb-modal-dismiss></button>
+			</div>
+
+			<nav class="nav-scroll pl-2 text-md font-bold text-heading" role="tablist" data-tb-tab-nav>
+				<a href="" id="channel-about-tab" role="tab" aria-selected="true">About</a>
+				<a href="" id="channel-members-tab" role="tab" aria-selected="false">Members</a>
+				<a href="" id="channel-files-tab" role="tab" aria-selected="false">Files</a>
+				<a href="" id="channel-preferences-tab" role="tab" aria-selected="false">Preferences</a>
+			</nav>
+		</div>
+
+		<div class="scrollbar p-5" data-tb-tab-content>
+			<div aria-labelledby="channel-about-tab" role="tabpanel">
+				<div class="rounded-md border border-light-200 dark:border-dark-200">
+					<div class="border-b border-light-200 p-4 dark:border-dark-200">
+						<div class="mb-1 text-sm text-muted">
+							Channel Name
+
+							<a href="#" class="float-right font-bold text-link hover:underline">Edit</a>
+						</div>
+						<div>Product Releases</div>
+					</div>
+					<div class="border-b border-light-200 p-4 dark:border-dark-200">
+						<div class="mb-1 text-sm text-muted">
+							Description
+
+							<a href="#" class="float-right font-bold text-link hover:underline">Edit</a>
+						</div>
+						<div>
+							Pariatur culpa ex ea ipsum irure. Sint labore aliqua sunt nulla aliqua laborum qui adipisicing laborum cupidatat. Aute consequat
+							duis sunt anim aliqua esse reprehenderit do pariatur Lorem ullamco excepteur. Ea tempor ut anim proident voluptate proident nostrud
+							ullamco. Laboris esse velit aliqua in culpa Lorem ut fugiat aliqua excepteur in exercitation velit consectetur.
+						</div>
+					</div>
+					<div class="border-b border-light-200 p-4 dark:border-dark-200">
+						<div class="mb-1 text-sm text-muted">Created by</div>
+						<div>Malinda Hollaway on 20/12/2022</div>
+					</div>
+					<div class="p-1 text-center">
+						<a href="#" class="block rounded p-2 text-md font-bold text-red-500 hover:bg-red-500/10">Leave Channel</a>
+					</div>
+				</div>
+			</div>
+			<div aria-labelledby="channel-members-tab" class="hidden" role="tabpanel">
+				<div class="form-control mb-3 flex items-center px-0">
+					<div class="relative flex flex-1 items-center">
+						<include src="./partials/misc/_search-icon.html"> { "classlist": "w-3 ml-3 mr-2" }</include>
+						<input type="text" class="flex-1 bg-transparent" placeholder="Find members..." />
+					</div>
+					<button type="button" class="icon mr-1 h-7 w-7 rounded hover:bg-light-100 dark:hover:bg-dark-200">person_add</button>
+				</div>
+				<div id="channel-members"></div>
+			</div>
+			<div aria-labelledby="channel-files-tab" class="hidden" role="tabpanel">
+				<div class="form-control mb-3 flex items-center px-0">
+					<div class="relative flex flex-1 items-center">
+						<include src="./partials/misc/_search-icon.html"> { "classlist": "w-3 ml-3 mr-2" }</include>
+						<input type="text" class="flex-1 bg-transparent" placeholder="Find members..." />
+					</div>
+					<button type="button" class="icon mr-1 h-7 w-7 rounded hover:bg-light-100 dark:hover:bg-dark-200">upload</button>
+				</div>
+				<div id="channel-files"></div>
+			</div>
+			<div aria-labelledby="channel-preferences-tab" class="hidden" role="tabpanel">
+				<div class="rounded-md border border-light-200 dark:border-dark-200">
+					<div class="flex items-start border-b border-light-200 p-4 dark:border-dark-200">
+						<div class="flex-1 pr-4">
+							<div class="font-bold text-heading">New Members</div>
+							<div class="text-muted">Allow new members to join without invitation</div>
+						</div>
+
+						<div class="switch mt-1">
+							<input id="switch-pref-1" type="checkbox" class="switch-checkbox" />
+							<label for="switch-pref-1" class="switch-label"></label>
+						</div>
+					</div>
+					<div class="flex items-start border-b border-light-200 p-4 dark:border-dark-200">
+						<div class="flex-1 pr-4">
+							<div class="font-bold text-heading">Clipboard</div>
+							<div class="text-muted">Allow members to copy contents</div>
+						</div>
+
+						<div class="switch mt-1">
+							<input id="switch-pref-2" type="checkbox" class="switch-checkbox" checked />
+							<label for="switch-pref-2" class="switch-label"></label>
+						</div>
+					</div>
+					<div class="flex items-start border-b border-light-200 p-4 dark:border-dark-200">
+						<div class="flex-1 pr-4">
+							<div class="font-bold text-heading">Voice Calls</div>
+							<div class="text-muted">Allow members to make voice calls</div>
+						</div>
+
+						<div class="switch mt-1">
+							<input id="switch-pref-3" type="checkbox" class="switch-checkbox" checked />
+							<label for="switch-pref-3" class="switch-label"></label>
+						</div>
+					</div>
+					<div class="flex items-start border-b border-light-200 p-4 dark:border-dark-200">
+						<div class="flex-1 pr-4">
+							<div class="font-bold text-heading">Video Calls</div>
+							<div class="text-muted">Allow members to make video calls</div>
+						</div>
+
+						<div class="switch mt-1">
+							<input id="switch-pref-4" type="checkbox" class="switch-checkbox" />
+							<label for="switch-pref-4" class="switch-label"></label>
+						</div>
+					</div>
+					<div class="border-b border-light-200 p-1 dark:border-dark-200">
+						<a href="#" class="flex items-center rounded px-3 py-2 font-bold text-heading hover:bg-light-100 dark:hover:bg-dark-200">
+							Copy member names
+							<i class="icon ml-auto text-base text-muted hover:text-heading">content_copy</i>
+						</a>
+					</div>
+					<div class="border-b border-light-200 p-1 dark:border-dark-200">
+						<a href="#" class="flex items-center rounded px-3 py-2 font-bold text-heading hover:bg-light-100 dark:hover:bg-dark-200">
+							Copy member email addresses
+							<i class="icon ml-auto text-base text-muted hover:text-heading">content_copy</i>
+						</a>
+					</div>
+					<div class="p-1 text-center">
+						<a href="#" class="block rounded p-2 text-md font-bold text-red-500 hover:bg-red-500/10">Archive channel for everyone</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,74 @@
+@layer components {
+	.swal2-container {
+		.swal2-popup {
+			@apply w-96
+            rounded-xl
+			bg-white
+        	pb-6
+			dark:bg-dark-100;
+		}
+
+		.swal2-icon {
+			@apply mt-3
+            -mb-3
+            scale-50
+            animate-none #{!important};
+
+			&.swal2-warning {
+				@apply border-red-400
+                text-red-400;
+			}
+		}
+
+		.swal2-title {
+			@apply pt-1
+            text-lg
+			font-medium
+            text-heading;
+		}
+
+		.swal2-html-container {
+			@apply mt-2
+            px-8
+			text-base
+			leading-normal
+            text-body;
+		}
+
+		.swal2-actions {
+			.swal2-styled {
+				@apply rounded
+                text-md
+				font-normal
+                hover:opacity-90;
+
+				&.swal2-confirm {
+					@apply bg-blue-500/10
+                    text-blue-500
+					hover:bg-blue-500/20
+					hover:bg-none
+                    focus:shadow-none;
+				}
+
+				&.swal2-cancel {
+					@apply bg-transparent
+					font-normal
+					text-muted
+					hover:bg-light-100
+					hover:bg-none
+					hover:text-heading
+					focus:shadow-none
+                    hover:dark:bg-dark-200;
+				}
+
+				&.swal2-deny {
+					@apply bg-red-500/10
+					text-red-500
+					hover:bg-red-500/20
+					hover:bg-none
+					focus:shadow-none;
+				}
+			}
+		}
+	}
+}

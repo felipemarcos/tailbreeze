@@ -1,0 +1,13 @@
+<script>
+	// Dark mode
+	var currentTheme = localStorage.getItem("theme");
+	var isDarkMode = currentTheme === "dark" ? true : false;
+	document.documentElement.setAttribute("data-theme", isDarkMode ? "dark" : "light");
+
+	// Light mode theme color
+	const currentThemeColor = localStorage.getItem("theme-color");
+	document.documentElement.setAttribute("data-theme-color", currentThemeColor || "blue");
+</script>
+
+<script src="../assets/js/app.js" type="module"></script>
+<script src="../assets/js/vendor.js" type="module"></script>

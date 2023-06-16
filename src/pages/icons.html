@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" data-page="icons">
+	<include src="./partials/_head.html">{ "pageTitle": "Icons" }</include>
+
+	<body>
+		<include src="./partials/_page-loader.html"></include>
+
+		<include src="./partials/_header.html"></include>
+
+		<include src="./partials/_sidebar.html"></include>
+
+		<div id="content">
+			<div class="content-header px-5">
+				<div class="flex flex-shrink-0 items-center text-heading">
+					<i class="icon mr-2">sentiment_satisfied</i>
+					<div class="font-bold">Icons</div>
+				</div>
+
+				<ol class="ml-5 hidden items-center text-md text-muted md:flex">
+					<li><a href="#" class="rounded p-1 transition-colors hover:text-body">Tailbreeze</a></li>
+					<li class="icon mx-1 text-xs">chevron_right</li>
+					<li class="rounded p-1">Content</li>
+				</ol>
+			</div>
+
+			<div class="p-5" data-simplebar>
+				<div class="mx-auto max-w-7xl">
+					<div class="card mb-4 p-3">
+						<div class="mb-1 p-2">
+							<h5 class="mb-2 text-lg font-bold leading-none text-heading">Material Symbols</h5>
+							<div>
+								Material Symbols are our newest icons consolidating over 2,500 glyphs in a single font file with a wide range of design
+								variants.
+							</div>
+						</div>
+
+						<div id="icons" class="grid grid-cols-4 gap-2 sm:grid-cols-6 lg:grid-cols-8"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<include src="./partials/_scripts.html"></include>
+	</body>
+</html>

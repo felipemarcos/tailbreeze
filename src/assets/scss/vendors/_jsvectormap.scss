@@ -1,0 +1,12 @@
+@layer components {
+	$tooltip-bg-color: var(--tooltip-bg);
+	$tooltip-font-family: theme("fontFamily.sans");
+	$tooltip-radius: 0.15rem;
+	$tooltip-padding: 0.5rem 0.65rem;
+
+	.jvm-tooltip {
+		color: var(--tooltip-color) !important;
+	}
+
+	@import "jsvectormap/src/scss/jsvectormap.scss";
+}

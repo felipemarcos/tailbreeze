@@ -1,0 +1,34 @@
+<div class="card mb-4 inline-block w-full p-5">
+	<div class="mb-4 flex items-start">
+		<h4 class="font-bold leading-none text-heading">Top Sales</h4>
+
+		<nav class="ml-auto -mt-2.5 -mr-2.5 flex items-center">
+			<a class="icon btn hover:bg-light-100 dark:hover:bg-dark-200" href="">info</a>
+		</nav>
+	</div>
+
+	<div class="mb-5 h-60">
+		<canvas id="chart-top-sales">
+			<!-- Chart will load from "js/widgets/website-analytics/averageVisitDuration.js" -->
+		</canvas>
+	</div>
+
+	<div class="mb-5 grid grid-cols-3 gap-4 leading-none">
+		<div class="rounded-md border border-light-200 p-3.5 dark:border-dark-200">
+			<div class="mb-2 text-lg font-bold text-heading">$2543.5</div>
+			<div class="text-md text-muted">Sales Today</div>
+		</div>
+
+		<div class="rounded-md border border-light-200 p-3.5 dark:border-dark-200">
+			<div class="mb-2 text-lg font-bold text-heading">$12322.3</div>
+			<div class="text-md text-muted">Last Week</div>
+		</div>
+
+		<div class="rounded-md border border-light-200 p-3.5 dark:border-dark-200">
+			<div class="mb-2 text-lg font-bold text-heading">$48434.9</div>
+			<div class="text-md text-muted">Last Month</div>
+		</div>
+	</div>
+
+	<div id="top-sales-list" class="-mb-3"></div>
+</div>

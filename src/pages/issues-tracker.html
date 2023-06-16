@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" data-page="issues-tracker">
+	<include src="./partials/_head.html">{ "pageTitle": "Issues Tracker" }</include>
+
+	<body>
+		<include src="./partials/_page-loader.html"></include>
+
+		<include src="./partials/_header.html"></include>
+
+		<include src="./partials/_sidebar.html">{ "sidebar": "sidebar-min" }</include>
+
+		<div id="content" class="content-alt">
+			<include src="./partials/issues-tracker/_sidebar.html"></include>
+
+			<div data-content="body">
+				<include src="./partials/issues-tracker/_header.html"></include>
+
+				<div class="p-5 pt-3" data-simplebar>
+					<div class="mb-3 text-sm text-muted">Total 232 opened issues</div>
+					<div id="issues-tracker" class="ma mx-auto">
+						<!-- Content will load from "js/template/issues-tracker.js" -->
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<include src="./partials/_scripts.html"></include>
+	</body>
+</html>

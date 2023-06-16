@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en" data-page="forms-templates">
+	<include src="./partials/_head.html">{ "pageTitle": "Form Templates" }</include>
+
+	<body>
+		<include src="./partials/_page-loader.html"></include>
+
+		<include src="./partials/_header.html"></include>
+
+		<include src="./partials/_sidebar.html"></include>
+
+		<div id="content">
+			<div class="content-header px-5">
+				<div class="flex flex-shrink-0 items-center text-heading">
+					<i class="icon mr-2">list_alt</i>
+					<div class="font-bold">Form Templates</div>
+				</div>
+
+				<ol class="ml-5 hidden items-center text-md text-muted md:flex">
+					<li><a href="#" class="rounded p-1 transition-colors hover:text-body">Tailbreeze</a></li>
+					<li class="icon mx-1 text-xs">chevron_right</li>
+					<li><a href="#" class="rounded p-1 transition-colors hover:text-body">Miscellaneous</a></li>
+					<li class="icon mx-1 text-xs">chevron_right</li>
+					<li class="rounded p-1">Forms</li>
+				</ol>
+			</div>
+
+			<div class="p-5" data-simplebar>
+				<div class="mx-auto max-w-5xl">
+					<div class="card mb-5 p-5">
+						<h5 class="mb-2 text-lg font-bold leading-none text-heading">Login form</h5>
+						<div class="mb-5">Sample login form with basic input fields.</div>
+
+						<div class="rounded-md border border-light-200 p-5 dark:border-dark-200 lg:w-6/12">
+							<div class="mb-4">
+								<input type="text" class="form-control" placeholder="Username" />
+							</div>
+
+							<div class="mb-4">
+								<input type="password" class="form-control" placeholder="Password" />
+							</div>
+
+							<div class="mb-5 flex items-center text-md">
+								<input type="checkbox" id="login-remember" class="checkbox mr-2" />
+								<label for="login-remember">Stay logged in</label>
+							</div>
+
+							<button type="button" class="btn block w-full bg-blue-500 text-md font-bold text-white hover:bg-blue-600">Login</button>
+						</div>
+					</div>
+
+					<div class="card mb-5 p-5">
+						<h5 class="mb-2 text-lg font-bold leading-none text-heading">Registration form</h5>
+						<div class="mb-5">Sample sign up form basic with names, email and password fields.</div>
+
+						<div class="rounded-md border border-light-200 p-5 dark:border-dark-200 lg:w-10/12">
+							<div class="items-start gap-4 md:flex">
+								<div class="mb-4 md:w-6/12">
+									<input type="text" class="form-control" placeholder="First Name" />
+								</div>
+								<div class="mb-4 md:w-6/12">
+									<input type="text" class="form-control" placeholder="Last Name" />
+								</div>
+							</div>
+
+							<div class="mb-4 flex items-center text-md">
+								<input type="text" class="form-control" placeholder="Email Address" />
+							</div>
+
+							<div class="items-start gap-5 md:flex">
+								<div class="mb-4 md:w-6/12">
+									<input type="password" class="form-control" placeholder="Password" />
+								</div>
+								<div class="mb-4 md:w-6/12">
+									<input type="password" class="form-control" placeholder="Confirm Password" />
+								</div>
+							</div>
+
+							<div class="mb-5 flex items-start text-md">
+								<input type="checkbox" id="register-accept" class="checkbox mr-2 mt-px" />
+								<label for="register-accept">I have read and accept the agreement</label>
+							</div>
+
+							<button type="button" class="btn block w-full bg-blue-500 text-md font-bold text-white hover:bg-blue-600">Create Account</button>
+						</div>
+					</div>
+
+					<div class="card mb-5 p-5">
+						<h5 class="mb-2 text-lg font-bold leading-none text-heading">Contact form</h5>
+						<div class="mb-5">Sample contact form name, email and message fields.</div>
+
+						<div class="rounded-md border border-light-200 p-5 dark:border-dark-200 lg:w-6/12">
+							<div class="mb-4">
+								<input type="text" class="form-control" placeholder="Name" />
+							</div>
+
+							<div class="mb-4">
+								<input type="text" class="form-control" placeholder="Email address" />
+							</div>
+
+							<div class="mb-4">
+								<textarea rows="3" class="form-control" placeholder="Message"></textarea>
+							</div>
+
+							<div class="mb-5 flex items-center text-md">
+								<input type="checkbox" id="contact-privacy" class="checkbox mr-2" />
+								<label for="contact-privacy">Agree to privacy policy</label>
+							</div>
+
+							<button type="button" class="btn block w-full bg-blue-500 text-md font-bold text-white hover:bg-blue-600">Submit</button>
+						</div>
+					</div>
+
+					<div class="card mb-5 p-5">
+						<h5 class="mb-2 text-lg font-bold leading-none text-heading">Newsletter form</h5>
+						<div class="mb-5">Sample newsletter form with name and email address.</div>
+
+						<div class="rounded-md border border-light-200 p-5 dark:border-dark-200 lg:w-6/12">
+							<div class="mb-4">
+								<input type="text" class="form-control" placeholder="Name" />
+							</div>
+
+							<div class="mb-4">
+								<input type="text" class="form-control" placeholder="Email address" />
+							</div>
+
+							<div class="mb-5 flex items-start text-md">
+								<input type="checkbox" id="newsletter-agree" class="checkbox mr-2 mt-px" />
+								<label for="newsletter-agree">I have read and aggree to the terms and conditions</label>
+							</div>
+
+							<button type="button" class="btn block w-full bg-blue-500 text-md font-bold text-white hover:bg-blue-600">Subscribe</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<include src="./partials/_scripts.html"></include>
+	</body>
+</html>

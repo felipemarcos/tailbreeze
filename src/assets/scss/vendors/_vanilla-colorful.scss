@@ -1,0 +1,26 @@
+.color-picker {
+	@apply w-full;
+}
+
+.color-picker {
+	&::part(saturation) {
+		@apply rounded-t;
+	}
+}
+
+hex-color-picker,
+hsl-string-color-picker {
+	&.color-picker {
+		&::part(hue) {
+			@apply rounded-b;
+		}
+	}
+}
+
+rgba-string-color-picker {
+	&.color-picker {
+		&::part(alpha) {
+			@apply rounded-b;
+		}
+	}
+}

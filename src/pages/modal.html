@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en" data-page="components-modal">
+	<include src="./partials/_head.html">{ "pageTitle": "Modal" }</include>
+
+	<body>
+		<include src="./partials/_page-loader.html"></include>
+
+		<include src="./partials/_header.html"></include>
+
+		<include src="./partials/_sidebar.html"></include>
+
+		<div id="content">
+			<div class="content-header px-5">
+				<div class="flex flex-shrink-0 items-center text-heading">
+					<i class="icon mr-2">grid_view</i>
+					<div class="font-bold">Modal</div>
+				</div>
+
+				<ol class="ml-5 hidden items-center text-md text-muted md:flex">
+					<li><a href="#" class="rounded p-1 transition-colors hover:text-body">Tailbreeze</a></li>
+					<li class="icon mx-1 text-xs">chevron_right</li>
+					<li><a href="#" class="rounded p-1 transition-colors hover:text-body">Miscellaneous</a></li>
+					<li class="icon mx-1 text-xs">chevron_right</li>
+					<li class="rounded p-1">Components</li>
+				</ol>
+			</div>
+
+			<div class="p-5" data-simplebar>
+				<div class="mx-auto max-w-5xl">
+					<div class="card mb-5 p-5">
+						<h5 class="mb-2 text-lg font-bold leading-none text-heading">Basic example</h5>
+						<div class="mb-5">
+							Modals are separate windows within an application, most often as a dialog box. They are a common user interface pattern for
+							providing information or requiring confirmation.
+						</div>
+
+						<button type="button" class="btn bg-blue-600/90 text-md text-white hover:bg-blue-600" data-tb-modal="#modal-basic">
+							Launch demo modal
+						</button>
+					</div>
+
+					<div class="card mb-5 p-5">
+						<h5 class="mb-2 text-lg font-bold leading-none text-heading">Modal sizes</h5>
+						<div class="mb-5">Use max-width utility classes to resize the modal.</div>
+
+						<button type="button" class="btn mr-1 mt-1 bg-blue-600/90 text-md text-white hover:bg-blue-600" data-tb-modal="#modal-small">
+							Small modal
+						</button>
+
+						<button type="button" class="btn mr-1 mt-1 bg-blue-600/90 text-md text-white hover:bg-blue-600" data-tb-modal="#modal-large">
+							Larga modal
+						</button>
+
+						<button type="button" class="btn mr-1 mt-1 bg-blue-600/90 text-md text-white hover:bg-blue-600" data-tb-modal="#modal-xl">
+							Extra Large modal
+						</button>
+					</div>
+
+					<div class="card mb-5 p-5">
+						<h5 class="mb-2 text-lg font-bold leading-none text-heading">Other modal examples</h5>
+						<div class="mb-5">The modal component is highliy customizable. You can check some of the examples below.</div>
+
+						<button type="button" class="btn mr-1 mt-1 bg-blue-600/90 text-md text-white hover:bg-blue-600" data-tb-modal="#modal-keyboard">
+							Keyboard disabled
+						</button>
+
+						<button type="button" class="btn mr-1 mt-1 bg-blue-600/90 text-md text-white hover:bg-blue-600" data-tb-modal="#modal-scroll">
+							Scrolling content
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Modal basic -->
+		<div data-tb-modal-window id="modal-basic" tabindex="-1" aria-hidden="true">
+			<div data-tb-modal-dialog class="p-5">
+				<div class="relative mb-5">
+					<h5 class="text-lg font-bold leading-none text-heading">Modal title</h5>
+					<button type="button" class="btn-close absolute -right-1 -top-1 hover:bg-light-100 dark:hover:bg-dark-200" data-tb-modal-dismiss></button>
+				</div>
+
+				<div class="mb-5">
+					Ut in nostrud magna consectetur id ea quis aute eu. Minim anim qui magna proident veniam excepteur reprehenderit ipsum magna veniam eu.
+					Velit commodo cillum pariatur voluptate pariatur magna in aliqua et do.
+				</div>
+
+				<div class="text-md text-white">
+					<button type="button" class="btn bg-blue-600/90 hover:bg-blue-600" data-tb-modal-dismiss>Close Modal</button>
+				</div>
+			</div>
+		</div>
+
+		<!-- Modal small -->
+		<div data-tb-modal-window id="modal-small" tabindex="-1" aria-hidden="true">
+			<div data-tb-modal-dialog class="max-w-sm p-5">
+				<div class="relative mb-5">
+					<h5 class="text-lg font-bold leading-none text-heading">Modal title</h5>
+					<button type="button" class="btn-close absolute -right-1 -top-1 hover:bg-light-100 dark:hover:bg-dark-200" data-tb-modal-dismiss></button>
+				</div>
+
+				<div class="mb-5">
+					Ut in nostrud magna consectetur id ea quis aute eu. Minim anim qui magna proident veniam excepteur reprehenderit ipsum magna veniam eu.
+					Velit commodo cillum pariatur voluptate pariatur magna in aliqua et do.
+				</div>
+
+				<div class="text-md text-white">
+					<button type="button" class="btn bg-blue-600/90 hover:bg-blue-600" data-tb-modal-dismiss>Close Modal</button>
+				</div>
+			</div>
+		</div>
+
+		<!-- Modal large -->
+		<div data-tb-modal-window id="modal-large" tabindex="-1" aria-hidden="true">
+			<div data-tb-modal-dialog class="max-w-3xl p-5">
+				<div class="relative mb-5">
+					<h5 class="text-lg font-bold leading-none text-heading">Modal title</h5>
+					<button type="button" class="btn-close absolute -right-1 -top-1 hover:bg-light-100 dark:hover:bg-dark-200" data-tb-modal-dismiss></button>
+				</div>
+
+				<div class="mb-5">
+					Ut in nostrud magna consectetur id ea quis aute eu. Minim anim qui magna proident veniam excepteur reprehenderit ipsum magna veniam eu.
+					Velit commodo cillum pariatur voluptate pariatur magna in aliqua et do.
+				</div>
+
+				<div class="text-md text-white">
+					<button type="button" class="btn bg-blue-600/90 hover:bg-blue-600" data-tb-modal-dismiss>Close Modal</button>
+				</div>
+			</div>
+		</div>
+
+		<!-- Modal xl -->
+		<div data-tb-modal-window id="modal-xl" tabindex="-1" aria-hidden="true">
+			<div data-tb-modal-dialog class="max-w-6xl p-5">
+				<div class="relative mb-5">
+					<h5 class="text-lg font-bold leading-none text-heading">Modal title</h5>
+					<button type="button" class="btn-close absolute -right-1 -top-1 hover:bg-light-100 dark:hover:bg-dark-200" data-tb-modal-dismiss></button>
+				</div>
+
+				<div class="mb-5">
+					Ut in nostrud magna consectetur id ea quis aute eu. Minim anim qui magna proident veniam excepteur reprehenderit ipsum magna veniam eu.
+					Velit commodo cillum pariatur voluptate pariatur magna in aliqua et do.
+				</div>
+
+				<div class="text-md text-white">
+					<button type="button" class="btn bg-blue-600/90 hover:bg-blue-600" data-tb-modal-dismiss>Close Modal</button>
+				</div>
+			</div>
+		</div>
+
+		<!-- Modal scroll -->
+		<div data-tb-modal-window id="modal-scroll" tabindex="-1" aria-hidden="true">
+			<div data-tb-modal-dialog class="flex h-full flex-col">
+				<div class="relative flex-shrink-0 p-5">
+					<h5 class="text-lg font-bold leading-none text-heading">Modal title</h5>
+					<button type="button" class="btn-close absolute right-4 top-4 hover:bg-light-100 dark:hover:bg-dark-200" data-tb-modal-dismiss></button>
+				</div>
+
+				<div class="scrollbar flex-1 overflow-auto px-5">
+					<p>
+						Ut in nostrud magna consectetur id ea quis aute eu. Minim anim qui magna proident veniam excepteur reprehenderit ipsum magna veniam eu.
+						Velit commodo cillum pariatur voluptate pariatur magna in aliqua et do.
+					</p>
+					<p>
+						Quis do nulla aute occaecat laborum est eu sint minim ullamco nisi ipsum ipsum. Occaecat commodo sint qui et incididunt minim minim
+						dolor esse veniam sint incididunt excepteur. Ad irure Lorem amet aute culpa tempor Lorem. Laboris minim officia aute laborum consequat
+						laborum quis et anim sit ad mollit. Laboris sit nostrud minim nulla id et excepteur aliqua sint eu. Nisi commodo labore magna dolore.
+						Magna incididunt pariatur ad dolore nisi dolor reprehenderit ipsum eu anim.
+					</p>
+					<p>
+						Enim pariatur fugiat aute cillum labore eu id amet amet. Pariatur et et laboris ipsum mollit anim aute proident nostrud non. Consequat
+						aliquip dolore mollit enim in deserunt sit do magna aliquip anim. Laboris amet pariatur dolore commodo voluptate nisi nisi cillum magna
+						adipisicing elit veniam Lorem. Sit quis sunt exercitation tempor eiusmod sunt aliqua commodo aliqua. Velit excepteur minim nostrud
+						cupidatat adipisicing. Laborum nisi est proident officia commodo.
+					</p>
+					<p>
+						Non officia irure reprehenderit enim ullamco consequat consequat. Velit est consequat mollit nulla aliquip excepteur. Nulla ullamco
+						dolore commodo nisi nisi cupidatat. Eiusmod sunt excepteur mollit cupidatat culpa enim ut ad. Labore esse fugiat elit elit veniam velit
+						cupidatat. Anim esse enim ullamco labore veniam non ullamco aliqua.
+					</p>
+					<p>
+						Officia deserunt excepteur ut laborum pariatur cupidatat mollit duis consectetur aute elit magna et duis. Veniam excepteur minim dolor
+						esse culpa ut ea aliqua officia. Enim velit esse est incididunt minim incididunt consectetur elit nostrud. Tempor anim minim do officia
+						incididunt esse laboris sit dolore deserunt. Sint ex excepteur reprehenderit in ex. Sit consectetur mollit id aliquip sint.
+					</p>
+					<p>
+						Nostrud anim deserunt laboris dolor. Commodo sit incididunt Lorem Lorem ipsum aliqua Lorem anim excepteur dolore. Quis nisi do ut
+						voluptate. Tempor laboris duis adipisicing aliqua eu laborum exercitation ex non culpa. Proident duis aute laboris qui pariatur elit
+						cupidatat laborum est id. Sint deserunt veniam velit incididunt exercitation voluptate. Duis voluptate duis consectetur dolore velit.
+					</p>
+					<p>
+						Dolor sint velit irure nisi tempor adipisicing mollit eiusmod aliquip. Cillum mollit est est commodo voluptate ullamco ea. Sit qui nisi
+						dolor anim do.
+					</p>
+					<p>
+						Proident aute esse et mollit cupidatat ad. Enim ad do laborum pariatur. Sunt nulla esse in id duis magna aute ullamco cupidatat dolore
+						Lorem dolore incididunt. Cillum amet cupidatat fugiat do. In aute et ut veniam adipisicing laboris.
+					</p>
+					<p>
+						Eiusmod ad non in veniam consequat qui tempor officia officia aute occaecat laboris amet. Cillum consequat ea laborum aliquip pariatur.
+						Eiusmod id Lorem consequat laboris amet adipisicing commodo exercitation laborum. Velit cillum incididunt eiusmod officia culpa pariatur
+						adipisicing et eu. Nisi culpa adipisicing elit culpa amet enim velit voluptate laborum et esse sint aute.
+					</p>
+					<p>
+						Ea aute incididunt ad dolor irure esse do. Ipsum officia do esse eu incididunt eu aute veniam sint quis mollit amet. Deserunt veniam
+						proident ex veniam.
+					</p>
+					<p>
+						Aute deserunt proident officia ullamco cillum reprehenderit aliquip laboris Lorem tempor. Ipsum ullamco elit sit laboris eu culpa
+						laborum excepteur. Ea cupidatat magna qui aute pariatur nostrud ipsum consequat fugiat veniam consequat tempor.
+					</p>
+					<p>
+						Id elit Lorem magna commodo ea sunt. Laboris dolor amet amet non. Enim nostrud amet voluptate excepteur ad Lorem anim minim commodo
+						laboris eu duis.
+					</p>
+					<p>
+						Deserunt sunt veniam pariatur quis nisi ex laboris sunt laborum et. Eiusmod aliquip duis minim proident ullamco eiusmod veniam eu. Magna
+						ullamco anim eu proident. Culpa aute irure duis exercitation proident et nulla occaecat ex dolore laboris.
+					</p>
+					<p>
+						Mollit consectetur incididunt irure aliqua tempor aute excepteur esse ut. Cillum tempor ut duis officia. Sit est do elit mollit
+						cupidatat culpa. Nisi id ex ea do amet occaecat do et irure. Aliqua aliquip adipisicing exercitation labore deserunt nostrud et dolore.
+						Minim in non dolore sunt dolor nostrud in aliqua reprehenderit sunt.
+					</p>
+					<p>
+						Aute sunt sint reprehenderit non anim officia aliqua. Mollit duis veniam anim qui nostrud consectetur sint. Ullamco incididunt voluptate
+						voluptate veniam do sit excepteur mollit dolore sunt eiusmod amet nostrud. Est aute nostrud in do velit consequat non cillum consectetur
+						amet. Occaecat enim duis proident quis. Sunt magna ad enim occaecat mollit. Veniam cupidatat consequat adipisicing non sint incididunt
+						amet exercitation esse fugiat nostrud.
+					</p>
+					<p>
+						Enim elit excepteur ex dolore. Irure exercitation est adipisicing occaecat aliquip Lorem exercitation dolore consectetur aliquip.
+						Adipisicing sit enim veniam do enim laborum magna incididunt. Eiusmod quis ut quis est enim fugiat non.
+					</p>
+				</div>
+
+				<div class="flex-shrink-0 p-5 text-md text-white">
+					<button type="button" class="btn bg-blue-600/90 hover:bg-blue-600" data-tb-modal-dismiss>Close Modal</button>
+				</div>
+			</div>
+		</div>
+
+		<!-- Modal keyboard -->
+		<div data-tb-modal-window id="modal-keyboard" data-tb-modal-keyboard="false" tabindex="-1" aria-hidden="true">
+			<div data-tb-modal-dialog class="p-5">
+				<div class="relative mb-5">
+					<h5 class="text-lg font-bold leading-none text-heading">Modal title</h5>
+					<button type="button" class="btn-close absolute -right-1 -top-1 hover:bg-light-100 dark:hover:bg-dark-200" data-tb-modal-dismiss></button>
+				</div>
+
+				<div class="mb-5">
+					Ut in nostrud magna consectetur id ea quis aute eu. Minim anim qui magna proident veniam excepteur reprehenderit ipsum magna veniam eu.
+					Velit commodo cillum pariatur voluptate pariatur magna in aliqua et do.
+				</div>
+
+				<div class="text-md text-white">
+					<button type="button" class="btn bg-blue-600/90 hover:bg-blue-600" data-tb-modal-dismiss>Close Modal</button>
+				</div>
+			</div>
+		</div>
+
+		<include src="./partials/_scripts.html"></include>
+	</body>
+</html>

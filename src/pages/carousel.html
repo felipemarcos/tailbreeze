@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en" data-page="components-carousel">
+	<include src="./partials/_head.html">{ "pageTitle": "Carousel" }</include>
+
+	<body>
+		<include src="./partials/_page-loader.html"></include>
+
+		<include src="./partials/_header.html"></include>
+
+		<include src="./partials/_sidebar.html"></include>
+
+		<div id="content">
+			<div class="content-header px-5">
+				<div class="flex flex-shrink-0 items-center text-heading">
+					<i class="icon mr-2">grid_view</i>
+					<div class="font-bold">Carousel</div>
+				</div>
+
+				<ol class="ml-5 hidden items-center text-md text-muted md:flex">
+					<li><a href="#" class="rounded p-1 transition-colors hover:text-body">Tailbreeze</a></li>
+					<li class="icon mx-1 text-xs">chevron_right</li>
+					<li><a href="#" class="rounded p-1 transition-colors hover:text-body">Miscellaneous</a></li>
+					<li class="icon mx-1 text-xs">chevron_right</li>
+					<li class="rounded p-1">Components</li>
+				</ol>
+			</div>
+
+			<div class="p-5" data-simplebar>
+				<div class="mx-auto max-w-5xl">
+					<div class="card mb-5 p-5">
+						<h5 class="mb-2 text-lg font-bold leading-none text-heading">Basic example</h5>
+						<div class="mb-5">Basic carousel setups that require minimal effort to get started with.</div>
+
+						<div class="carousel">
+							<div class="carousel-inner">
+								<div class="carousel-slide"><img src="../assets/img/gallery/19.jpg" alt="" /></div>
+								<div class="carousel-slide"><img src="../assets/img/gallery/18.jpg" alt="" /></div>
+								<div class="carousel-slide"><img src="../assets/img/gallery/16.jpg" alt="" /></div>
+								<div class="carousel-slide"><img src="../assets/img/gallery/11.jpg" alt="" /></div>
+								<div class="carousel-slide"><img src="../assets/img/gallery/9.jpg" alt="" /></div>
+								<div class="carousel-slide"><img src="../assets/img/gallery/1.jpg" alt="" /></div>
+							</div>
+							<button type="button" class="carousel-prev icon">
+								west
+								<span class="sr-only">Previous</span>
+							</button>
+							<button type="button" class="carousel-next icon">
+								east
+								<span class="sr-only">Next</span>
+							</button>
+						</div>
+					</div>
+
+					<div class="card mb-5 p-5">
+						<h5 class="mb-2 text-lg font-bold leading-none text-heading">Caption and indicators</h5>
+						<div class="mb-5">Below is an example carousel with indicating dots and caption.</div>
+
+						<div class="carousel">
+							<div class="carousel-inner">
+								<div class="carousel-slide">
+									<img src="../assets/img/gallery/5.jpg" alt="" />
+									<div class="carousel-caption drop-shadow-sm">
+										<h4 class="mb-1 text-lg font-bold leading-none">First slide label</h4>
+										<div class="text-sm">Elit anim anim culpa commodo deserunt</div>
+									</div>
+								</div>
+								<div class="carousel-slide">
+									<img src="../assets/img/gallery/6.jpg" alt="" />
+									<div class="carousel-caption drop-shadow-sm">
+										<h4 class="mb-1 text-lg font-bold leading-none">Second slide label</h4>
+										<div class="text-sm">Quis laboris dolor consectetur occaecat</div>
+									</div>
+								</div>
+								<div class="carousel-slide">
+									<img src="../assets/img/gallery/11.jpg" alt="" />
+									<div class="carousel-caption drop-shadow-sm">
+										<h4 class="mb-1 text-lg font-bold leading-none">Third third label</h4>
+										<div class="text-sm">Velit voluptate nulla ex enim et esse</div>
+									</div>
+								</div>
+								<div class="carousel-slide">
+									<div class="carousel-caption drop-shadow-sm">
+										<h4 class="mb-1 text-lg font-bold leading-none">Fourth slide label</h4>
+										<div class="text-sm">Fugiat anim laboris anim laboris aliquip</div>
+									</div>
+									<img src="../assets/img/gallery/13.jpg" alt="" />
+								</div>
+								<div class="carousel-slide">
+									<div class="carousel-caption drop-shadow-sm">
+										<h4 class="mb-1 text-lg font-bold leading-none">Fifth slide label</h4>
+										<div class="text-sm">Incididunt cillum pariatur laborum aliquip Lorem</div>
+									</div>
+									<img src="../assets/img/gallery/19.jpg" alt="" />
+								</div>
+								<div class="carousel-slide">
+									<div class="carousel-caption drop-shadow-sm">
+										<h4 class="mb-1 text-lg font-bold leading-none">Sixth slide label</h4>
+										<div class="text-sm">Sit aliquip anim excepteur doanim</div>
+									</div>
+									<img src="../assets/img/gallery/9.jpg" alt="" />
+								</div>
+							</div>
+							<button type="button" class="carousel-prev icon">
+								west
+								<span class="sr-only">Previous</span>
+							</button>
+							<button type="button" class="carousel-next icon">
+								east
+								<span class="sr-only">Next</span>
+							</button>
+
+							<div class="carousel-dots"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<include src="./partials/_scripts.html"></include>
+	</body>
+</html>

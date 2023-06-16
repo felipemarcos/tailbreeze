@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en" data-page="charts-and-maps-charts">
+	<include src="./partials/_head.html">{ "pageTitle": "Charts" }</include>
+
+	<body>
+		<include src="./partials/_page-loader.html"></include>
+
+		<include src="./partials/_header.html"></include>
+
+		<include src="./partials/_sidebar.html"></include>
+
+		<div id="content">
+			<div class="content-header px-5">
+				<div class="flex flex-shrink-0 items-center text-heading">
+					<i class="icon mr-2">grid_view</i>
+					<div class="font-bold">Charts</div>
+				</div>
+
+				<ol class="ml-5 hidden items-center text-md text-muted md:flex">
+					<li><a href="#" class="rounded p-1 transition-colors hover:text-body">Tailbreeze</a></li>
+					<li class="icon mx-1 text-xs">chevron_right</li>
+					<li><a href="#" class="rounded p-1 transition-colors hover:text-body">Miscellaneous</a></li>
+					<li class="icon mx-1 text-xs">chevron_right</li>
+					<li class="rounded p-1">Charts and Maps</li>
+				</ol>
+			</div>
+
+			<div class="p-5" data-simplebar>
+				<div class="mx-auto max-w-7xl gap-x-4 lg:columns-2">
+					<div class="card mb-4 inline-block w-full p-5">
+						<h5 class="mb-2 text-lg font-bold leading-none text-heading">Bar Chart</h5>
+						<div class="mb-5">
+							A bar chart provides a way of showing data values represented as vertical bars. It is sometimes used to show trend data, and the
+							comparison of multiple data sets side by side.
+						</div>
+
+						<div class="h-72">
+							<canvas id="chart-bar">
+								<!-- Chart will load from "js/template/chart.js" -->
+							</canvas>
+						</div>
+					</div>
+
+					<div class="card mb-4 inline-block w-full p-5">
+						<h5 class="mb-2 text-lg font-bold leading-none text-heading">Horizontal Bar Chart</h5>
+						<div class="mb-5">
+							Bar chart with horizontal bars. This is a horizontal bar chart, where the bars are horizontal instead of vertical.
+						</div>
+
+						<div class="h-72">
+							<canvas id="chart-horizontal-bar">
+								<!-- Chart will load from "js/template/chart.js" -->
+							</canvas>
+						</div>
+					</div>
+
+					<div class="card mb-4 inline-block w-full p-5">
+						<h5 class="mb-2 text-lg font-bold leading-none text-heading">Stacked Bar Chart</h5>
+						<div class="mb-5">
+							Stacked bar charts are used to compare parts to a whole. They are useful for comparing the percentage of each category to the whole
+						</div>
+
+						<div class="h-72">
+							<canvas id="chart-stacked-bar">
+								<!-- Chart will load from "js/template/chart.js" -->
+							</canvas>
+						</div>
+					</div>
+
+					<div class="card mb-4 inline-block w-full p-5">
+						<h5 class="mb-2 text-lg font-bold leading-none text-heading">Stacked Horizontal Bar Chart</h5>
+						<div class="mb-5">Stacked bar chart can also be positioned horizontly as well.</div>
+
+						<div class="h-72">
+							<canvas id="chart-stacked-horizontal-bar">
+								<!-- Chart will load from "js/template/chart.js" -->
+							</canvas>
+						</div>
+					</div>
+
+					<div class="card mb-4 inline-block w-full p-5">
+						<h5 class="mb-2 text-lg font-bold leading-none text-heading">Line Chart</h5>
+						<div class="mb-5">
+							A line chart is a way of plotting data points on a line. Often, it is used to show trend data, or the comparison of two data sets.
+						</div>
+
+						<div class="h-72">
+							<canvas id="chart-line">
+								<!-- Chart will load from "js/template/chart.js" -->
+							</canvas>
+						</div>
+					</div>
+
+					<div class="card mb-4 inline-block w-full p-5">
+						<h5 class="mb-2 text-lg font-bold leading-none text-heading">Curved Line Chart</h5>
+						<div class="mb-5">Curved lines are possible using the <code>tension</code> property of the line chart.</div>
+
+						<div class="h-72">
+							<canvas id="chart-curved-line">
+								<!-- Chart will load from "js/template/chart.js" -->
+							</canvas>
+						</div>
+					</div>
+
+					<div class="card mb-4 inline-block w-full p-5">
+						<h5 class="mb-2 text-lg font-bold leading-none text-heading">Area Chart</h5>
+						<div class="mb-5">
+							An area chart is a line chart where the area between the line and axes are filled with color or texture. Often, it is used to show
+							trend data, and the comparison of two data sets.
+						</div>
+
+						<div class="h-72">
+							<canvas id="chart-area">
+								<!-- Chart will load from "js/template/chart.js" -->
+							</canvas>
+						</div>
+					</div>
+
+					<div class="card mb-4 inline-block w-full p-5">
+						<h5 class="mb-2 text-lg font-bold leading-none text-heading">Scatter Chart</h5>
+						<div class="mb-5">
+							Scatter charts are based on basic line charts with the x axis changed to a linear axis. To use a scatter chart, data must be passed
+							as objects containing X and Y properties.
+						</div>
+
+						<div class="h-72">
+							<canvas id="chart-scatter">
+								<!-- Chart will load from "js/template/chart.js" -->
+							</canvas>
+						</div>
+					</div>
+
+					<div class="card mb-4 inline-block w-full p-5">
+						<h5 class="mb-2 text-lg font-bold leading-none text-heading">Pie Chart</h5>
+						<div class="mb-5">
+							pie charts are divided into segments, the arc of each segment shows the proportional value of each piece of data.
+						</div>
+
+						<div class="h-72">
+							<canvas id="chart-pie">
+								<!-- Chart will load from "js/template/chart.js" -->
+							</canvas>
+						</div>
+					</div>
+
+					<div class="card mb-4 inline-block w-full p-5">
+						<h5 class="mb-2 text-lg font-bold leading-none text-heading">Daughnut Chart</h5>
+						<div class="mb-5">
+							Doughnut charts are similar to pie charts, but have a cutout which looks like a doughnut. This can be used to show the relationship
+							of a part to a whole.
+						</div>
+
+						<div class="h-72">
+							<canvas id="chart-doughnut">
+								<!-- Chart will load from "js/template/chart.js" -->
+							</canvas>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<include src="./partials/_scripts.html"></include>
+	</body>
+</html>

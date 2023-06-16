@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" data-page="website-analytics">
+	<include src="./partials/_head.html">{ "pageTitle": "Website Analytics" }</include>
+
+	<body>
+		<include src="./partials/_page-loader.html"></include>
+
+		<include src="./partials/_header.html"></include>
+
+		<include src="./partials/_sidebar.html"></include>
+
+		<div id="content">
+			<div class="content-header px-5">
+				<div class="flex flex-shrink-0 items-center text-heading">
+					<i class="icon mr-2">public</i>
+					<span class="font-bold">Website Analytics</span>
+				</div>
+
+				<ol class="ml-5 hidden items-center text-md text-muted md:flex">
+					<li><a href="#" class="rounded p-1 transition-colors hover:text-body">Tailbreeze</a></li>
+					<li class="icon mx-1 text-xs">chevron_right</li>
+					<li class="rounded p-1">Dashboards</li>
+				</ol>
+
+				<i class="ml-auto"></i>
+
+				<div id="date" class="hidden text-md text-muted lg:block"></div>
+
+				<nav class="-mr-1 ml-4 flex items-center">
+					<a class="icon btn hover:bg-light-200 dark:hover:bg-dark-100" href="">info</a>
+					<a class="icon btn hover:bg-light-200 dark:hover:bg-dark-100" href="">tune</a>
+
+					<div class="relative" data-tb-dropdown>
+						<button
+							type="button"
+							class="icon btn hover:bg-light-200 aria-expanded:bg-light-200 dark:hover:bg-dark-100 dark:aria-expanded:bg-dark-100"
+							data-tb-dropdown-toggle
+							aria-expanded="false"
+						>
+							more_vert
+						</button>
+
+						<div class="right-0 p-1" data-tb-dropdown-menu>
+							<a href="" class="flex items-center" data-tb-dropdown-item>
+								<i class="icon mr-2">article</i>
+								Reports
+							</a>
+							<a href="" class="flex items-center" data-tb-dropdown-item>
+								<i class="icon mr-2">sync_alt</i>
+								Activity Logs
+							</a>
+							<a href="" class="flex items-center" data-tb-dropdown-item>
+								<i class="icon mr-2">tune</i>
+								Preferences
+							</a>
+						</div>
+					</div>
+				</nav>
+			</div>
+
+			<div class="p-5" data-simplebar>
+				<div class="gap-x-4 lg:columns-2 2xl:columns-3">
+					<include src="./partials/dashboards/website-analytics/_sessions-by-country.html"></include>
+
+					<include src="./partials/dashboards/website-analytics/_active-users.html"></include>
+
+					<include src="./partials/dashboards/website-analytics/_os-usage.html"></include>
+
+					<include src="./partials/dashboards/website-analytics/_device-sessions.html"></include>
+
+					<include src="./partials/dashboards/website-analytics/_visits-by-source.html"></include>
+
+					<include src="./partials/dashboards/website-analytics/_browser-bounce-rate.html"></include>
+
+					<include src="./partials/dashboards/website-analytics/_engagements.html"></include>
+
+					<include src="./partials/dashboards/website-analytics/_average-visit-duration.html"></include>
+
+					<include src="./partials/dashboards/website-analytics/_sessions-by-channel.html"></include>
+
+					<include src="./partials/dashboards/website-analytics/_user-acquisition.html"></include>
+
+					<include src="./partials/dashboards/website-analytics/_recent-blog-posts.html"></include>
+				</div>
+			</div>
+		</div>
+
+		<include src="./partials/_scripts.html"></include>
+	</body>
+</html>

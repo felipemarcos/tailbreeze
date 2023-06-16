@@ -1,0 +1,18 @@
+@media print {
+	@page {
+		margin: 0;
+		size: auto;
+	}
+
+	body {
+		margin: 0mm 0mm 0mm 0mm !important;
+		padding: 0mm !important;
+	}
+
+	.print-content {
+		-webkit-print-color-adjust: exact !important;
+		border: 0 !important;
+		padding: 2rem !important;
+		width: 100% !important;
+	}
+}

@@ -1,0 +1,13 @@
+@layer components {
+	.chart-bordered {
+		&:before {
+			@apply pointer-events-none
+				absolute
+				rounded-md
+				border
+				border-light-200
+				content-[""]
+				dark:border-dark-200;
+		}
+	}
+}

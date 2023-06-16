@@ -1,0 +1,43 @@
+.input-slider {
+	&.noUi-horizontal {
+		@apply h-0.5;
+
+		.noUi-handle {
+			@apply -right-1.5
+                -top-[0.3rem]
+                h-3
+                w-3;
+		}
+	}
+
+	.noUi-handle {
+		@apply transform-gpu
+            rounded-full
+            border-0
+            bg-theme
+            shadow-none
+            transition-[transform,shadow]
+            duration-200;
+
+		&:before,
+		&:after {
+			@apply hidden;
+		}
+
+		&.noUi-active {
+			@apply scale-125
+                shadow-[0_0_0_0.25rem_rgba(104,138,160,0.1)];
+		}
+	}
+
+	.noUi-connect {
+		@apply bg-theme-blue;
+	}
+
+	&.noUi-target {
+		@apply border-0
+            bg-light-300
+            shadow-none
+            dark:bg-dark-300;
+	}
+}

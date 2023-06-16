@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" data-page="content-images">
+	<include src="./partials/_head.html">{ "pageTitle": "Images" }</include>
+
+	<body>
+		<include src="./partials/_page-loader.html"></include>
+
+		<include src="./partials/_header.html"></include>
+
+		<include src="./partials/_sidebar.html"></include>
+
+		<div id="content">
+			<div class="content-header px-5">
+				<div class="flex flex-shrink-0 items-center text-heading">
+					<i class="icon mr-2">chrome_reader_mode</i>
+					<div class="font-bold">Images</div>
+				</div>
+
+				<ol class="ml-5 hidden items-center text-md text-muted md:flex">
+					<li><a href="#" class="rounded p-1 transition-colors hover:text-body">Tailbreeze</a></li>
+					<li class="icon mx-1 text-xs">chevron_right</li>
+					<li><a href="#" class="rounded p-1 transition-colors hover:text-body">Miscellaneous</a></li>
+					<li class="icon mx-1 text-xs">chevron_right</li>
+					<li class="rounded p-1">Content</li>
+				</ol>
+			</div>
+
+			<div class="p-5" data-simplebar>
+				<div class="mx-auto max-w-5xl">
+					<div class="card mb-5 p-5">
+						<h5 class="mb-2 text-lg font-bold leading-none text-heading">Responsive images</h5>
+						<div class="mb-5 text-muted">Use <code>.max-w-full</code> and <code>.h-auto</code> classes to make a image responsive.</div>
+
+						<img class="h-auto max-w-full rounded" src="../assets/img/gallery/1.jpg" alt="" />
+					</div>
+
+					<div class="card mb-5 p-5">
+						<h5 class="mb-2 text-lg font-bold leading-none text-heading">Thumbnails</h5>
+						<div class="mb-5 text-muted">Use <code>.border</code> class to give an image a rounded 1px border appearance.</div>
+
+						<img class="mx-auto max-w-sm rounded border border-light-200 p-1 dark:border-dark-200" src="../assets/img/gallery/2.jpg" alt="" />
+					</div>
+
+					<div class="card mb-5 p-5">
+						<h5 class="mb-2 text-lg font-bold leading-none text-heading">Shadows</h5>
+						<div class="mb-5 text-muted">Use shadow classes to add a shadow to the image.</div>
+
+						<img class="mx-auto max-w-sm rounded shadow-xl shadow-black/10" src="../assets/img/gallery/2.jpg" alt="" />
+					</div>
+
+					<div class="card mb-5 p-5">
+						<h5 class="mb-2 text-lg font-bold leading-none text-heading">Shapes</h5>
+						<div class="text-muted">Change the shape of the image using <code>border-radius</code> classes.</div>
+
+						<div class="mt-1 grid grid-cols-3 gap-4">
+							<div class="mt-4">
+								<img class="w-full max-w-sm rounded-xl" src="../assets/img/gallery/4.jpg" alt="" />
+							</div>
+
+							<div class="mt-4">
+								<img class="w-full max-w-sm rounded-full" src="../assets/img/gallery/5.jpg" alt="" />
+							</div>
+							<div class="mt-4">
+								<img class="h-32 w-32 rounded-full" src="../assets/img/gallery/thumbs/6.jpg" alt="" />
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<include src="./partials/_scripts.html"></include>
+	</body>
+</html>

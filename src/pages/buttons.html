@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en" data-page="components-buttons">
+	<include src="./partials/_head.html">{ "pageTitle": "Buttons" }</include>
+
+	<body>
+		<include src="./partials/_page-loader.html"></include>
+
+		<include src="./partials/_header.html"></include>
+
+		<include src="./partials/_sidebar.html"></include>
+
+		<div id="content">
+			<div class="content-header px-5">
+				<div class="flex flex-shrink-0 items-center text-heading">
+					<i class="icon mr-2">grid_view</i>
+					<div class="font-bold">Buttons</div>
+				</div>
+
+				<ol class="ml-5 hidden items-center text-md text-muted md:flex">
+					<li><a href="#" class="rounded p-1 transition-colors hover:text-body">Tailbreeze</a></li>
+					<li class="icon mx-1 text-xs">chevron_right</li>
+					<li><a href="#" class="rounded p-1 transition-colors hover:text-body">Miscellaneous</a></li>
+					<li class="icon mx-1 text-xs">chevron_right</li>
+					<li class="rounded p-1">Components</li>
+				</ol>
+			</div>
+
+			<div class="p-5" data-simplebar>
+				<div class="mx-auto max-w-5xl">
+					<div class="card mb-5 p-5">
+						<h5 class="mb-2 text-lg font-bold leading-none text-heading">Basic example</h5>
+						<div class="mb-5">Use these default button styles with multiple colors to indicate an action or link within your website.</div>
+
+						<button type="button" class="btn bg-blue-600/90 text-md text-white hover:bg-blue-600">Button</button>
+					</div>
+
+					<div class="card mb-5 p-5">
+						<h5 class="mb-2 text-lg font-bold leading-none text-heading">Sizes</h5>
+						<div class="mb-5">Use these examples if you want to use smaller or larger buttons.</div>
+
+						<div class="flex flex-wrap items-start gap-1.5">
+							<button type="button" class="btn h-6 bg-blue-600/90 text-xs text-white hover:bg-blue-600">Extra Small</button>
+							<button type="button" class="btn h-7 bg-blue-600/90 text-sm text-white hover:bg-blue-600">Small</button>
+							<button type="button" class="btn bg-blue-600/90 text-md text-white hover:bg-blue-600">Default</button>
+							<button type="button" class="btn h-9 bg-blue-600/90 text-white hover:bg-blue-600">Large</button>
+						</div>
+					</div>
+
+					<div class="card mb-5 p-5">
+						<h5 class="mb-2 text-lg font-bold leading-none text-heading">Disabled</h5>
+						<div class="mb-5">
+							Use the following styles to indicate a disabled button. This can be often used inside form elements to disable the submit button
+							before all the form elements have been completed and validated.
+						</div>
+
+						<button
+							type="button"
+							class="btn bg-blue-600/90 text-md text-white hover:bg-blue-600 disabled:cursor-default disabled:bg-blue-600/90 disabled:opacity-75 disabled:hover:bg-blue-600/90"
+							disabled
+						>
+							Button
+						</button>
+					</div>
+
+					<div class="card mb-5 p-5">
+						<h5 class="mb-2 text-lg font-bold leading-none text-heading">With Icons</h5>
+						<div class="mb-5">Followings are the icon usage example with buttons.</div>
+
+						<div class="flex flex-wrap items-start gap-1.5">
+							<button type="button" class="btn bg-blue-600/90 text-md text-white hover:bg-blue-600">
+								<i class="icon mr-1 font-light">mail</i>
+								Mail
+							</button>
+							<button type="button" class="btn bg-blue-600/90 text-md text-white hover:bg-blue-600">
+								<i class="icon mr-1 font-light">check_circle</i>
+								Tasks
+							</button>
+							<button type="button" class="btn bg-blue-600/90 text-md text-white hover:bg-blue-600">
+								<i class="icon mr-1 font-light">account_circle</i>
+								Profile
+							</button>
+						</div>
+					</div>
+
+					<div class="card mb-5 p-5">
+						<h5 class="mb-2 text-lg font-bold leading-none text-heading">Contextual variants</h5>
+						<div class="mb-5">Use Tailwind's color classes to contexualize the buttons.</div>
+
+						<div class="flex flex-wrap items-start gap-1.5">
+							<button type="button" class="btn bg-blue-600/90 text-md text-white hover:bg-blue-600">Primary</button>
+							<button type="button" class="btn bg-teal-600/90 text-md text-white hover:bg-teal-600">Success</button>
+							<button type="button" class="btn bg-red-600/90 text-md text-white hover:bg-red-600">Danger</button>
+							<button type="button" class="btn bg-orange-600/90 text-md text-white hover:bg-orange-600">Warning</button>
+							<button type="button" class="btn bg-cyan-600/90 text-md text-white hover:bg-cyan-600">Info</button>
+						</div>
+					</div>
+
+					<div class="card mb-5 p-5">
+						<h5 class="mb-2 text-lg font-bold leading-none text-heading">Outlined buttons</h5>
+						<div class="mb-5">Use the following button styles to show the colors only for the border of the element.</div>
+
+						<div class="flex flex-wrap items-start gap-1.5">
+							<button type="button" class="btn border border-blue-600/90 text-md text-blue-600 hover:bg-blue-600 hover:hover:text-white">
+								Primary
+							</button>
+							<button type="button" class="btn border border-teal-600/90 text-md text-teal-600 hover:bg-teal-600 hover:text-white">
+								Success
+							</button>
+							<button type="button" class="btn border border-red-600/90 text-md text-red-600 hover:bg-red-600 hover:text-white">Danger</button>
+							<button type="button" class="btn border border-orange-600/90 text-md text-orange-600 hover:bg-orange-600 hover:text-white">
+								Warning
+							</button>
+							<button type="button" class="btn border border-cyan-600/90 text-md text-cyan-600 hover:bg-cyan-600 hover:text-white">Info</button>
+						</div>
+					</div>
+
+					<div class="card mb-5 p-5">
+						<h5 class="mb-2 text-lg font-bold leading-none text-heading">Rounded</h5>
+						<div class="mb-5">Use elements rounded corners with the <code>.rounded-full</code> property.</div>
+
+						<div class="flex flex-wrap items-start gap-1.5">
+							<button type="button" class="btn rounded-full bg-blue-600/90 text-md text-white hover:bg-blue-600">Primary</button>
+							<button type="button" class="btn rounded-full bg-teal-500 text-md text-white hover:bg-teal-600">Success</button>
+							<button type="button" class="btn rounded-full bg-red-500 text-md text-white hover:bg-red-600">Danger</button>
+							<button type="button" class="btn rounded-full bg-orange-500 text-md text-white hover:bg-orange-600">Warning</button>
+							<button type="button" class="btn rounded-full bg-cyan-500 text-md text-white hover:bg-cyan-600">Info</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<include src="./partials/_scripts.html"></include>
+	</body>
+</html>

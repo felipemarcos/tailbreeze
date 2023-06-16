@@ -1,0 +1,41 @@
+@layer components {
+	#search {
+		@apply absolute
+            left-0
+            top-0
+            flex
+            h-16
+            w-full
+            -translate-y-full
+            items-center
+            px-3.5
+            opacity-0
+            lg:relative
+            lg:translate-y-0
+            lg:opacity-100;
+
+		&.search-toggled {
+			@apply z-10 
+                  translate-y-0
+                  opacity-100;
+		}
+	}
+
+	.dropdown-header {
+		[data-tb-dropdown-menu] {
+			@apply right-2
+                  -mt-2
+                  h-[calc(100vh_-_4rem)]
+                  w-full
+                  max-w-[calc(100%_-_1.5rem)]
+                  overflow-hidden
+                  sm:max-w-[355px];
+		}
+
+		.simplebar-content {
+			@apply flex
+                  h-full
+                  flex-col;
+		}
+	}
+}

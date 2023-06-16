@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" data-page="components-badges">
+	<include src="./partials/_head.html">{ "pageTitle": "Badges" }</include>
+
+	<body>
+		<include src="./partials/_page-loader.html"></include>
+
+		<include src="./partials/_header.html"></include>
+
+		<include src="./partials/_sidebar.html"></include>
+
+		<div id="content">
+			<div class="content-header px-5">
+				<div class="flex flex-shrink-0 items-center text-heading">
+					<i class="icon mr-2">grid_view</i>
+					<div class="font-bold">Badges</div>
+				</div>
+
+				<ol class="ml-5 hidden items-center text-md text-muted md:flex">
+					<li><a href="#" class="rounded p-1 transition-colors hover:text-body">Tailbreeze</a></li>
+					<li class="icon mx-1 text-xs">chevron_right</li>
+					<li><a href="#" class="rounded p-1 transition-colors hover:text-body">Miscellaneous</a></li>
+					<li class="icon mx-1 text-xs">chevron_right</li>
+					<li class="rounded p-1">Components</li>
+				</ol>
+			</div>
+
+			<div class="p-5" data-simplebar>
+				<div class="mx-auto max-w-5xl">
+					<div class="card mb-5 p-5">
+						<h5 class="mb-2 text-lg font-bold leading-none text-heading">Basic examples</h5>
+						<div class="mb-5">
+							Badge is an element for the use of drawing attention to additional interface information with eye-catching appeal, typically
+							displaying unread messages count.
+						</div>
+
+						<div class="flex flex-wrap gap-1.5">
+							<div class="inline-block rounded bg-blue-500/10 px-2 py-1 text-sm font-bold text-blue-500">Primary</div>
+							<div class="inline-block rounded bg-teal-500/10 px-2 py-1 text-sm font-bold text-teal-500">Success</div>
+							<div class="inline-block rounded bg-red-500/10 px-2 py-1 text-sm font-bold text-red-500">Danger</div>
+							<div class="inline-block rounded bg-orange-500/10 px-2 py-1 text-sm font-bold text-orange-500">Warning</div>
+							<div class="inline-block rounded bg-cyan-500/10 px-2 py-1 text-sm font-bold text-cyan-500">Info</div>
+							<div class="inline-block rounded bg-light-100 px-2 py-1 text-sm font-bold text-body dark:bg-dark-200">Secondary</div>
+						</div>
+					</div>
+
+					<div class="card mb-5 p-5">
+						<h5 class="mb-2 text-lg font-bold leading-none text-heading">Sizing</h5>
+						<div class="mb-5">You can resize the badges using Tailwind's size classes.</div>
+
+						<div class="flex flex-wrap items-start gap-1.5">
+							<div class="inline-block rounded-sm bg-blue-500/10 px-1 py-0.5 text-xs font-bold text-blue-500">small</div>
+							<div class="inline-block rounded bg-blue-500/10 px-2 py-1 text-sm font-bold text-blue-500">Default</div>
+							<div class="inline-block rounded bg-blue-500/10 px-2.5 py-1.5 font-bold text-blue-500">Medium</div>
+							<div class="inline-block rounded bg-blue-500/10 px-3 py-2 text-lg font-bold text-blue-500">Large</div>
+						</div>
+					</div>
+
+					<div class="card mb-5 p-5">
+						<h5 class="mb-2 text-lg font-bold leading-none text-heading">Button</h5>
+						<div class="mb-5">
+							The badge can also be placed inside the button to display, for example, the number of notifications or necessary actions to perform.
+						</div>
+
+						<button type="button" class="btn bg-blue-600/90 font-bold text-white hover:bg-blue-600">
+							Notifications
+							<span class="ml-2 rounded-sm bg-blue-100 px-1 py-0.5 text-xs font-bold text-blue-500">88</span>
+						</button>
+					</div>
+
+					<div class="card mb-5 p-5">
+						<h5 class="mb-2 text-lg font-bold leading-none text-heading">Pills</h5>
+						<div class="mb-5">Use the <code>.rounded-full</code> utility class to make badges more rounded with a larger border-radius.</div>
+
+						<div class="flex flex-wrap gap-1.5">
+							<div class="inline-block rounded-full bg-blue-500/10 px-2 py-1 text-sm font-bold text-blue-500">Primary</div>
+							<div class="inline-block rounded-full bg-teal-500/10 px-2 py-1 text-sm font-bold text-teal-500">Success</div>
+							<div class="inline-block rounded-full bg-red-500/10 px-2 py-1 text-sm font-bold text-red-500">Danger</div>
+							<div class="inline-block rounded-full bg-orange-500/10 px-2 py-1 text-sm font-bold text-orange-500">Warning</div>
+							<div class="inline-block rounded-full bg-cyan-500/10 px-2 py-1 text-sm font-bold text-cyan-500">Info</div>
+							<div class="inline-block rounded-full bg-light-100 px-2 py-1 text-sm font-bold text-body dark:bg-dark-200">Secondary</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<include src="./partials/_scripts.html"></include>
+	</body>
+</html>

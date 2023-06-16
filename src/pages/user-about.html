@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en" data-page="user-about">
+	<include src="./partials/_head.html">{ "pageTitle": "User | About" }</include>
+
+	<body>
+		<include src="./partials/_page-loader.html"></include>
+
+		<include src="./partials/_header.html"></include>
+		<include src="./partials/_sidebar.html"></include>
+
+		<div id="content">
+			<include src="./partials/user/_header.html"> { "title": "About" }</include>
+
+			<div class="p-5" data-simplebar>
+				<div class="mx-auto w-full max-w-5xl">
+					<include src="./partials/user/_menu.html"> { "aboutActive": "active" }</include>
+
+					<div class="items-start md:flex">
+						<div class="mb-4 md:mr-4 md:w-60 lg:w-72">
+							<include src="./partials/user/_about.html"></include>
+						</div>
+
+						<div class="flex-1">
+							<div class="card mb-4 p-5">
+								<h4 class="-mt-1 mb-4 font-bold text-heading">About</h4>
+								<p class="mb-3">
+									Pellentesque vitae quam quis tellus dignissim faucibus. Suspendisse mattis felis at faucibus lobortis. Sed sit amet tellus
+									dolor. Fusce quis sollicitudin velit. Praesent gravida ullamcorper lectus et tincidunt. Phasellus lectus quam, porta
+									pharetra feugiat in, auctor eget dolor.
+								</p>
+								<p>
+									Vestibulum tincidunt imperdiet egestas. In in nunc vitae elit tincidunt tristique id eu justo. Quisque gravida maximus orci,
+									vulputate pharetra mauris commodo at. Mauris eget fermentum ipsum, quis faucibus neque. Fusce eleifend sapien sit amet
+									convallis rhoncus. Proin commodo lacinia lectus, et tempus turpis.
+								</p>
+							</div>
+
+							<div class="card mb-4 p-5">
+								<h4 class="-mt-1 mb-4 font-bold text-heading">Working Experiences</h4>
+
+								<div class="mb-5 flex items-start">
+									<div class="icon mr-3 grid h-10 w-10 place-content-center rounded-full bg-light-100 dark:bg-dark-200/50">work</div>
+									<div class="flex-1">
+										<div class="mb-px font-bold text-heading">Senior Software Engineer</div>
+										<div class="text-sm text-muted">IBM — 2017-05 - 2019-05 (2 years)</div>
+									</div>
+								</div>
+
+								<div class="mb-5 flex items-start">
+									<div class="icon mr-3 grid h-10 w-10 place-content-center rounded-full bg-light-100 dark:bg-dark-200/50">work</div>
+									<div class="flex-1">
+										<div class="mb-px font-bold text-heading">User Interface Engineer</div>
+										<div class="text-sm text-muted">Microsoft — 2016-02 - 2017-12 (01 year 10 Months)</div>
+									</div>
+								</div>
+
+								<div class="mb-5 flex items-start">
+									<div class="icon mr-3 grid h-10 w-10 place-content-center rounded-full bg-light-100 dark:bg-dark-200/50">work</div>
+									<div class="flex-1">
+										<div class="mb-px font-bold text-heading">Team Leader</div>
+										<div class="text-sm text-muted">Cisco — 2012-01 - 2016-01 (4 years)</div>
+									</div>
+								</div>
+
+								<div class="mb-5 flex items-start">
+									<div class="icon mr-3 grid h-10 w-10 place-content-center rounded-full bg-light-100 dark:bg-dark-200/50">work</div>
+									<div class="flex-1">
+										<div class="mb-px font-bold text-heading">Junior UX Developer</div>
+										<div class="text-sm text-muted">Samsung — 2010-01 - 2011-12 (2 years)</div>
+									</div>
+								</div>
+
+								<a href="" class="-mb-1 block text-sm text-link hover:underline">Show 4 more work experiences</a>
+							</div>
+
+							<div class="card p-5">
+								<h4 class="-mt-1 mb-4 font-bold text-heading">Education</h4>
+
+								<div class="mb-5 flex items-start">
+									<div class="icon mr-3 grid h-10 w-10 place-content-center rounded-full bg-light-100 dark:bg-dark-200/50">school</div>
+									<div class="flex-1">
+										<div class="mb-px font-bold text-heading">MSc in Software Engineering (2014 - 2015)</div>
+										<div class="text-sm text-muted">Oxford University - Oxford, United Kingdom</div>
+									</div>
+								</div>
+
+								<div class="mb-5 flex items-start">
+									<div class="icon mr-3 grid h-10 w-10 place-content-center rounded-full bg-light-100 dark:bg-dark-200/50">school</div>
+									<div class="flex-1">
+										<div class="mb-px font-bold text-heading">Bsc in Computer Science (2009 - 2012)</div>
+										<div class="text-sm text-muted">University of Wolverhampton - Wolverhampton, United Kingdom</div>
+									</div>
+								</div>
+
+								<div class="mb-5 flex items-start">
+									<div class="icon mr-3 grid h-10 w-10 place-content-center rounded-full bg-light-100 dark:bg-dark-200/50">school</div>
+									<div class="flex-1">
+										<div class="mb-px font-bold text-heading">High School (2005 - 2009)</div>
+										<div class="text-sm text-muted">Newham Sixth Form College - Newham, London, United Kingdom</div>
+									</div>
+								</div>
+
+								<a href="" class="-mb-1 block text-sm text-link hover:underline">Show 2 more education</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<include src="./partials/_scripts.html"></include>
+	</body>
+</html>

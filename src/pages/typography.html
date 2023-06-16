@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en" data-page="content-typography">
+	<include src="./partials/_head.html">{ "pageTitle": "Typography" }</include>
+
+	<body>
+		<include src="./partials/_page-loader.html"></include>
+
+		<include src="./partials/_header.html"></include>
+
+		<include src="./partials/_sidebar.html"></include>
+
+		<div id="content">
+			<div class="content-header px-5">
+				<div class="flex flex-shrink-0 items-center text-heading">
+					<i class="icon mr-2">chrome_reader_mode</i>
+					<div class="font-bold">Typography</div>
+				</div>
+
+				<ol class="ml-5 hidden items-center text-md text-muted md:flex">
+					<li><a href="#" class="rounded p-1 transition-colors hover:text-body">Tailbreeze</a></li>
+					<li class="icon mx-1 text-xs">chevron_right</li>
+					<li><a href="#" class="rounded p-1 transition-colors hover:text-body">Miscellaneous</a></li>
+					<li class="icon mx-1 text-xs">chevron_right</li>
+					<li class="rounded p-1">Content</li>
+				</ol>
+			</div>
+
+			<div class="p-5" data-simplebar>
+				<div class="mx-auto max-w-5xl">
+					<div class="card mb-5 p-5">
+						<h5 class="mb-2 text-lg font-bold leading-none text-heading">Headings</h5>
+						<div class="mb-5 text-muted">All HTML headings, <code>&lt;h1&gt;</code> through <code>&lt;h6&gt;</code>, are available.</div>
+
+						<h1 class="mb-2 text-4xl font-bold text-heading">h1. Bootstrap heading</h1>
+						<h2 class="mb-2 text-3xl font-bold text-heading">h2. Bootstrap heading</h2>
+						<h3 class="mb-2 text-2xl font-bold text-heading">h3. Bootstrap heading</h3>
+						<h4 class="mb-2 text-xl font-bold text-heading">h4. Bootstrap heading</h4>
+						<h5 class="mb-2 text-lg font-bold text-heading">h5. Bootstrap heading</h5>
+						<h6 class="font-bold text-heading">h6. Bootstrap heading</h6>
+					</div>
+
+					<div class="card mb-5 p-5">
+						<h5 class="mb-2 text-lg font-bold leading-none text-heading">Inline text elements</h5>
+						<div class="mb-5 text-muted">Styling for common inline HTML5 elements.</div>
+
+						<p class="mb-2">You can use the mark tag to <mark>highlight</mark> text.</p>
+						<p class="mb-2"><del>This line of text is meant to be treated as deleted text.</del></p>
+						<p class="mb-2"><s>This line of text is meant to be treated as no longer accurate.</s></p>
+						<p class="mb-2"><ins>This line of text is meant to be treated as an addition to the document.</ins></p>
+						<p class="mb-2"><u>This line of text will render as underlined.</u></p>
+						<p class="mb-2"><small>This line of text is meant to be treated as fine print.</small></p>
+						<p class="mb-2"><strong>This line rendered as bold text.</strong></p>
+						<p><em>This line rendered as italicized text.</em></p>
+					</div>
+
+					<div class="card mb-5 p-5">
+						<h5 class="mb-2 text-lg font-bold leading-none text-heading">Text utilities</h5>
+						<div class="mb-5 text-muted">
+							Change text alignment, transform, style, weight, line-height, decoration, color and all other properties with Tailwind's text
+							utilities and color utilities.
+						</div>
+
+						<p class="mb-2">
+							<span class="font-bold">Text alignment</span> -
+							<a target="_blank" class="text-link underline" href="https://tailwindcss.com/docs/text-align"
+								>https://tailwindcss.com/docs/text-align</a
+							>
+						</p>
+						<p class="mb-2">
+							<span class="font-bold">Transform</span> -
+							<a target="_blank" class="text-link underline" href="https://tailwindcss.com/docs/text-transform"
+								>https://tailwindcss.com/docs/text-transform</a
+							>
+						</p>
+						<p class="mb-2">
+							<span class="font-bold">Style</span> -
+							<a target="_blank" class="text-link underline" href="https://tailwindcss.com/docs/font-style"
+								>https://tailwindcss.com/docs/font-style</a
+							>
+						</p>
+						<p class="mb-2">
+							<span class="font-bold">Weight</span> -
+							<a target="_blank" class="text-link underline" href="https://tailwindcss.com/docs/font-weight"
+								>https://tailwindcss.com/docs/font-weight</a
+							>
+						</p>
+						<p class="mb-2">
+							<span class="font-bold">Line height</span> -
+							<a target="_blank" class="text-link underline" href="https://tailwindcss.com/docs/line-height"
+								>https://tailwindcss.com/docs/line-height</a
+							>
+						</p>
+						<p class="mb-2">
+							<span class="font-bold">Decoration</span> -
+							<a target="_blank" class="text-link underline" href="https://tailwindcss.com/docs/text-decoration"
+								>https://tailwindcss.com/docs/text-decoration</a
+							>
+						</p>
+						<p class="mb-2">
+							<span class="font-bold">Color</span> -
+							<a target="_blank" class="text-link underline" href="https://tailwindcss.com/docs/text-color"
+								>https://tailwindcss.com/docs/text-color</a
+							>
+						</p>
+						<p>
+							<span class="font-bold">All other properties</span> -
+							<a target="_blank" class="text-link underline" href="https://tailwindcss.com/">https://tailwindcss.com</a>
+						</p>
+					</div>
+
+					<div class="card mb-5 p-5">
+						<h5 class="mb-2 text-lg font-bold leading-none text-heading">Blockquotes</h5>
+						<div class="mb-5 text-muted">Basic Blockquotes can be styles using Tailwind's utility classes too</div>
+
+						<figure class="mb-10">
+							<blockquote>
+								<p class="text-xl">A well-known quote, contained in a blockquote element</p>
+							</blockquote>
+							<figcaption class="mt-1 text-muted before:content-['—']">
+								Someone famous in <cite title="Source Title">Source Title</cite>
+							</figcaption>
+						</figure>
+
+						<figure class="mb-10 text-center">
+							<blockquote>
+								<p class="text-xl">A well-known quote, contained in a blockquote element</p>
+							</blockquote>
+							<figcaption class="mt-1 text-muted before:content-['—']">
+								Someone famous in <cite title="Source Title">Source Title</cite>
+							</figcaption>
+						</figure>
+
+						<figure class="text-right">
+							<blockquote>
+								<p class="text-xl">A well-known quote, contained in a blockquote element</p>
+							</blockquote>
+							<figcaption class="mt-1 text-muted before:content-['—']">
+								Someone famous in <cite title="Source Title">Source Title</cite>
+							</figcaption>
+						</figure>
+					</div>
+
+					<div class="card mb-5 p-5">
+						<h5 class="mb-2 text-lg font-bold leading-none text-heading">Lists</h5>
+						<div class="mb-5 text-muted">
+							Ordered and unordered lists are unstyled by default, with no bullets/numbers and no margin or padding. Use List Style Type utility
+							classes to style them.
+						</div>
+
+						<div class="mb-4 font-bold leading-none text-heading">Unstyled</div>
+
+						<ul class="mb-8">
+							<li class="mb-2">This is a list.</li>
+							<li class="mb-2">It appears completely unstyled.</li>
+							<li class="mb-2">Structurally, it's still a list.</li>
+							<li class="mb-2">However, this style only applies to immediate child elements.</li>
+							<li>This may still come in handy in some situations.</li>
+						</ul>
+
+						<div class="mb-4 font-bold leading-none text-heading">list-style-type: disc</div>
+
+						<ul class="mb-8 ml-3.5 list-disc">
+							<li class="mb-2">This is a list.</li>
+							<li class="mb-2">It appears completely unstyled.</li>
+							<li class="mb-2">Structurally, it's still a list.</li>
+							<li class="mb-2">However, this style only applies to immediate child elements.</li>
+							<li>This may still come in handy in some situations.</li>
+						</ul>
+
+						<div class="mb-4 font-bold leading-none text-heading">list-style-type: decimal</div>
+
+						<ul class="ml-3.5 list-decimal">
+							<li class="mb-2">This is a list.</li>
+							<li class="mb-2">It appears completely unstyled.</li>
+							<li class="mb-2">Structurally, it's still a list.</li>
+							<li class="mb-2">However, this style only applies to immediate child elements.</li>
+							<li>This may still come in handy in some situations.</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<include src="./partials/_scripts.html"></include>
+	</body>
+</html>

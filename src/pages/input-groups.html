@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" data-page="forms-input-groups">
+	<include src="./partials/_head.html">{ "pageTitle": "Input Groups" }</include>
+
+	<body>
+		<include src="./partials/_page-loader.html"></include>
+
+		<include src="./partials/_header.html"></include>
+
+		<include src="./partials/_sidebar.html"></include>
+
+		<div id="content">
+			<div class="content-header px-5">
+				<div class="flex flex-shrink-0 items-center text-heading">
+					<i class="icon mr-2">list_alt</i>
+					<div class="font-bold">Input Groups</div>
+				</div>
+
+				<ol class="ml-5 hidden items-center text-md text-muted md:flex">
+					<li><a href="#" class="rounded p-1 transition-colors hover:text-body">Tailbreeze</a></li>
+					<li class="icon mx-1 text-xs">chevron_right</li>
+					<li><a href="#" class="rounded p-1 transition-colors hover:text-body">Miscellaneous</a></li>
+					<li class="icon mx-1 text-xs">chevron_right</li>
+					<li class="rounded p-1">Forms</li>
+				</ol>
+			</div>
+
+			<div class="p-5" data-simplebar>
+				<div class="mx-auto max-w-5xl">
+					<div class="card mb-5 p-5">
+						<h5 class="mb-2 text-lg font-bold leading-none text-heading">Input Groups</h5>
+						<div class="mb-5">
+							Easily extend form controls by adding text, buttons, or button groups on either side of textual inputs, custom selects, and custom
+							file inputs.
+						</div>
+
+						<div class="form-control mb-4 flex items-center px-0">
+							<span class="icon border-r border-light-400 px-2 dark:border-dark-300">alternate_email</span>
+							<input type="text" class="h-full flex-1 bg-transparent px-3" placeholder="Username" />
+						</div>
+
+						<div class="form-control mb-4 flex items-center px-0">
+							<input type="text" class="h-full flex-1 bg-transparent px-3" placeholder="Email Address" />
+							<span class="border-l border-light-400 px-2 text-sm dark:border-dark-300">@example.com</span>
+						</div>
+
+						<div class="form-control mb-8 flex items-center px-0">
+							<span class="icon border-r border-light-400 px-2 dark:border-dark-300">attach_money</span>
+							<input type="text" class="h-full flex-1 bg-transparent px-2" placeholder="Amount to pay" />
+							<span class="border-l border-light-400 px-2 text-sm dark:border-dark-300">.00</span>
+						</div>
+
+						<div class="mb-2 block font-bold text-heading">Sizing</div>
+						<div class="mb-4">
+							Sizing can be adjusted using size classes such as <code>.h-*</code>, <code>.px-*</code> and <code>.text-*</code>.
+						</div>
+
+						<div class="form-control mb-4 flex h-7 items-center px-0">
+							<span class="border-r border-light-400 px-2 text-xs dark:border-dark-300">Small</span>
+							<input type="text" class="h-full flex-1 bg-transparent px-2 text-xs" />
+						</div>
+
+						<div class="form-control mb-4 flex items-center px-0">
+							<span class="border-r border-light-400 px-3 text-md dark:border-dark-300">Default</span>
+							<input type="text" class="h-full flex-1 bg-transparent px-2" />
+						</div>
+
+						<div class="form-control flex h-12 items-center px-0">
+							<span class="border-r border-light-400 px-3 text-lg dark:border-dark-300">Large</span>
+							<input type="text" class="h-full flex-1 bg-transparent px-2 text-lg" />
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<include src="./partials/_scripts.html"></include>
+	</body>
+</html>

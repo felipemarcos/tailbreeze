@@ -1,0 +1,204 @@
+@layer components {
+	textarea,
+	input {
+		@apply text-md
+			placeholder:text-muted;
+	}
+
+	// Inputs
+	.form-control {
+		@include form-control();
+
+		&:disabled {
+			@include form-control-disable();
+		}
+
+		&:not([class*="border-"]) {
+			&:focus {
+				@include form-control-focus();
+
+				@apply ring-[3px]
+					ring-light-100
+					dark:ring-dark-200/50;
+			}
+		}
+	}
+
+	div.form-control {
+		&:focus-within {
+			@include form-control-focus();
+
+			@apply ring-[3px]
+				ring-light-100
+				dark:ring-dark-200/50;
+		}
+	}
+
+	textarea.form-control {
+		@apply h-auto
+		resize-none
+		py-2;
+	}
+
+	.select {
+		@apply relative;
+
+		&:after {
+			@apply pointer-events-none
+			absolute
+			top-0
+			right-1.5
+			flex
+			h-full
+			items-center
+			font-icon
+			text-2xl
+			font-light
+			content-["\e5cf"];
+		}
+	}
+
+	select.form-control {
+		@apply appearance-none;
+	}
+
+	// Checkbox and radio
+	.checkbox,
+	.radio {
+		@apply -mt-px
+		flex-shrink-0
+		appearance-none
+		border-[1.5px]
+		border-current
+		bg-center
+		bg-no-repeat
+		text-muted;
+
+		&:not(:disabled) {
+			&:hover,
+			&:focus {
+				@apply ring-[3px]
+					ring-light-200
+					dark:ring-dark-200;
+			}
+		}
+
+		&:disabled {
+			@apply bg-light-100
+				text-muted opacity-70
+				dark:bg-dark-200/60;
+		}
+	}
+
+	.checkbox {
+		--checkbox-checked-bg: url("/src/assets/img/forms/checkbox-checked.svg");
+
+		@apply h-[16px]
+		w-[16px]
+		rounded-sm
+		bg-[length:10px];
+
+		&:checked {
+			@apply border-0
+			bg-theme
+			bg-[url:var(--checkbox-checked-bg)]
+			dark:bg-blue-600;
+		}
+	}
+
+	.radio {
+		@apply h-[17px]
+		w-[17px]
+		rounded-full;
+
+		&:checked {
+			@apply border-theme
+			bg-[url:var(--radio-checked-bg)]
+			dark:border-blue-500;
+		}
+	}
+
+	// Switch
+	.switch-checkbox {
+		@apply sr-only;
+
+		&:not(:disabled) {
+			&:hover,
+			&:active,
+			&:focus {
+				& ~ .switch-label {
+					&:before {
+						@apply ring-[3px]
+						ring-light-200
+						dark:ring-dark-200;
+					}
+				}
+			}
+		}
+
+		&:disabled {
+			& ~ .switch-label {
+				&:before {
+					@apply bg-light-100
+						text-muted
+						opacity-70
+						dark:bg-dark-200/60;
+				}
+
+				&:after {
+					@apply opacity-70;
+				}
+			}
+		}
+
+		&:checked {
+			& ~ .switch-label {
+				&:before {
+					@apply border-theme
+						bg-theme
+						dark:border-blue-600
+						dark:bg-blue-600;
+				}
+
+				&:after {
+					@apply top-1
+						translate-x-4
+						bg-white
+						dark:bg-light-500;
+				}
+			}
+		}
+	}
+
+	.switch-label {
+		@apply relative
+		flex
+		items-center;
+
+		&:before {
+			@apply isolate
+			mr-2
+			h-5
+			w-9
+			rounded-full
+			border-[1.5px]
+			border-[#6a8ca3]
+			transition-colors
+			duration-200
+			content-[""];
+		}
+
+		&:after {
+			@apply absolute
+			top-1
+			left-1
+			h-3
+			w-3
+			rounded-full
+			bg-[#6a8ca3]
+			transition-all
+			duration-300
+			content-[""];
+		}
+	}
+}

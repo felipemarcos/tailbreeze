@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en" data-page="content-table">
+	<include src="./partials/_head.html">{ "pageTitle": "Tables" }</include>
+
+	<body>
+		<include src="./partials/_page-loader.html"></include>
+
+		<include src="./partials/_header.html"></include>
+
+		<include src="./partials/_sidebar.html"></include>
+
+		<div id="content">
+			<div class="content-header px-5">
+				<div class="flex flex-shrink-0 items-center text-heading">
+					<i class="icon mr-2">chrome_reader_mode</i>
+					<div class="font-bold">Tables</div>
+				</div>
+
+				<ol class="ml-5 hidden items-center text-md text-muted md:flex">
+					<li><a href="#" class="rounded p-1 transition-colors hover:text-body">Tailbreeze</a></li>
+					<li class="icon mx-1 text-xs">chevron_right</li>
+					<li><a href="#" class="rounded p-1 transition-colors hover:text-body">Miscellaneous</a></li>
+					<li class="icon mx-1 text-xs">chevron_right</li>
+					<li class="rounded p-1">Content</li>
+				</ol>
+			</div>
+
+			<div class="p-5" data-simplebar>
+				<div class="mx-auto max-w-5xl">
+					<div class="card mb-5 p-5">
+						<h5 class="mb-2 text-lg font-bold leading-none text-heading">Basic example</h5>
+						<div class="mb-5 text-muted">
+							Use the following example of a responsive table component to show multiple rows and columns of text data.
+						</div>
+
+						<div class="scrollbar overflow-x-auto">
+							<table class="table">
+								<thead>
+									<tr>
+										<th scope="col">#</th>
+										<th scope="col">First</th>
+										<th scope="col">Last</th>
+										<th scope="col">Handle</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<th>1</th>
+										<td>Peter</td>
+										<td>Torres</td>
+										<td>@torres</td>
+									</tr>
+									<tr>
+										<th>2</th>
+										<td>Jacob</td>
+										<td>Maldonado</td>
+										<td>@maldonado</td>
+									</tr>
+									<tr>
+										<th>2</th>
+										<td>Logan</td>
+										<td>Simon</td>
+										<td>@simon</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+
+					<div class="card mb-5 p-5">
+						<h5 class="mb-2 text-lg font-bold leading-none text-heading">Variants</h5>
+						<div class="mb-5 text-muted">Below are the color variations that can be used in the table component.</div>
+
+						<div class="scrollbar overflow-x-auto">
+							<table class="table">
+								<tbody>
+									<tr>
+										<td class="border-none">Default</td>
+										<td class="border-none">Cell</td>
+										<td class="border-none">Cell</td>
+										<td class="border-none">Cell</td>
+									</tr>
+									<tr class="bg-blue-500/20">
+										<td class="border-none">Primary</td>
+										<td class="border-none">Cell</td>
+										<td class="border-none">Cell</td>
+										<td class="border-none">Cell</td>
+									</tr>
+									<tr class="bg-green-500/20">
+										<td class="border-none">Success</td>
+										<td class="border-none">Cell</td>
+										<td class="border-none">Cell</td>
+										<td class="border-none">Cell</td>
+									</tr>
+									<tr class="bg-red-500/20">
+										<td class="border-none">Danger</td>
+										<td class="border-none">Cell</td>
+										<td class="border-none">Cell</td>
+										<td class="border-none">Cell</td>
+									</tr>
+									<tr class="bg-amber-500/20">
+										<td class="border-none">Warning</td>
+										<td class="border-none">Logan</td>
+										<td class="border-none">Simon</td>
+										<td class="border-none">@simon</td>
+									</tr>
+									<tr class="bg-cyan-500/20">
+										<td class="border-none">Info</td>
+										<td class="border-none">Logan</td>
+										<td class="border-none">Simon</td>
+										<td class="border-none">@simon</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+
+					<div class="card mb-5 p-5">
+						<h5 class="mb-2 text-lg font-bold leading-none text-heading">Striped</h5>
+						<div class="mb-5 text-muted">
+							Use this example to increase the readability of the data sets by alternating the background colors of every second table row.
+						</div>
+
+						<div class="scrollbar overflow-x-auto">
+							<table class="table">
+								<thead>
+									<tr>
+										<th scope="col">#</th>
+										<th scope="col">First</th>
+										<th scope="col">Last</th>
+										<th scope="col">Handle</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr class="bg-light-100 dark:bg-dark-200">
+										<th>1</th>
+										<td>Peter</td>
+										<td>Torres</td>
+										<td>@torres</td>
+									</tr>
+									<tr>
+										<th>2</th>
+										<td>Jacob</td>
+										<td>Maldonado</td>
+										<td>@maldonado</td>
+									</tr>
+									<tr class="bg-light-100 dark:bg-dark-200">
+										<th>2</th>
+										<td>Logan</td>
+										<td>Simon</td>
+										<td>@simon</td>
+									</tr>
+									<tr>
+										<th>3</th>
+										<td>Cora</td>
+										<td>Henderson</td>
+										<td>@henderson</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+
+					<div class="card mb-5 p-5">
+						<h5 class="mb-2 text-lg font-bold leading-none text-heading">Hoverable</h5>
+						<div class="mb-5 text-muted">
+							Use the <code>hover:{bg-*}</code> utility class from to change the background color of a data row when hovering over the element
+							with the cursor.
+						</div>
+
+						<div class="scrollbar overflow-x-auto">
+							<table class="table">
+								<thead>
+									<tr>
+										<th scope="col">#</th>
+										<th scope="col">First</th>
+										<th scope="col">Last</th>
+										<th scope="col">Handle</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr class="hover:bg-light-100 dark:hover:bg-dark-200">
+										<th>1</th>
+										<td>Peter</td>
+										<td>Torres</td>
+										<td>@torres</td>
+									</tr>
+									<tr class="hover:bg-light-100 dark:hover:bg-dark-200">
+										<th>2</th>
+										<td>Jacob</td>
+										<td>Maldonado</td>
+										<td>@maldonado</td>
+									</tr>
+									<tr class="hover:bg-light-100 dark:hover:bg-dark-200">
+										<th>2</th>
+										<td>Logan</td>
+										<td>Simon</td>
+										<td>@simon</td>
+									</tr>
+									<tr class="hover:bg-light-100 dark:hover:bg-dark-200">
+										<th>3</th>
+										<td>Cora</td>
+										<td>Henderson</td>
+										<td>@henderson</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+
+					<div class="card mb-5 p-5">
+						<h5 class="mb-2 text-lg font-bold leading-none text-heading">Bordered</h5>
+						<div class="mb-5 text-muted">Add the .border class for borders on all sides of the table and cells.</div>
+
+						<div class="scrollbar overflow-x-auto">
+							<table class="table border border-light-100 dark:border-dark-200">
+								<thead>
+									<tr>
+										<th scope="col" class="border-r">#</th>
+										<th scope="col" class="border-r">First</th>
+										<th scope="col" class="border-r">Last</th>
+										<th scope="col" class="border-r">Handle</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<th class="border-r">1</th>
+										<td class="border-r">Peter</td>
+										<td class="border-r">Torres</td>
+										<td class="border-r">@torres</td>
+									</tr>
+									<tr>
+										<th class="border-r">2</th>
+										<td class="border-r">Jacob</td>
+										<td class="border-r">Maldonado</td>
+										<td class="border-r">@maldonado</td>
+									</tr>
+									<tr>
+										<th class="border-r">2</th>
+										<td class="border-r">Logan</td>
+										<td class="border-r">Simon</td>
+										<td class="border-r">@simon</td>
+									</tr>
+									<tr>
+										<th class="border-r">3</th>
+										<td class="border-r">Cora</td>
+										<td class="border-r">Henderson</td>
+										<td class="border-r">@henderson</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<include src="./partials/_scripts.html"></include>
+	</body>
+</html>

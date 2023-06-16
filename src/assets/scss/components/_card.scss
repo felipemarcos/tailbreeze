@@ -1,0 +1,10 @@
+@layer components {
+	.card {
+		@apply rounded-md
+        border
+        border-light-200
+        bg-white
+        dark:border-dark-100
+        dark:bg-dark-100;
+	}
+}

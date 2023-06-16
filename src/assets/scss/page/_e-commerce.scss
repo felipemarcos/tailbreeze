@@ -1,0 +1,25 @@
+@layer components {
+	#map-active-visitors {
+		.jvm-region {
+			&[fill="INITIAL_FILL"] {
+				fill: var(--widget-active-visitor-initial-fill);
+			}
+
+			&:not([fill="INITIAL_FILL"]) {
+				fill: var(--widget-active-visitor-active-fill);
+			}
+		}
+	}
+
+	#map-sales-region {
+		.jvm-region {
+			&[fill="INITIAL_FILL"] {
+				fill: var(--widget-sales-region-initial-fill);
+			}
+
+			&:not([fill="INITIAL_FILL"]) {
+				fill: var(--widget-sales-region-active-fill);
+			}
+		}
+	}
+}

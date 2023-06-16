@@ -1,0 +1,99 @@
+@layer components {
+	.carousel {
+		@apply relative
+			overflow-hidden
+			rounded;
+	}
+	.carousel-inner {
+		@apply flex
+			gap-1.5;
+	}
+	.carousel-slide {
+		@apply relative
+			min-w-0
+			flex-[0_0_100%];
+
+		img {
+			@apply rounded;
+		}
+	}
+
+	.carousel-prev,
+	.carousel-next {
+		@apply absolute
+		bottom-0
+		top-0
+		z-10
+		mx-5
+		my-auto
+		flex
+		h-8
+		w-8
+		cursor-pointer
+		items-center
+		justify-center
+		rounded-full
+		bg-white/30
+		text-black
+		backdrop-blur-sm
+		transition-colors
+		duration-200
+		hover:bg-white/50;
+
+		&:hover {
+			@apply bg-opacity-75;
+		}
+
+		&.icon {
+			@apply text-base;
+		}
+	}
+
+	.carousel-prev {
+		@apply left-0;
+	}
+
+	.carousel-next {
+		@apply right-0;
+	}
+
+	.carousel-dots {
+		@apply absolute
+			bottom-0
+			left-0
+			mt-3
+			flex
+			w-full
+			justify-center
+			gap-1.5
+			rounded-b-md
+			bg-white/10
+			p-3;
+	}
+
+	.carousel-dot {
+		@apply h-1
+			w-3
+			cursor-pointer
+			rounded-full
+			bg-white/50
+			backdrop-blur-sm
+			transition-[colors,width]
+			duration-200;
+
+		&.active {
+			@apply w-6
+				bg-theme;
+		}
+	}
+
+	.carousel-caption {
+		@apply absolute
+			bottom-7
+			left-0
+			w-full
+			p-5
+			text-center
+			text-white;
+	}
+}

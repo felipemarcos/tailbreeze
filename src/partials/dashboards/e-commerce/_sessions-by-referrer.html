@@ -1,0 +1,21 @@
+<div class="card mb-4 inline-block w-full p-5">
+	<div class="mb-4 flex items-start">
+		<h4 class="font-bold leading-none text-heading">Sessions by Referrer</h4>
+
+		<nav class="ml-auto -mt-2.5 -mr-2.5 flex items-center">
+			<a class="icon btn hover:bg-light-100 dark:hover:bg-dark-200" href="">info</a>
+		</nav>
+	</div>
+
+	<div class="relative mb-5 h-60">
+		<canvas id="chart-sessions-by-referrer"></canvas>
+		<div class="pointer-events-none absolute left-0 top-0 z-0 flex h-full w-full flex-col items-center justify-center">
+			<div class="-mb-1 text-2xl font-bold text-heading">465K</div>
+			<div class="text-muted">Total Sessions</div>
+		</div>
+	</div>
+
+	<div id="list-sessions-by-referrer">
+		<!-- Data will load from "js/widgets/website-analytics/visitsBySource.js" -->
+	</div>
+</div>

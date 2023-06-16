@@ -1,0 +1,21 @@
+@layer components {
+	$material-symbols-font-path: "../../../node_modules/material-symbols/";
+	@import "material-symbols/rounded.scss";
+
+	.material-symbols-rounded {
+		@apply text-xl;
+	}
+
+	.icon {
+		text-rendering: optimizeLegibility;
+		font-feature-settings: "liga";
+
+		@apply flex-shrink-0
+		font-icon
+		text-xl
+		font-[401]
+		not-italic
+		leading-tight
+        dark:font-light;
+	}
+}

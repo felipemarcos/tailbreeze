@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en" data-page="forms-validation">
+	<include src="./partials/_head.html">{ "pageTitle": "Form Validation" }</include>
+
+	<body>
+		<include src="./partials/_page-loader.html"></include>
+
+		<include src="./partials/_header.html"></include>
+
+		<include src="./partials/_sidebar.html"></include>
+
+		<div id="content">
+			<div class="content-header px-5">
+				<div class="flex flex-shrink-0 items-center text-heading">
+					<i class="icon mr-2">list_alt</i>
+					<div class="font-bold">Form Validation</div>
+				</div>
+
+				<ol class="ml-5 hidden items-center text-md text-muted md:flex">
+					<li><a href="#" class="rounded p-1 transition-colors hover:text-body">Tailbreeze</a></li>
+					<li class="icon mx-1 text-xs">chevron_right</li>
+					<li><a href="#" class="rounded p-1 transition-colors hover:text-body">Miscellaneous</a></li>
+					<li class="icon mx-1 text-xs">chevron_right</li>
+					<li class="rounded p-1">Forms</li>
+				</ol>
+			</div>
+
+			<div class="p-5" data-simplebar>
+				<div class="mx-auto max-w-5xl">
+					<div class="card mb-5 p-5">
+						<h5 class="mb-2 text-lg font-bold leading-none text-heading">Valid status</h5>
+						<div class="mb-5">Valid validation styles can be added using Tailwind's green color variants.</div>
+
+						<div class="md:w-6/12">
+							<div class="mb-5">
+								<label for="valid-name" class="mb-1 block text-md">Full Name</label>
+								<div class="relative">
+									<input id="valid-name" type="text" class="form-control border-green-400 dark:border-green-700" value="Mark Bens" />
+									<i class="icon absolute right-2 top-2 -mt-px font-light text-green-500">check_circle</i>
+								</div>
+								<div class="mt-1 text-sm text-green-500">Looks good!</div>
+							</div>
+
+							<div class="mb-5">
+								<label for="valid-email" class="mb-1 block text-md">Email Address</label>
+								<div class="relative">
+									<input
+										id="valid-email"
+										type="email"
+										class="form-control border-green-400 dark:border-green-700"
+										value="markotto@funmail.com"
+									/>
+									<i class="icon absolute right-2 top-2 -mt-px font-light text-green-500">check_circle</i>
+								</div>
+								<div class="mt-1 text-sm text-green-500">Looks good!</div>
+							</div>
+
+							<div>
+								<label for="valid-password" class="mb-1 block text-md">Password</label>
+								<div class="relative">
+									<input
+										id="valid-password"
+										type="password"
+										class="form-control border-green-400 dark:border-green-700"
+										value="password@123"
+									/>
+									<i class="icon absolute right-2 top-2 -mt-px font-light text-green-500">check_circle</i>
+								</div>
+								<div class="mt-1 text-sm text-green-500">Looks good!</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="card mb-5 p-5">
+						<h5 class="mb-2 text-lg font-bold leading-none text-heading">Invalid status</h5>
+						<div class="mb-5">Invalid validation styles can be added using Tailwind's red color variants.</div>
+
+						<div class="md:w-6/12">
+							<div class="mb-5">
+								<label for="invalid-name" class="mb-1 block text-md">Full Name</label>
+								<div class="relative">
+									<input id="invalid-name" type="text" class="form-control border-red-400 dark:border-red-700" value="" />
+									<i class="icon absolute right-2 top-2 -mt-px font-light text-red-500">info</i>
+								</div>
+								<div class="mt-1 text-sm text-red-500">Enter your name!</div>
+							</div>
+
+							<div class="mb-5">
+								<label for="invalid-email" class="mb-1 block text-md">Email Address</label>
+								<div class="relative">
+									<input id="invalid-email" type="email" class="form-control border-red-400 dark:border-red-700" value="markotto@" />
+									<i class="icon absolute right-2 top-2 -mt-px font-light text-red-500">info</i>
+								</div>
+								<div class="mt-1 text-sm text-red-500">Enter a valid email address!</div>
+							</div>
+
+							<div>
+								<label for="valid-password" class="mb-1 block text-md">Password</label>
+								<div class="relative">
+									<input id="valid-password" type="password" class="form-control border-red-400 dark:border-red-700" value="password@123" />
+									<i class="icon absolute right-2 top-2 -mt-px font-light text-red-500">info</i>
+								</div>
+								<div class="mt-1 text-sm text-red-500">Password isn't strong enough!</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<include src="./partials/_scripts.html"></include>
+	</body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en" data-page="components-button-groups">
+	<include src="./partials/_head.html">{ "pageTitle": "Button Groups" }</include>
+
+	<body>
+		<include src="./partials/_page-loader.html"></include>
+
+		<include src="./partials/_header.html"></include>
+
+		<include src="./partials/_sidebar.html"></include>
+
+		<div id="content">
+			<div class="content-header px-5">
+				<div class="flex flex-shrink-0 items-center text-heading">
+					<i class="icon mr-2">grid_view</i>
+					<div class="font-bold">Button Groups</div>
+				</div>
+
+				<ol class="ml-5 hidden items-center text-md text-muted md:flex">
+					<li><a href="#" class="rounded p-1 transition-colors hover:text-body">Tailbreeze</a></li>
+					<li class="icon mx-1 text-xs">chevron_right</li>
+					<li><a href="#" class="rounded p-1 transition-colors hover:text-body">Miscellaneous</a></li>
+					<li class="icon mx-1 text-xs">chevron_right</li>
+					<li class="rounded p-1">Components</li>
+				</ol>
+			</div>
+
+			<div class="p-5" data-simplebar>
+				<div class="mx-auto max-w-5xl">
+					<div class="card mb-5 p-5">
+						<h5 class="mb-2 text-lg font-bold leading-none text-heading">Basic example</h5>
+						<div class="mb-5">Group a series of buttons together on a single line using the following code.</div>
+
+						<div class="inline-flex items-center text-md text-white" role="group">
+							<button type="button" class="btn rounded-r-none bg-blue-600/90 hover:bg-blue-600">Left</button>
+							<button type="button" class="btn rounded-none bg-blue-600/90 hover:bg-blue-600">Middle</button>
+							<button type="button" class="btn rounded-l-none bg-blue-600/90 hover:bg-blue-600">Right</button>
+						</div>
+					</div>
+
+					<div class="card mb-5 p-5">
+						<h5 class="mb-2 text-lg font-bold leading-none text-heading">Active State</h5>
+						<div class="mb-5">Use stronger color shade to indicate the actibe state.</div>
+
+						<div class="inline-flex items-center text-md text-white" role="group">
+							<button type="button" class="btn rounded-r-none bg-blue-600">Left</button>
+							<button type="button" class="btn rounded-none bg-blue-600/90 hover:bg-blue-600">Middle</button>
+							<button type="button" class="btn rounded-l-none bg-blue-600/90 hover:bg-blue-600">Right</button>
+						</div>
+					</div>
+
+					<div class="card mb-5 p-5">
+						<h5 class="mb-2 text-lg font-bold leading-none text-heading">Outlined Buttons</h5>
+						<div class="mb-5">Outlined button groups are possible using Tailwind'd border classes.</div>
+
+						<div class="inline-flex items-center rounded border border-blue-600/90 text-md font-bold text-blue-600" role="group">
+							<button type="button" class="btn rounded-none hover:bg-blue-600 hover:text-white">Left</button>
+							<button type="button" class="btn rounded-none border-x border-blue-600/90 hover:bg-blue-600 hover:text-white">Middle</button>
+							<button type="button" class="btn rounded-none hover:bg-blue-600 hover:text-white">Right</button>
+						</div>
+					</div>
+
+					<div class="card mb-5 p-5">
+						<h5 class="mb-2 text-lg font-bold leading-none text-heading">Sizing</h5>
+						<div class="mb-5">Use sizing classes to scale the button groups easily.</div>
+
+						<div class="mb-2 flex items-center text-xs text-white" role="group">
+							<button type="button" class="btn h-6 rounded-r-none bg-blue-600/90 hover:bg-blue-600">Left</button>
+							<button type="button" class="btn h-6 rounded-none bg-blue-600/90 hover:bg-blue-600">Middle</button>
+							<button type="button" class="btn h-6 rounded-l-none bg-blue-600/90 hover:bg-blue-600">Right</button>
+						</div>
+
+						<div class="mb-2 flex items-center text-sm text-white" role="group">
+							<button type="button" class="btn h-7 rounded-r-none bg-blue-600/90 hover:bg-blue-600">Left</button>
+							<button type="button" class="btn h-7 rounded-none bg-blue-600/90 hover:bg-blue-600">Middle</button>
+							<button type="button" class="btn h-7 rounded-l-none bg-blue-600/90 hover:bg-blue-600">Right</button>
+						</div>
+
+						<div class="mb-2 flex items-center text-md text-white" role="group">
+							<button type="button" class="btn rounded-r-none bg-blue-600/90 hover:bg-blue-600">Left</button>
+							<button type="button" class="btn rounded-none bg-blue-600/90 hover:bg-blue-600">Middle</button>
+							<button type="button" class="btn rounded-l-none bg-blue-600/90 hover:bg-blue-600">Right</button>
+						</div>
+
+						<div class="flex items-center text-white" role="group">
+							<button type="button" class="btn h-9 rounded-r-none bg-blue-600/90 hover:bg-blue-600">Left</button>
+							<button type="button" class="btn h-9 rounded-none bg-blue-600/90 hover:bg-blue-600">Middle</button>
+							<button type="button" class="btn h-9 rounded-l-none bg-blue-600/90 hover:bg-blue-600">Right</button>
+						</div>
+					</div>
+
+					<div class="card mb-5 p-5">
+						<h5 class="mb-2 text-lg font-bold leading-none text-heading">Colors</h5>
+						<div class="mb-5">
+							Choose from several predefined button group styles, each serving its own semantic purpose, with a few extras thrown in for more
+							control.
+						</div>
+
+						<div class="mb-2 flex items-center text-md text-white" role="group">
+							<button type="button" class="btn rounded-r-none bg-blue-600/90 hover:bg-blue-600">Left</button>
+							<button type="button" class="btn rounded-none bg-blue-600/90 hover:bg-blue-600">Middle</button>
+							<button type="button" class="btn rounded-l-none bg-blue-600/90 hover:bg-blue-600">Right</button>
+						</div>
+
+						<div class="mb-2 flex items-center text-md text-white" role="group">
+							<button type="button" class="btn rounded-r-none bg-teal-600/90 hover:bg-teal-600">Left</button>
+							<button type="button" class="btn rounded-none bg-teal-600/90 hover:bg-teal-600">Middle</button>
+							<button type="button" class="btn rounded-l-none bg-teal-600/90 hover:bg-teal-600">Right</button>
+						</div>
+
+						<div class="mb-2 flex items-center text-md text-white" role="group">
+							<button type="button" class="btn rounded-r-none bg-red-600/90 hover:bg-red-600">Left</button>
+							<button type="button" class="btn rounded-none bg-red-600/90 hover:bg-red-600">Middle</button>
+							<button type="button" class="btn rounded-l-none bg-red-600/90 hover:bg-red-600">Right</button>
+						</div>
+
+						<div class="mb-2 flex items-center text-md text-white" role="group">
+							<button type="button" class="btn rounded-r-none bg-orange-600/90 hover:bg-orange-600">Left</button>
+							<button type="button" class="btn rounded-none bg-orange-600/90 hover:bg-orange-600">Middle</button>
+							<button type="button" class="btn rounded-l-none bg-orange-600/90 hover:bg-orange-600">Right</button>
+						</div>
+
+						<div class="flex items-center text-md" role="group">
+							<button type="button" class="btn rounded-r-none bg-light-200 hover:bg-light-300 dark:bg-dark-200 dark:hover:bg-dark-300">
+								Left
+							</button>
+							<button type="button" class="btn rounded-none bg-light-200 hover:bg-light-300 dark:bg-dark-200 dark:hover:bg-dark-300">
+								Middle
+							</button>
+							<button type="button" class="btn rounded-l-none bg-light-200 hover:bg-light-300 dark:bg-dark-200 dark:hover:bg-dark-300">
+								Right
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<include src="./partials/_scripts.html"></include>
+	</body>
+</html>

@@ -1,0 +1,67 @@
+@layer components {
+	// Horizontal nav scroller
+	.nav-scroll {
+		@apply hide-scrollbar
+        relative
+        flex
+		h-9
+		items-center
+		overflow-x-auto
+        whitespace-nowrap;
+
+		& > li > a,
+		& > a {
+			@apply relative
+            inline-flex
+			h-full
+			rounded
+			px-3
+			py-2
+			text-left
+			hover:bg-light-100
+			dark:hover:bg-dark-200;
+
+			&[aria-selected="true"],
+			&.active {
+				@apply text-theme;
+			}
+
+			&[aria-disabled="true"] {
+				@apply pointer-events-none;
+			}
+		}
+	}
+
+	// Nav with hoverable links
+	.nav-hover {
+		& > li {
+			& > a {
+				@apply mb-px
+                flex
+                h-9
+                items-center
+                whitespace-nowrap
+                rounded
+                px-2.5
+                duration-300;
+
+				&:not(.active) {
+					@apply hover:bg-light-200/60
+                    dark:hover:bg-dark-100/60;
+				}
+
+				&.active {
+					@apply bg-theme/10
+					font-bold
+					text-theme;
+				}
+
+				& > .icon {
+					@apply mr-3
+                    flex-shrink-0
+                    text-[1.15rem];
+				}
+			}
+		}
+	}
+}

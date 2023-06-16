@@ -1,0 +1,56 @@
+// Tailwind
+@import "./vendors/tailwind";
+
+// Abstract
+@import "./abstract/mixins";
+@import "./abstract/variables";
+
+// Base
+@import "./base/font";
+@import "./base/base";
+@import "./base/code";
+
+// Layout
+@import "./layout/main";
+@import "./layout/sidebar";
+@import "./layout/header";
+
+// Components
+@import "./components/dropdown";
+@import "./components/modal";
+@import "./components/caret";
+@import "./components/card";
+@import "./components/form";
+@import "./components/button";
+@import "./components/nav";
+@import "./components/table";
+
+@import "./components/collapse";
+
+// Templates
+@import "./page/website-analytics";
+@import "./page/e-commerce";
+@import "./page/faq";
+
+// Misc
+@import "./misc/scrollbar";
+@import "./misc/print";
+
+// Theme
+@import "./theme/theme";
+
+// Vendors
+@import "./vendors/material-symbols";
+@import "./vendors/simplebar";
+@import "./vendors/sweetalert2";
+@import "./vendors/jsvectormap";
+@import "./vendors/chartjs";
+@import "./vendors/quill";
+@import "./vendors/fullcalendar";
+@import "./vendors/vanillajs-datepicker";
+@import "./vendors/nice-select2";
+@import "./vendors/dropzone";
+@import "./vendors/vanilla-colorful";
+@import "./vendors/nouislider";
+@import "./vendors/embla-carousel";
+@import "./vendors/tippy";

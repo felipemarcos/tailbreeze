@@ -1,0 +1,172 @@
+@layer components {
+	.datepicker-dropdown {
+		@apply absolute
+			left-0
+			top-full
+			z-50
+			hidden
+			w-64
+			rounded-md
+			border
+			border-light-200
+			bg-white
+			p-3
+			text-body
+			shadow-lg
+			shadow-light-500/20
+			dark:border-0
+			dark:bg-dark-200
+			dark:shadow-black/20;
+
+		&.active {
+			@apply block;
+		}
+	}
+
+	.datepicker-picker {
+		@apply w-full 
+				text-md;
+
+		.datepicker-cell {
+			@apply grid
+				h-8
+				place-content-center
+				rounded-full
+				leading-none;
+		}
+	}
+
+	.datepicker-main {
+		@apply -mx-0.5 
+				p-0;
+	}
+
+	.datepicker-view {
+		@apply p-0;
+
+		.days {
+			@apply w-full;
+		}
+	}
+
+	.days-of-week {
+		@apply mb-2;
+	}
+
+	.datepicker-grid,
+	.days-of-week {
+		@apply grid
+				w-full
+				grid-cols-7
+				text-center;
+	}
+
+	.datepicker-grid {
+		&.months,
+		&.years,
+		&.decades {
+			@apply grid
+					grid-cols-4;
+		}
+	}
+
+	.datepicker-header {
+		@apply mb-4
+				h-auto
+				bg-transparent
+				p-0;
+
+		.datepicker-controls {
+			@apply flex
+					p-0;
+
+			.view-switch {
+				@apply -order-1
+					flex-1
+					rounded
+					px-2
+					py-0
+					text-left
+					text-base
+					font-bold
+					text-heading
+					hover:bg-light-100
+					dark:hover:bg-dark-300;
+			}
+
+			.next-btn,
+			.prev-btn {
+				@apply icon
+						ml-2
+						h-7
+						w-7
+						rounded
+						border-0
+						text-base
+						text-heading
+						hover:bg-light-100
+						dark:hover:bg-dark-300;
+			}
+		}
+	}
+
+	.datepicker-view {
+		.dow {
+			@apply text-sm
+				font-normal
+					text-muted;
+		}
+	}
+
+	.datepicker-cell {
+		@apply cursor-pointer;
+
+		&.next,
+		&.prev {
+			&:not(.disabled) {
+				@apply text-muted
+						opacity-50;
+			}
+
+			&.selected {
+				@apply text-white;
+			}
+		}
+
+		&.focused {
+			&:not(.selected):not(.today) {
+				@apply bg-light-200
+					dark:bg-dark-300;
+			}
+		}
+
+		&.today.focused,
+		&.selected,
+		&.range-start,
+		&.range-end {
+			@apply bg-theme
+				font-bold
+				text-white;
+		}
+
+		&.range {
+			@apply bg-theme/10;
+		}
+
+		&.today {
+			@apply bg-transparent
+					text-heading;
+		}
+
+		&:not(.disabled):not(.selected):not(.focused):not(.range-start):not(.range-end):not(.range) {
+			&:hover {
+				@apply bg-light-100
+						dark:bg-dark-300;
+			}
+		}
+
+		&:not(.prev):not(.next) {
+			@apply font-bold;
+		}
+	}
+}

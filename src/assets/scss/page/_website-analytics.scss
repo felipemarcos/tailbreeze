@@ -1,0 +1,13 @@
+@layer components {
+	#map-sessions-country {
+		.jvm-region {
+			&[fill="INITIAL_FILL"] {
+				fill: var(--widget-session-country-initial-fill);
+			}
+
+			&:not([fill="INITIAL_FILL"]) {
+				fill: var(--widget-session-country-active-fill);
+			}
+		}
+	}
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" data-page="photos">
+	<include src="./partials/_head.html">{ "pageTitle": "Photos" }</include>
+
+	<body>
+		<include src="./partials/_page-loader.html"></include>
+
+		<include src="./partials/_header.html"></include>
+
+		<include src="./partials/_sidebar.html">{ "sidebar": "sidebar-min" }</include>
+
+		<div id="content" class="content-alt">
+			<include src="./partials/photos/_sidebar.html"></include>
+
+			<div data-content="body">
+				<include src="./partials/photos/_header.html"></include>
+
+				<div class="p-5" data-simplebar>
+					<div id="photos">
+						<!-- Content will load from "js/template/photos.js" -->
+					</div>
+				</div>
+			</div>
+		</div>
+		<include src="./partials/_scripts.html"></include>
+	</body>
+</html>

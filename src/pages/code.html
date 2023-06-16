@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" data-page="content-code">
+	<include src="./partials/_head.html">{ "pageTitle": "Codes" }</include>
+
+	<body>
+		<include src="./partials/_page-loader.html"></include>
+
+		<include src="./partials/_header.html"></include>
+
+		<include src="./partials/_sidebar.html"></include>
+
+		<div id="content">
+			<div class="content-header px-5">
+				<div class="flex flex-shrink-0 items-center text-heading">
+					<i class="icon mr-2">chrome_reader_mode</i>
+					<div class="font-bold">Code</div>
+				</div>
+
+				<ol class="ml-5 hidden items-center text-md text-muted md:flex">
+					<li><a href="#" class="rounded p-1 transition-colors hover:text-body">Tailbreeze</a></li>
+					<li class="icon mx-1 text-xs">chevron_right</li>
+					<li><a href="#" class="rounded p-1 transition-colors hover:text-body">Miscellaneous</a></li>
+					<li class="icon mx-1 text-xs">chevron_right</li>
+					<li class="rounded p-1">Content</li>
+				</ol>
+			</div>
+
+			<div class="p-5" data-simplebar>
+				<div class="mx-auto max-w-5xl">
+					<div class="card mb-5 p-5">
+						<h5 class="mb-2 text-lg font-bold leading-none text-heading">Inline code</h5>
+						<div class="mb-5 text-muted">Wrap inline snippets of code with <code>&lt;code&gt;</code>. Be sure to escape HTML angle brackets.</div>
+
+						<div>For example, <code>&lt;section&gt;</code> should be wrapped as inline.</div>
+					</div>
+
+					<div class="card mb-5 p-5">
+						<h5 class="mb-2 text-lg font-bold leading-none text-heading">Code blocks</h5>
+						<div class="mb-5 text-muted">
+							Use <code>&lt;pre&gt;</code>s for multiple lines of code. Once again, be sure to escape any angle brackets in the code for proper
+							rendering.
+						</div>
+
+						<pre class="pre">
+&lt;p&gt;Sample text here...&lt;/p&gt;
+&lt;p&gt;And another line of sample text here...&lt;/p&gt;</pre
+						>
+					</div>
+
+					<div class="card mb-5 p-5">
+						<h5 class="mb-2 text-lg font-bold leading-none text-heading">Variables</h5>
+						<div class="mb-5 text-muted">For indicating variables use the <code>&lt;var&gt;</code> tag.</div>
+
+						<var>y</var> = <var>y</var> + <var>x</var>
+					</div>
+
+					<div class="card mb-5 p-5">
+						<h5 class="mb-2 text-lg font-bold leading-none text-heading">User input</h5>
+						<div class="mb-5 text-muted">Use the <code>&lt;kbd&gt;</code> to indicate input that is typically entered via keyboard.</div>
+
+						<p class="mb-2">
+							To switch directories, type
+							<kbd class="rounded bg-dark-200 px-1 py-0.5 text-sm text-white dark:bg-dark-300 dark:text-heading">cd</kbd> followed by the name of
+							the directory.
+						</p>
+						<p>
+							To edit settings, press
+							<kbd class="rounded bg-dark-200 px-1 py-0.5 text-sm text-white dark:bg-dark-300 dark:text-heading">ctrl + ,</kbd>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<include src="./partials/_scripts.html"></include>
+	</body>
+</html>
