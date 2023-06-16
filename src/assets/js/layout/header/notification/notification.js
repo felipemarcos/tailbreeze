@@ -10,7 +10,7 @@ export const notification = () => {
 		NOTIFICATION_DATA.map((data) => {
 			const UNREAD_CLASS = data.status === "unread" ? "font-bold" : "";
 
-			list += `<a href="" class="flex items-center py-3 px-4 rounded overflow-hidden hover:bg-light-100 dark:hover:bg-dark-300">
+			list += `<a href="" class="flex items-center py-3 px-4 rounded overflow-hidden hover:bg-light-100">
                         <div class=" ${
 							data.color
 						} w-9 h-9 rounded-full flex-shrink-0 icon text-white flex items-center justify-center mr-3 text-2xl font-light">${data.icon}</div>

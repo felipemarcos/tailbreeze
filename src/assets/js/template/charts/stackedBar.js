@@ -1,5 +1,5 @@
 import Chart from "chart.js/auto";
-import { CHART_TICKS, chartTooltipStyle, CHART_LEGEND_LABEL, reloadChart, CHART_GRID } from "../../vendors/chart";
+import { CHART_TICKS, chartTooltipStyle, CHART_LEGEND_LABEL, CHART_GRID } from "../../vendors/chart";
 import { COLORS } from "../../constants";
 
 export const stackedBar = () => {

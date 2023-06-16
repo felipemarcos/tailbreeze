@@ -40,12 +40,3 @@ export const charts = () => {
 	// Daughnut chart
 	doughnut();
 };
-
-// Update charts when dark/light mode is switched
-export const chartsUpdate = () => {
-	// Pie chart
-	pieChartUpdate();
-
-	// Doughnut chart
-	doughnutChartUpdate();
-};

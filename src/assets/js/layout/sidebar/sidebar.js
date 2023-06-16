@@ -7,6 +7,11 @@ export const sidebar = () => {
 	const SIDEBAR_EL = document.getElementById("sidebar-menu");
 	const ACTIVE_PAGE = document.documentElement.dataset.page;
 
+	// Pro badge
+	const proBadge = (link, margin = "-mr-0.5") => {
+		return link.pro ? `<span class="ml-auto inline-block rounded-sm bg-theme/10 px-1.5 py-0.5 text-xs font-bold text-theme ${margin}">Pro</span>` : "";
+	};
+
 	if (SIDEBAR_EL) {
 		SIDEBAR_LINKS.forEach((item) => {
 			// Create parent group (ul), append the group title (li)
@@ -27,11 +32,16 @@ export const sidebar = () => {
 				const LINK = document.createElement("a");
 				LINK.className = "bg-body relative block cursor-pointer";
 
+				if (link.ext) {
+					LINK.setAttribute("target", "_blanl");
+					LINK.setAttribute("rel", "noreferrer");
+				}
+
 				// Create span tag to wrap link text and icon (if any)
 				// ul > li > a > span
 				const LINK_SPAN = document.createElement("span");
 				LINK_SPAN.className = `flex items-center h-9 rounded whitespace-nowrap px-3 font-bold relative mb-px`;
-				LINK_SPAN.innerHTML = `<i class="icon mr-3 -ml-0.5">${link.icon}</i> ${link.name}`;
+				LINK_SPAN.innerHTML = `<i class="icon mr-3 -ml-0.5">${link.icon}</i> ${link.name} ${proBadge(link)}`;
 
 				// Append span to link
 				LINK.appendChild(LINK_SPAN);
@@ -40,7 +50,7 @@ export const sidebar = () => {
 				const IS_LINK_ACTIVE = ACTIVE_PAGE === link.name.toLowerCase().replace(/\s/g, "-");
 				IS_LINK_ACTIVE
 					? (LINK_SPAN.classList.add("bg-theme/10", "text-theme"), LIST.classList.add("active"))
-					: LINK_SPAN.classList.add("hover:bg-light-200/60", "dark:hover:bg-dark-100/60");
+					: LINK_SPAN.classList.add("hover:bg-light-200/60");
 
 				// If link has url, set href.
 				// If link has no url, add onclick event to toggle the sub-menus.
@@ -85,9 +95,9 @@ export const sidebar = () => {
 
 						// Create sub link (ul > li > a)
 						const SUB_LINK = document.createElement("a");
-						SUB_LINK.innerText = sub.name;
+						SUB_LINK.innerHTML = sub.name + proBadge(sub, "mr-1.5");
 						SUB_LINK.href = sub.url;
-						SUB_LINK.className = "whitespace-nowrap mb-2 block";
+						SUB_LINK.className = "whitespace-nowrap mb-2 flex items-center pr-1";
 
 						// Check if sub link is active and add active class
 						const IS_SUB_ACTIVE = ACTIVE_PAGE === (link.name + "-" + sub.name).toLowerCase().replace(/\s/g, "-");
@@ -135,7 +145,7 @@ export const sidebar = () => {
 		const hideSidebar = () => {
 			BODY.classList.remove("sidebar-toggled");
 			document.getElementById("sidebar-backdrop").remove();
-			SIDEBAR_TOGGLE.classList.remove("bg-white/10", "dark:bg-dark-100/60");
+			SIDEBAR_TOGGLE.classList.remove("bg-white/10");
 		};
 
 		// Toggle sidebar on header toggle icon click
@@ -144,10 +154,10 @@ export const sidebar = () => {
 				e.preventDefault();
 
 				if (BODY.classList.contains("sidebar-toggled")) {
-					SIDEBAR_TOGGLE.classList.remove("bg-white/10", "dark:bg-dark-100/60");
+					SIDEBAR_TOGGLE.classList.remove("bg-white/10");
 					hideSidebar();
 				} else {
-					SIDEBAR_TOGGLE.classList.add("bg-white/10", "dark:bg-dark-100/60");
+					SIDEBAR_TOGGLE.classList.add("bg-white/10");
 					BODY.classList.add("sidebar-toggled");
 					SIDEBAR.parentNode.insertBefore(BACKDROP_ELEM, SIDEBAR.nextSibling);
 				}

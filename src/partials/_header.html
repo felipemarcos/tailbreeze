@@ -1,19 +1,13 @@
-<header
-	class="relative z-20 flex h-16 flex-shrink-0 items-center rounded-b-lg bg-theme text-white shadow-md shadow-theme/20 dark:bg-[#1b2931] dark:text-heading dark:shadow-none print:hidden"
->
+<header class="relative z-20 flex h-16 flex-shrink-0 items-center rounded-b-lg bg-theme text-white shadow-md shadow-theme/20 print:hidden">
 	<!-- Logo -->
 	<div class="flex flex-shrink-0 items-center px-5 lg:w-[var(--sidebar-width)]">
-		<button
-			id="sidebar-toggle"
-			type="button"
-			class="-ml-2 mr-2 grid h-9 w-9 place-content-center rounded font-light hover:bg-white/10 dark:hover:bg-dark-100 xl:hidden"
-		>
-			<i class="icon text-2xl font-light">dock_to_right</i>
+		<button id="sidebar-toggle" type="button" class="-ml-2 mr-2 grid h-9 w-9 place-content-center rounded font-light hover:bg-white/10 xl:hidden">
+			<i class="icon text-2xl">dock_to_right</i>
 		</button>
 
 		<include src="./partials/misc/_logo.html"></include>
 
-		<span class="hidden text-lg font-bold leading-none sm:block">Tailbreeze Pro</span>
+		<span class="hidden text-lg font-bold leading-none sm:block">Tailbreeze</span>
 	</div>
 
 	<!-- Search -->
@@ -25,18 +19,22 @@
 
 			<input
 				id="search-input"
-				class="h-11 w-full rounded bg-slate-100 bg-white/20 pl-9 pr-4 transition-colors duration-300 placeholder:text-white focus:bg-slate-100 focus:placeholder:text-body dark:bg-dark-100 dark:placeholder:text-body"
+				class="h-11 w-full rounded bg-slate-100 bg-white/20 pl-9 pr-4 transition-colors duration-300 placeholder:text-white focus:bg-slate-100 focus:placeholder:text-body"
 				type="text"
 				placeholder="Search for files, contacts, photos etc."
 			/>
 
-			<i class="icon btn absolute bottom-0 right-1.5 top-0 my-auto h-7 w-7 font-light hover:bg-white/20 dark:hover:bg-dark-200">tune</i>
+			<i class="icon btn absolute bottom-0 right-1.5 top-0 my-auto h-7 w-7 font-light hover:bg-white/20">tune</i>
 		</div>
 	</div>
 
 	<i class="ml-auto"></i>
 
 	<!-- CTA -->
+	<a href="pricing.html" class="ml-8 mr-5 flex h-9 flex-shrink-0 items-center rounded border border-white/50 px-2.5 hover:bg-white/10">
+		<i class="icon mr-1.5 text-2xl font-light">verified</i>
+		Upgrade <span class="ml-1 hidden xl:block">to Pro</span>
+	</a>
 
 	<!-- Top right menu -->
 	<ul class="flex items-center pr-2">
@@ -45,7 +43,7 @@
 			<button
 				type="button"
 				id="search-toggle"
-				class="icon grid h-9 w-9 place-content-center rounded text-2xl font-light hover:bg-white/10 aria-expanded:bg-white/20 dark:hover:bg-dark-100 dark:aria-expanded:bg-dark-100"
+				class="icon grid h-9 w-9 place-content-center rounded text-2xl font-light hover:bg-white/10 aria-expanded:bg-white/20"
 			>
 				<svg viewBox="0 0 24 24" fill="none" class="w-4">
 					<path
@@ -62,7 +60,7 @@
 				type="button"
 				data-tb-dropdown-toggle
 				aria-expanded="false"
-				class="icon relative grid h-9 w-9 place-content-center rounded text-2xl font-light hover:bg-white/10 aria-expanded:bg-white/20 dark:hover:bg-dark-100 dark:aria-expanded:bg-dark-100"
+				class="icon relative grid h-9 w-9 place-content-center rounded text-2xl font-light hover:bg-white/10 aria-expanded:bg-white/20"
 			>
 				notifications
 
@@ -74,9 +72,9 @@
 					<div class="flex items-center px-5 py-2">
 						<div class="font-bold text-heading">Notifications</div>
 						<nav class="-mr-1 ml-auto flex items-center">
-							<button type="button" class="icon btn hover:bg-light-100 dark:hover:bg-dark-300/50">done_all</button>
-							<button type="button" class="icon btn hover:bg-light-100 dark:hover:bg-dark-300/50">tune</button>
-							<button type="button" class="icon btn hover:bg-light-100 dark:hover:bg-dark-300/50">launch</button>
+							<button type="button" class="icon btn hover:bg-light-100">done_all</button>
+							<button type="button" class="icon btn hover:bg-light-100">tune</button>
+							<button type="button" class="icon btn hover:bg-light-100">launch</button>
 						</nav>
 					</div>
 
@@ -93,7 +91,7 @@
 				type="button"
 				data-tb-dropdown-toggle
 				aria-expanded="false"
-				class="icon relative grid h-9 w-9 place-content-center rounded text-2xl font-light hover:bg-white/10 aria-expanded:bg-white/20 dark:hover:bg-dark-100 dark:aria-expanded:bg-dark-100"
+				class="icon relative grid h-9 w-9 place-content-center rounded text-2xl font-light hover:bg-white/10 aria-expanded:bg-white/20"
 			>
 				chat
 
@@ -105,9 +103,9 @@
 					<div class="flex items-center px-5 py-2">
 						<div class="font-bold text-heading">Messages</div>
 						<nav class="-mr-1 ml-auto flex items-center">
-							<button type="button" class="icon btn hover:bg-light-100 dark:hover:bg-dark-300/50">add_circle_outline</button>
-							<button type="button" class="icon btn hover:bg-light-100 dark:hover:bg-dark-300/50">call</button>
-							<button type="button" class="icon btn hover:bg-light-100 dark:hover:bg-dark-300/50">fullscreen</button>
+							<button type="button" class="icon btn hover:bg-light-100">add_circle_outline</button>
+							<button type="button" class="icon btn hover:bg-light-100">call</button>
+							<button type="button" class="icon btn hover:bg-light-100">fullscreen</button>
 						</nav>
 					</div>
 
@@ -124,7 +122,7 @@
 				type="button"
 				data-tb-dropdown-toggle
 				aria-expanded="false"
-				class="icon relative grid h-9 w-9 place-content-center rounded text-2xl font-light hover:bg-white/10 aria-expanded:bg-white/20 dark:hover:bg-dark-100 dark:aria-expanded:bg-dark-100"
+				class="icon relative grid h-9 w-9 place-content-center rounded text-2xl font-light hover:bg-white/10 aria-expanded:bg-white/20"
 			>
 				check_circle
 			</button>
@@ -134,8 +132,8 @@
 					<div class="mb-3 flex items-center px-5 py-2">
 						<div class="font-bold text-heading">Tasks</div>
 						<nav class="-mr-1 ml-auto flex items-center">
-							<button type="button" class="icon btn hover:bg-light-100 dark:hover:bg-dark-300/50">task_alt</button>
-							<button type="button" class="icon btn hover:bg-light-100 dark:hover:bg-dark-300/50">launch</button>
+							<button type="button" class="icon btn hover:bg-light-100">task_alt</button>
+							<button type="button" class="icon btn hover:bg-light-100">launch</button>
 						</nav>
 					</div>
 
@@ -152,7 +150,7 @@
 				type="button"
 				data-tb-dropdown-toggle
 				aria-expanded="false"
-				class="icon relative grid h-9 w-9 place-content-center rounded text-2xl font-light hover:bg-white/10 aria-expanded:bg-white/20 dark:hover:bg-dark-100 dark:aria-expanded:bg-dark-100"
+				class="icon relative grid h-9 w-9 place-content-center rounded text-2xl font-light hover:bg-white/10 aria-expanded:bg-white/20"
 			>
 				apps
 			</button>
@@ -162,8 +160,8 @@
 					<div class="flex items-center px-5 py-2">
 						<div class="font-bold text-heading">App Shortcuts</div>
 						<nav class="-mr-1 ml-auto flex items-center">
-							<button type="button" class="icon btn hover:bg-light-100 dark:hover:bg-dark-300/50">add_circle_outline</button>
-							<button type="button" class="icon btn hover:bg-light-100 dark:hover:bg-dark-300/50">delete</button>
+							<button type="button" class="icon btn hover:bg-light-100">add_circle_outline</button>
+							<button type="button" class="icon btn hover:bg-light-100">delete</button>
 						</nav>
 					</div>
 
@@ -180,7 +178,7 @@
 				type="button"
 				data-tb-dropdown-toggle
 				aria-expanded="false"
-				class="icon relative grid h-9 w-9 place-content-center rounded text-2xl font-light hover:bg-white/10 aria-expanded:bg-white/20 dark:hover:bg-dark-100 dark:aria-expanded:bg-dark-100"
+				class="icon relative grid h-9 w-9 place-content-center rounded text-2xl font-light hover:bg-white/10 aria-expanded:bg-white/20"
 			>
 				settings
 			</button>
@@ -197,7 +195,7 @@
 				data-tb-dropdown-toggle
 				aria-expanded="false"
 				title="Language"
-				class="icon grid h-9 w-9 place-content-center rounded hover:bg-white/10 aria-expanded:bg-white/20 dark:hover:bg-dark-100 dark:aria-expanded:bg-dark-100"
+				class="icon grid h-9 w-9 place-content-center rounded hover:bg-white/10 aria-expanded:bg-white/20"
 			>
 				<img class="h-4 rounded-sm" src="../assets/img/flags/england.svg" alt="" />
 			</button>
@@ -229,7 +227,7 @@
 				data-tb-dropdown-toggle
 				aria-expanded="false"
 				title="Profile"
-				class="icon grid h-9 w-9 place-content-center rounded hover:bg-white/10 aria-expanded:bg-white/20 dark:hover:bg-dark-100 dark:aria-expanded:bg-dark-100"
+				class="icon grid h-9 w-9 place-content-center rounded hover:bg-white/10 aria-expanded:bg-white/20"
 			>
 				<img class="w-7 rounded-full" src="../assets/img/contacts/5.jpg" alt="" />
 			</button>
@@ -268,16 +266,16 @@
 				<h4 class="-mt-px mb-2 font-bold leading-none text-heading">LocalStorage Data</h4>
 				<div class="text-muted">Following LocalStorage items are currently being used.</div>
 			</div>
-			<button type="button" class="btn-close -mr-1 -mt-1 hover:bg-light-100 dark:hover:bg-dark-200" data-tb-modal-dismiss></button>
+			<button type="button" class="btn-close -mr-1 -mt-1 hover:bg-light-100" data-tb-modal-dismiss></button>
 		</div>
 
 		<pre class="pre scrollbar mb-5"><code id="pref-localstorage-data"></code></pre>
 
-		<div class="flex items-start border-b border-slate-100 pb-3 font-bold text-heading dark:border-dark-200">
+		<div class="flex items-start border-b border-slate-100 pb-3 font-bold text-heading">
 			<div class="w-32 flex-shrink-0">Property</div>
 			<div class="flex-1">Description</div>
 		</div>
-		<div class="flex items-start border-b border-slate-100 py-3 dark:border-dark-200">
+		<div class="flex items-start border-b border-slate-100 py-3">
 			<div class="w-32 flex-shrink-0">
 				<code>theme</code>
 			</div>
@@ -299,7 +297,7 @@
 			<div class="flex-1">
 				<h4 class="-mt-px font-bold leading-none text-heading">Tailbreeze Admin</h4>
 			</div>
-			<button type="button" class="btn-close -my-2 -mr-1 hover:bg-light-100 dark:hover:bg-dark-300/50" data-tb-modal-dismiss aria-label="Close"></button>
+			<button type="button" class="btn-close -my-2 -mr-1 hover:bg-light-100" data-tb-modal-dismiss aria-label="Close"></button>
 		</div>
 
 		<img class="mb-5 w-full rounded" src="../assets/img/misc/preview.png" alt="" />

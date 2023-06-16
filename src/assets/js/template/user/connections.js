@@ -68,7 +68,7 @@ export const userConnections = () => {
 
 	if (WRAPPER) {
 		DATA.forEach((item) => {
-			list += `<div class="rounded-md border border-light-200 dark:border-dark-200 flex items-center p-2">
+			list += `<div class="rounded-md border border-light-200 flex items-center p-2">
                         <a href="" class="flex-shrink-0 mr-3">
                             <img class="w-12 rounded" src="${connectionImages[item.avatar]}" alt="">
                         </a>
@@ -76,7 +76,7 @@ export const userConnections = () => {
                             <a href="" class="font-bold text-heading hover:underline">${item.name}</a>
                             <div class="text-muted text-md">${item.mutual} Mutual Connections</div>
                         </div>
-                        <a class="icon btn hover:bg-light-100 dark:hover:bg-dark-200" href="">more_vert</a>
+                        <a class="icon btn hover:bg-light-100" href="">more_vert</a>
                     </div>`;
 		});
 

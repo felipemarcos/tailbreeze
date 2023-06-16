@@ -2,7 +2,7 @@ import "chartjs-adapter-moment";
 import { Chart } from "chart.js";
 import { cssVar } from "../../utils";
 import { COLORS } from "../../constants";
-import { chartTooltipStyle, reloadChart } from "../../vendors/chart";
+import { chartTooltipStyle } from "../../vendors/chart";
 
 const CHART_WRAPPER = document.getElementById("chart-visits-by-source");
 let visitsBySourceChart;
@@ -99,22 +99,12 @@ export const visitsBySource = () => {
 								${item.percentage}
 								<i class="icon ml-1 font-light">${item.up ? "arrow_circle_up" : "arrow_circle_down"}</i>
 							</div>
-							<div class="h-0.5 my-3 bg-light-200 dark:bg-dark-200 w-full">
+							<div class="h-0.5 my-3 bg-light-200 w-full">
 								<div class="h-0.5 bg-current rounded" style="width: ${item.percentage}%"></div>
 							</div>
 						</div>`;
 
 			WRAPPER.innerHTML = list;
-		});
-	}
-};
-
-// Reload Map and chart to match dark/light mode when switched
-// This function will be used in `settings.js`
-export const visitsBySourceUpdate = () => {
-	if (CHART_WRAPPER) {
-		setTimeout(() => {
-			reloadChart(visitsBySourceChart, (visitsBySourceChart.data.datasets[0].borderColor = cssVar("--chart-pie-border")));
 		});
 	}
 };

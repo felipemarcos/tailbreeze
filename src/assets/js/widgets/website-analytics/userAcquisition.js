@@ -1,5 +1,5 @@
 import Chart from "chart.js/auto";
-import { CHART_TICKS, chartTooltipStyle, reloadChart, CHART_GRID } from "../../vendors/chart";
+import { CHART_TICKS, chartTooltipStyle, CHART_GRID } from "../../vendors/chart";
 import { cssVar } from "../../utils";
 import { COLORS } from "../../constants";
 
@@ -113,15 +113,5 @@ export const userAcquisition = () => {
 
 	if (CHART_WRAPPER) {
 		userAcquisitionChart = new Chart(CHART_WRAPPER, CHART_CONFIG);
-	}
-};
-
-// Reload Map and chart to match dark/light mode when switched
-// This function will be used in `settings.js`
-export const userAcquisitionUpdate = () => {
-	if (CHART_WRAPPER) {
-		setTimeout(() => {
-			reloadChart(userAcquisitionChart);
-		});
 	}
 };

@@ -1,11 +1,9 @@
 import "chartjs-adapter-moment";
 import Chart from "chart.js/auto";
-import { cssVar } from "../../utils";
 import { COLORS } from "../../constants";
-import { chartGradient, generateTimeSeriesData, chartTooltipStyle, CHART_TICKS, reloadChart, CHART_GRID } from "../../vendors/chart";
+import { chartGradient, generateTimeSeriesData, chartTooltipStyle, CHART_TICKS, CHART_GRID } from "../../vendors/chart";
 
 const CHART_WRAPPER = document.getElementById("chart-average-visit-duration");
-let averageVisitDurationChart;
 
 export const averageVisitDuration = () => {
 	// Helper function for chart gradient fill
@@ -46,15 +44,15 @@ export const averageVisitDuration = () => {
 				label: "Last Month",
 				data: LAST_MONTH_DATA,
 				fill: true,
-				backgroundColor: (context) => gradientBg(context, cssVar("--chart-previous-data-start-fill"), cssVar("--chart-previous-data-end-fill")),
-				borderColor: cssVar("--chart-previous-data-border-fill"),
+				backgroundColor: (context) => gradientBg(context, "rgba(182, 216, 245, 0.2)", "rgba(182, 216, 245, 0)"),
+				borderColor: "#b6d8f5",
 				borderWidth: 1.5,
 				tension: 0.4,
 				pointRadius: 0,
-				pointBackgroundColor: cssVar("--chart-previous-data-border-fill"),
-				pointBorderColor: cssVar("--chart-previous-data-border-fill"),
-				pointHoverBorderColor: cssVar("--chart-previous-data-border-fill"),
-				pointHoverBackgroundColor: cssVar("--chart-previous-data-border-fill"),
+				pointBackgroundColor: "#b6d8f5",
+				pointBorderColor: "#b6d8f5",
+				pointHoverBorderColor: "#b6d8f5",
+				pointHoverBackgroundColor: "#b6d8f5",
 			},
 		],
 	};
@@ -122,23 +120,6 @@ export const averageVisitDuration = () => {
 	};
 
 	if (CHART_WRAPPER) {
-		averageVisitDurationChart = new Chart(CHART_WRAPPER, CHART_CONFIG);
-	}
-};
-
-// Reload Map and chart to match dark/light mode when switched
-// This function will be used in `settings.js`
-export const averageVisitDurationUpdate = () => {
-	const updateChartColor = () => {
-		averageVisitDurationChart.data.datasets[1].pointBackgroundColor = cssVar("--chart-previous-data-border-fill");
-		averageVisitDurationChart.data.datasets[1].borderColor = cssVar("--chart-previous-data-border-fill");
-		averageVisitDurationChart.data.datasets[1].pointHoverBorderColor = cssVar("--chart-previous-data-border-fill");
-		averageVisitDurationChart.data.datasets[1].pointHoverBackgroundColor = cssVar("--chart-previous-data-border-fill");
-	};
-
-	if (CHART_WRAPPER) {
-		setTimeout(() => {
-			reloadChart(averageVisitDurationChart, updateChartColor());
-		});
+		let averageVisitDurationChart = new Chart(CHART_WRAPPER, CHART_CONFIG);
 	}
 };

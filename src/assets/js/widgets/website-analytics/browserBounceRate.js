@@ -72,7 +72,7 @@ export const browserBounceRate = () => {
 		                    ${item.percentage}%
 		                    <i class="icon ml-1 font-light">${item.up ? "arrow_circle_up" : "arrow_circle_down"}</i>
 		                </div>
-                        <div class="h-0.5 my-4 bg-light-200 dark:bg-dark-200 w-full">
+                        <div class="h-0.5 my-4 bg-light-200 w-full">
                             <div class="h-0.5 bg-current rounded" style="width: ${item.percentage}%"></div>
                         </div>
 		            </div>`;

@@ -174,7 +174,7 @@ export const operatingSystemUsage = () => {
 
 			// Create and append data
 			// prettier-ignore
-			list += `<div class="border border-light-200 dark:border-dark-200 py-3 rounded-md overflow-hidden">
+			list += `<div class="border border-light-200 py-3 rounded-md overflow-hidden">
 						<div class="px-3">
 							<div class="flex items-center mb-2 h-8 -mt-2">
 								<div class="font-bold text-lg">${item.id}</div>

@@ -1,10 +1,10 @@
-# Tailbreeze Pro - Admin template and dashboard
+# Tailbreeze - Admin template and dashboard
 
-![242410968-1512addf-e32a-4a55-b136-2e168cddbf08](https://github.com/avidtemplates/tailbreeze-pro/assets/136823914/24491ec6-7d31-4116-8aea-0fe8487b8dbd)
+![Community preview](https://github.com/avidtemplates/tailbreeze/assets/136823914/4769c75e-78b7-4624-ae0c-adf9183a927c)
 
-Tailbreeze Pro is a powerful, lightweight, and fully responsive admin template/dashboard built using TailwindCSS. It boasts a sophisticated design that includes application views, sample pages, widgets, and components that have been meticulously designed and customized to perfectly align with the overall user interface.
+Tailbreeze is a powerful, lightweight, and fully responsive admin template/dashboard built using TailwindCSS. It boasts a sophisticated design that includes application views, sample pages, widgets, and components that have been meticulously designed and customized to perfectly align with the overall user interface.
 
-Live preview: https://avidtemplates.github.io/tailbreeze-pro
+Live preview: https://tailbreeze.avidtemplates.com
 
 ## Key features:
 
@@ -12,12 +12,9 @@ Live preview: https://avidtemplates.github.io/tailbreeze-pro
 -   Vanilla JS with ES+ modules.
 -   No jQuery.
 -   ParcelJS for bundler.
--   Dark mode.
--   Light mode theme colors.
--   Customized form components.
 -   Fully responsive and retina ready.
 -   Beautifully crafted and meaningful widgets.
--   Application views.
+-   Sample application views.
 -   Samples pages.
 -   Customized UI components.
 -   Font icons.
@@ -53,4 +50,21 @@ None of the IE versions, including IE 11, are supported.
 
 ## License
 
-https://www.templatemonster.com/licenses/website-templates/
+Tailbreeze(free) is licensed under the [MIT](https://github.com/avidtemplates/tailbreeze/blob/main/LICENSE) license.
+
+## Upgrade to Pro
+
+![Pro preview](https://github.com/avidtemplates/tailbreeze/assets/136823914/64d645dc-dbe2-4dc5-a448-45205808be74)
+
+If you're a fan of Tailbreeze, why not elevate your experience by upgrading to the pro version? By doing so, you'll unlock a whole new level of possibilities, including extra application views, pages, and a wide range of exciting features.
+
+### Pro features:
+
+-   Dark mode.
+-   Light mode theme colors.
+-   More dashboards.
+-   More application views.
+-   More sample pages.
+-   Customized form components.
+
+[Click here](https://tailbreeze.avidtemplates.com/pricing) to explore the feature differences and upgrade.

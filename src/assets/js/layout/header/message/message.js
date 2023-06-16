@@ -12,7 +12,7 @@ export const message = () => {
 			const AVATAR = `<img class="w-9 h-9 rounded-full mr-4" src="${images[data.image]}" alt="" />`;
 			const CHAR = `<div class="w-9 h-9 rounded-full text-white font-bold flex items-center justify-center mr-3 ${data.color}">${data.cap}</div>`;
 
-			list += `<a href="" class="flex items-center py-3 px-4 hover:bg-light-100 dark:hover:bg-dark-300 rounded overflow-hidden">
+			list += `<a href="" class="flex items-center py-3 px-4 hover:bg-light-100 rounded overflow-hidden">
                         <div class="avatar">
                             ${data.image ? AVATAR : CHAR}    
                         </div>

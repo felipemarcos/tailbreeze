@@ -19,16 +19,7 @@
 			border-solid
 			border-transparent
 			bg-light-300
-			bg-clip-content
-			dark:bg-dark-300;
-	}
-}
-
-:root {
-	&[data-theme="dark"] {
-		.scrollbar {
-			scrollbar-color: rgb(var(--theme-dark-300)) transparent;
-		}
+			bg-clip-content;
 	}
 }
 

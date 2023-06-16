@@ -29,15 +29,10 @@
 
 // Templates
 @import "./page/website-analytics";
-@import "./page/e-commerce";
-@import "./page/faq";
 
 // Misc
 @import "./misc/scrollbar";
 @import "./misc/print";
-
-// Theme
-@import "./theme/theme";
 
 // Vendors
 @import "./vendors/material-symbols";
@@ -45,12 +40,5 @@
 @import "./vendors/sweetalert2";
 @import "./vendors/jsvectormap";
 @import "./vendors/chartjs";
-@import "./vendors/quill";
-@import "./vendors/fullcalendar";
-@import "./vendors/vanillajs-datepicker";
-@import "./vendors/nice-select2";
-@import "./vendors/dropzone";
-@import "./vendors/vanilla-colorful";
-@import "./vendors/nouislider";
 @import "./vendors/embla-carousel";
 @import "./vendors/tippy";

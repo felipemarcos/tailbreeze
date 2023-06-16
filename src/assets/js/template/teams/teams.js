@@ -11,7 +11,7 @@ export const teams = () => {
 			let members = "";
 
 			item.members.map((member) => {
-				members += `<img class="w-9 h-9 rounded-full ring-2 ring-white dark:ring-dark-100 -ml-2" src="${contactImages[member.img]}">`;
+				members += `<img class="w-9 h-9 rounded-full ring-2 ring-white -ml-2" src="${contactImages[member.img]}">`;
 			});
 
 			list += `<div class="card p-1">

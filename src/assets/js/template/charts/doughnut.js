@@ -1,5 +1,5 @@
 import Chart from "chart.js/auto";
-import { chartTooltipStyle, CHART_LEGEND_LABEL, reloadChart } from "../../vendors/chart";
+import { chartTooltipStyle, CHART_LEGEND_LABEL } from "../../vendors/chart";
 import { cssVar } from "../../utils";
 import { COLORS } from "../../constants";
 
@@ -56,14 +56,5 @@ export const doughnut = () => {
 	// Init chart
 	if (WRAPPER) {
 		chart = new Chart(WRAPPER, CONFIG);
-	}
-};
-
-// Reload chart to match dark/light mode when switched
-export const doughnutChartUpdate = () => {
-	if (WRAPPER) {
-		setTimeout(() => {
-			reloadChart(chart, (chart.data.datasets[0].borderColor = cssVar("--chart-pie-border")));
-		});
 	}
 };

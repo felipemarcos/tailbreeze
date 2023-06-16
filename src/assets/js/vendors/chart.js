@@ -68,13 +68,6 @@ export const CHART_GRID = {
 	color: "rgba(83, 152, 199, 0.1)",
 };
 
-// Reload Chart.js for dark/light mode themes
-export const reloadChart = (chart, callback) => {
-	callback;
-
-	chart.update();
-};
-
 // Generate time series data
 export const generateTimeSeriesData = (baseval, count, yrange) => {
 	let i = 0;

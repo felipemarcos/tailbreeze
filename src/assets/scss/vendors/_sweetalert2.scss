@@ -4,13 +4,12 @@
 			@apply w-96
             rounded-xl
 			bg-white
-        	pb-6
-			dark:bg-dark-100;
+        	pb-6;
 		}
 
 		.swal2-icon {
-			@apply mt-3
-            -mb-3
+			@apply -mb-3
+            mt-3
             scale-50
             animate-none #{!important};
 
@@ -57,8 +56,7 @@
 					hover:bg-light-100
 					hover:bg-none
 					hover:text-heading
-					focus:shadow-none
-                    hover:dark:bg-dark-200;
+					focus:shadow-none;
 				}
 
 				&.swal2-deny {

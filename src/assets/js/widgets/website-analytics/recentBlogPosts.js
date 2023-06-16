@@ -48,7 +48,7 @@ export const recentBlogPosts = () => {
 
 	if (WRAPPPER) {
 		DATA.forEach((item) => {
-			list += `<a href="" class="rounded flex items-start hover:bg-light-100 dark:hover:bg-dark-200 p-3">
+			list += `<a href="" class="rounded flex items-start hover:bg-light-100 p-3">
                         <img class="w-10 rounded flex-shrink-0 mr-3" src="${images[item.img]}" alt="">
                         <div class="flex-1 overflow-hidden">
                             <div class="font-bold text-truncate">${item.title}</div>

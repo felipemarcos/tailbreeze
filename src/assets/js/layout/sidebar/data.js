@@ -9,8 +9,9 @@ export const SIDEBAR_LINKS = [
 			},
 			{
 				name: "E-Commerce",
-				url: "e-commerce.html",
+				url: "#",
 				icon: "shopping_bag",
+				pro: true,
 			},
 		],
 	},
@@ -23,7 +24,8 @@ export const SIDEBAR_LINKS = [
 				sub: [
 					{
 						name: "Timeline",
-						url: "user-timeline.html",
+						url: "#",
+						pro: true,
 					},
 					{
 						name: "About",
@@ -46,37 +48,44 @@ export const SIDEBAR_LINKS = [
 			{
 				name: "File Manager",
 				icon: "folder",
-				url: "file-manager.html",
+				url: "#",
+				pro: true,
 			},
 			{
 				name: "Contacts",
 				icon: "account_circle",
-				url: "contacts.html",
+				url: "#",
+				pro: true,
 			},
 			{
 				name: "Mail",
 				icon: "mail",
-				url: "mail.html",
+				url: "#",
+				pro: true,
 			},
 			{
 				name: "Messages",
 				icon: "mark_chat_unread",
-				url: "messages.html",
+				url: "#",
+				pro: true,
 			},
 			{
 				name: "Photos",
 				icon: "crop_original",
-				url: "photos.html",
+				url: "#",
+				pro: true,
 			},
 			{
 				name: "Todo Lists",
 				icon: "check_circle",
-				url: "todo-lists.html",
+				url: "#",
+				pro: true,
 			},
 			{
 				name: "Calendar",
 				icon: "calendar_today",
-				url: "calendar.html",
+				url: "#",
+				pro: true,
 			},
 			{
 				name: "Issues Tracker",
@@ -103,10 +112,12 @@ export const SIDEBAR_LINKS = [
 					{
 						name: "Search Results",
 						url: "search-results.html",
+						pro: true,
 					},
 					{
 						name: "FAQ",
-						url: "faq.html",
+						url: "#",
+						pro: true,
 					},
 					{
 						name: "Teams",
@@ -175,7 +186,8 @@ export const SIDEBAR_LINKS = [
 					},
 					{
 						name: "Components",
-						url: "form-components.html",
+						url: "#",
+						pro: true,
 					},
 					{
 						name: "Templates",
@@ -266,6 +278,34 @@ export const SIDEBAR_LINKS = [
 						url: "maps.html",
 					},
 				],
+			},
+		],
+	},
+	{
+		group: "Useful Links",
+		links: [
+			{
+				name: "Upgrade to Pro",
+				icon: "verified",
+				url: "pricing.html",
+			},
+			{
+				name: "Documentation",
+				icon: "data_object",
+				url: "https://docs.tailbreeze.avidtemplates.com",
+				ext: true,
+			},
+			{
+				name: "Download",
+				icon: "download",
+				url: "https://github.com/avidtemplates/tailbreeze",
+				ext: true,
+			},
+			{
+				name: "Support",
+				icon: "help",
+				url: "https://github.com/avidtemplates/tailbreeze/issues",
+				ext: true,
 			},
 		],
 	},

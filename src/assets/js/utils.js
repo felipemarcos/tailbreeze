@@ -19,7 +19,6 @@ export const misc = () => {
 
 //---------------------------------------------------
 // Return CSS variable
-// This is helpful for dark/light theme modes
 //---------------------------------------------------
 export const cssVar = (variable) => {
 	return getComputedStyle(document.body).getPropertyValue(variable).trim();

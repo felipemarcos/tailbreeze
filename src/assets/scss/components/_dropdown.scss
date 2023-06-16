@@ -11,10 +11,7 @@
         bg-white
         text-body
         shadow-lg
-        shadow-light-500/20
-        dark:border-0
-        dark:bg-dark-200
-        dark:shadow-black/20;
+        shadow-light-500/20;
 	}
 
 	[data-tb-dropdown] {
@@ -45,8 +42,7 @@
         text-body
         transition-colors
         hover:bg-light-100
-        hover:text-heading
-        dark:hover:bg-dark-300/50;
+        hover:text-heading;
 
 		& > .icon {
 			@apply mr-2;

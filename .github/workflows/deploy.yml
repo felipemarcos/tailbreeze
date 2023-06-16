@@ -1,34 +1,36 @@
-name: Build and Deploy
+name: Build and deployement
+
 on:
-    push:
-        branches: ["main"]
+  push:
+    branches: ["main"]
+  workflow_dispatch:
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
 jobs:
-    build:
-        runs-on: ubuntu-latest
-        concurrency: ci-${{github.ref}}
-        strategy:
-            matrix:
-                node-version: [18.x]
-        permissions:
-            id-token: write
-            pages: write
-            contents: write
-        steps:
-            - name: Checkout
-              uses: actions/checkout@v3
-
-            - name: Configure Node ${{ matrix.node-version }}
-              uses: actions/setup-node@v3
-              with:
-                  node-version: ${{ matrix.node-version }}
-
-            - name: Build assets
-              run: |
-                  npm install
-                  npm run build
-
-            - name: Deploy
-              uses: JamesIves/github-pages-deploy-action@v4
-              with:
-                  folder: dist
-                  branch: gh-pages
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Build assets
+        run: |
+          npm install
+          npm run build
+      - name: Setup Pages
+        uses: actions/configure-pages@v3
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v1
+        with:
+          path: dist
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v2

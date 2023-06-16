@@ -7,41 +7,30 @@
 		<div class="mb-5 grid grid-cols-3 gap-3">
 			<button type="button" id="pref-fullscreen"></button>
 
-			<button type="button" id="pref-dark-mode"></button>
+			<div class="relative grid place-items-center rounded-lg border border-light-200">
+				<img class="flex-shrink-0 opacity-25" src="../assets/img/demo/dark-mode-preview.png" alt="Dark mode preview" />
+
+				<span class="absolute w-9 rounded bg-theme py-0.5 text-center text-sm font-bold leading-none text-white">Pro</span>
+			</div>
 
 			<button type="button" id="pref-zoom"></button>
 
-			<div id="pref-theme-colors" class="relative col-span-3 rounded-lg border border-light-200 bg-light-100/50 px-5 py-3 dark:border-dark-300">
-				<div class="mb-2 flex items-center justify-center">
-					<i class="icon mr-1 text-2xl font-light">format_paint</i>
-					<div class="text-sm font-bold leading-tight text-heading">Theme Color</div>
-				</div>
-				<div id="theme-color-picker" class="mb-1 flex flex-wrap justify-center gap-1">
-					<!-- Content will load from js/header/preferences.js -->
-				</div>
+			<div class="relative col-span-3 grid place-items-center rounded-lg border border-light-200">
+				<img class="flex-shrink-0 opacity-25" src="../assets/img/demo/theme-colors-preview.png" alt="Theme colors preview" />
 
-				<i
-					data-tippy-content="This is applicable only when the <br>light theme mode is active"
-					data-tippy-allowhtml="true"
-					class="icon absolute right-1 top-0.5 cursor-default text-base font-light text-muted"
-				>
-					info
-				</i>
+				<span class="absolute w-9 rounded bg-theme py-0.5 text-center text-sm font-bold leading-none text-white">Pro</span>
 			</div>
 
 			<button
 				data-tb-modal="#modal-localstorage-data"
 				type="button"
-				class="rounded-lg border border-light-200 bg-light-100/50 p-3 text-center transition-colors duration-300 hover:bg-light-100 dark:border-dark-300 dark:bg-dark-300/50 dark:hover:bg-dark-300"
+				class="rounded-lg border border-light-200 bg-light-100/50 p-3 text-center transition-colors duration-300 hover:bg-light-100"
 			>
 				<i class="icon -mt-0.5 mb-1 inline-block text-2xl font-light">web_asset</i>
 				<div class="text-sm font-bold leading-tight text-heading">LocalStorage Data</div>
 			</button>
 
-			<a
-				href=""
-				class="rounded-lg border border-light-200 bg-light-100/50 p-3 text-center transition-colors duration-300 hover:bg-light-100 dark:border-dark-300 dark:bg-dark-300/50 dark:hover:bg-dark-300"
-			>
+			<a href="" class="rounded-lg border border-light-200 bg-light-100/50 p-3 text-center transition-colors duration-300 hover:bg-light-100">
 				<i class="icon -mt-0.5 mb-1 inline-block text-2xl font-light">refresh</i>
 				<div class="text-sm font-bold leading-tight text-heading">Refersh Content</div>
 			</a>
@@ -49,7 +38,7 @@
 			<button
 				data-tb-modal="#modal-about"
 				type="button"
-				class="flex flex-col items-center rounded-lg border border-light-200 bg-light-100/50 p-3 transition-colors duration-300 hover:bg-light-100 dark:border-dark-300 dark:bg-dark-300/50 dark:hover:bg-dark-300"
+				class="flex flex-col items-center rounded-lg border border-light-200 bg-light-100/50 p-3 transition-colors duration-300 hover:bg-light-100"
 			>
 				<i class="icon -mt-0.5 mb-1 inline-block text-2xl font-light">info</i>
 				<div class="text-sm font-bold leading-tight text-heading">About <br />MA 3.0</div>

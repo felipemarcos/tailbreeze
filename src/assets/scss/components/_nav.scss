@@ -18,8 +18,7 @@
 			px-3
 			py-2
 			text-left
-			hover:bg-light-100
-			dark:hover:bg-dark-200;
+			hover:bg-light-100;
 
 			&[aria-selected="true"],
 			&.active {
@@ -46,8 +45,7 @@
                 duration-300;
 
 				&:not(.active) {
-					@apply hover:bg-light-200/60
-                    dark:hover:bg-dark-100/60;
+					@apply hover:bg-light-200/60;
 				}
 
 				&.active {

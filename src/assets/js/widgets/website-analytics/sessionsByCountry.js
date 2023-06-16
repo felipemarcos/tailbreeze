@@ -1,13 +1,11 @@
 import jsVectorMap from "jsvectormap";
 import "jsvectormap/dist/maps/world.js";
 import Chart from "chart.js/auto";
-import { cssVar } from "../../utils";
-import { chartTooltipStyle, CHART_TICKS, reloadChart } from "../../vendors/chart";
+import { chartTooltipStyle, CHART_TICKS } from "../../vendors/chart";
 import { resizeMap } from "../../vendors/jsVectorMap";
 import { COLORS } from "../../constants";
 
 const CHART_WRAPPER = document.getElementById("chart-sessions-country");
-let sessionChart;
 
 export const sessionsByCountry = () => {
 	// Map
@@ -72,7 +70,7 @@ export const sessionsByCountry = () => {
 			{
 				label: "Sessions",
 				data: [80, 40, 30, 50, 60, 20],
-				backgroundColor: cssVar("--widget-session-country-active-fill"),
+				backgroundColor: "#ffc107",
 				barThickness: 4,
 				borderWidth: 0,
 				borderRadius: 10,
@@ -150,16 +148,6 @@ export const sessionsByCountry = () => {
 	};
 
 	if (CHART_WRAPPER) {
-		sessionChart = new Chart(CHART_WRAPPER, CHART_CONFIG);
-	}
-};
-
-// Reload Map and chart to match dark/light mode when switched
-// This function will be used in `preferences.js`
-export const sessionsByCountryUpdate = () => {
-	if (CHART_WRAPPER) {
-		setTimeout(() => {
-			reloadChart(sessionChart, "scales", (sessionChart.data.datasets[0].backgroundColor = cssVar("--widget-session-country-active-fill")));
-		});
+		let sessionChart = new Chart(CHART_WRAPPER, CHART_CONFIG);
 	}
 };

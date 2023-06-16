@@ -6,7 +6,7 @@ export const icons = () => {
 
 	if (WRAPPER) {
 		ICONS_DATA.map((item) => {
-			list += `<div class="rounded py-2 px-3 hover:bg-light-100 dark:hover:bg-dark-200">
+			list += `<div class="rounded py-2 px-3 hover:bg-light-100">
                         <span class="icon text-3xl text-heading font-light">${item}</span>
                         <span class="hidden text-sm text-muted sm:block px-0.5">${item}</span>
                     </div>`;

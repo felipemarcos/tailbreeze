@@ -18,8 +18,7 @@
 				@include form-control-focus();
 
 				@apply ring-[3px]
-					ring-light-100
-					dark:ring-dark-200/50;
+					ring-light-100;
 			}
 		}
 	}
@@ -29,8 +28,7 @@
 			@include form-control-focus();
 
 			@apply ring-[3px]
-				ring-light-100
-				dark:ring-dark-200/50;
+				ring-light-100;
 		}
 	}
 
@@ -46,8 +44,8 @@
 		&:after {
 			@apply pointer-events-none
 			absolute
-			top-0
 			right-1.5
+			top-0
 			flex
 			h-full
 			items-center
@@ -78,15 +76,13 @@
 			&:hover,
 			&:focus {
 				@apply ring-[3px]
-					ring-light-200
-					dark:ring-dark-200;
+					ring-light-200;
 			}
 		}
 
 		&:disabled {
 			@apply bg-light-100
-				text-muted opacity-70
-				dark:bg-dark-200/60;
+				text-muted opacity-70;
 		}
 	}
 
@@ -101,8 +97,7 @@
 		&:checked {
 			@apply border-0
 			bg-theme
-			bg-[url:var(--checkbox-checked-bg)]
-			dark:bg-blue-600;
+			bg-[url:var(--checkbox-checked-bg)];
 		}
 	}
 
@@ -113,8 +108,7 @@
 
 		&:checked {
 			@apply border-theme
-			bg-[url:var(--radio-checked-bg)]
-			dark:border-blue-500;
+			bg-[url:var(--radio-checked-bg)];
 		}
 	}
 
@@ -129,8 +123,7 @@
 				& ~ .switch-label {
 					&:before {
 						@apply ring-[3px]
-						ring-light-200
-						dark:ring-dark-200;
+						ring-light-200;
 					}
 				}
 			}
@@ -141,8 +134,7 @@
 				&:before {
 					@apply bg-light-100
 						text-muted
-						opacity-70
-						dark:bg-dark-200/60;
+						opacity-70;
 				}
 
 				&:after {
@@ -155,16 +147,13 @@
 			& ~ .switch-label {
 				&:before {
 					@apply border-theme
-						bg-theme
-						dark:border-blue-600
-						dark:bg-blue-600;
+						bg-theme;
 				}
 
 				&:after {
 					@apply top-1
 						translate-x-4
-						bg-white
-						dark:bg-light-500;
+						bg-white;
 				}
 			}
 		}
@@ -190,8 +179,8 @@
 
 		&:after {
 			@apply absolute
-			top-1
 			left-1
+			top-1
 			h-3
 			w-3
 			rounded-full

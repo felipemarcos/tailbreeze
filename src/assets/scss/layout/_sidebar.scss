@@ -10,7 +10,6 @@
 			pt-16
 			text-heading
 			hover:w-[var(--sidebar-width)]
-			dark:border-0
 			print:hidden
 			xl:translate-x-0;
 
@@ -39,9 +38,7 @@
 				@apply border-r
 				border-light-300
 				shadow-xl
-				shadow-black/10
-				dark:border-0
-				dark:shadow-black/30;
+				shadow-black/10;
 			}
 		}
 	}
@@ -51,8 +48,7 @@
 		#sidebar {
 			@apply translate-x-0
 				shadow-xl
-				shadow-black/10
-				dark:shadow-black/50;
+				shadow-black/10;
 		}
 	}
 
