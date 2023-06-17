@@ -6,7 +6,7 @@
 		"start": "parcel src/pages/*.html",
 		"build": "parcel build src/pages/*.html --no-source-maps --public-url ./"
 	},
-	"author": "themingpro.com",
+	"author": "avidtemplates.com",
 	"devDependencies": {
 		"@parcel/optimizer-cssnano": "^2.8.3",
 		"@parcel/resolver-glob": "^2.8.3",

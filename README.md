@@ -4,7 +4,7 @@
 
 Tailbreeze Pro is a powerful, lightweight, and fully responsive admin template/dashboard built using TailwindCSS. It boasts a sophisticated design that includes application views, sample pages, widgets, and components that have been meticulously designed and customized to perfectly align with the overall user interface.
 
-Live preview: https://themingpro.github.io/tailbreeze-pro
+Live preview: https://avidtemplates.github.io/tailbreeze-pro
 
 ## Key features:
 
