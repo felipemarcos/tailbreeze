@@ -84,7 +84,7 @@ export const userAcquisition = () => {
 						drawBorder: true,
 						drawOnChartArea: false,
 						drawTicks: false,
-						borderColor: cssVar("--chart-pie-border"),
+						borderColor: "#ffffff",
 					},
 					stacked: true,
 					ticks: {

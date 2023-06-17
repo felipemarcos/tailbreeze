@@ -14,7 +14,7 @@ export const doughnut = () => {
 				data: [23981, 16342, 9736, 7632],
 				backgroundColor: [COLORS.PURPLE, COLORS.CYAN, COLORS.LIME, COLORS.AMBER],
 				borderWidth: 3,
-				borderColor: cssVar("--chart-pie-border"),
+				borderColor: "#ffffff",
 				hoverOffset: 1,
 				hoverBorderWidth: 0,
 				borderRadius: 5,
