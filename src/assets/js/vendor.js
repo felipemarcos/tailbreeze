@@ -25,9 +25,6 @@ inputMask();
 // NiceSelect 2
 niceSelect2();
 
-// Dropzone.js
-dropzoneJs();
-
 // Color picker
 colorPicker();
 
@@ -42,3 +39,6 @@ vanillajsDatepicker();
 
 // Tippy tooltips
 tooltips();
+
+// Dropzone.js
+dropzoneJs();
