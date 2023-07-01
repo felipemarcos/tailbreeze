@@ -9,9 +9,10 @@ export const SIDEBAR_LINKS = [
 			},
 			{
 				name: "E-Commerce",
-				url: "#",
+				url: "https://tailbreeze-pro.avidtemplates.com/e-commerce.html",
 				icon: "shopping_bag",
 				pro: true,
+				ext: true,
 			},
 		],
 	},
@@ -24,8 +25,9 @@ export const SIDEBAR_LINKS = [
 				sub: [
 					{
 						name: "Timeline",
-						url: "#",
+						url: "https://tailbreeze-pro.avidtemplates.com/user-timeline.html",
 						pro: true,
+						ext: true,
 					},
 					{
 						name: "About",
@@ -48,44 +50,51 @@ export const SIDEBAR_LINKS = [
 			{
 				name: "File Manager",
 				icon: "folder",
-				url: "#",
+				url: "https://tailbreeze-pro.avidtemplates.com/file-manager.html",
 				pro: true,
+				ext: true,
 			},
 			{
 				name: "Contacts",
 				icon: "account_circle",
-				url: "#",
+				url: "https://tailbreeze-pro.avidtemplates.com/contacts.html",
 				pro: true,
+				ext: true,
 			},
 			{
 				name: "Mail",
 				icon: "mail",
-				url: "#",
+				url: "https://tailbreeze-pro.avidtemplates.com/mail.html",
 				pro: true,
+				ext: true,
 			},
 			{
 				name: "Messages",
 				icon: "mark_chat_unread",
-				url: "#",
+				url: "https://tailbreeze-pro.avidtemplates.com/messages.html",
 				pro: true,
+				ext: true,
 			},
 			{
 				name: "Photos",
 				icon: "crop_original",
-				url: "#",
+				url: "https://tailbreeze-pro.avidtemplates.com/photos.html",
 				pro: true,
+				ext: true,
 			},
 			{
 				name: "Todo Lists",
 				icon: "check_circle",
-				url: "#",
+				url: "https://tailbreeze-pro.avidtemplates.com/todo-lists.html",
 				pro: true,
+				ext: true,
 			},
 			{
 				name: "Calendar",
 				icon: "calendar_today",
-				url: "#",
+				url: "https://tailbreeze-pro.avidtemplates.com/calendar.html",
 				pro: true,
+				ext: true,
 			},
 			{
 				name: "Issues Tracker",
@@ -111,13 +120,15 @@ export const SIDEBAR_LINKS = [
 					},
 					{
 						name: "Search Results",
-						url: "search-results.html",
+						url: "https://tailbreeze-pro.avidtemplates.com/search-results.html",
 						pro: true,
+						ext: true,
 					},
 					{
 						name: "FAQ",
-						url: "#",
+						url: "https://tailbreeze-pro.avidtemplates.com/faq.html",
 						pro: true,
+						ext: true,
 					},
 					{
 						name: "Teams",
@@ -186,8 +197,9 @@ export const SIDEBAR_LINKS = [
 					},
 					{
 						name: "Components",
-						url: "#",
+						url: "https://tailbreeze-pro.avidtemplates.com/form-components.html",
 						pro: true,
+						ext: true,
 					},
 					{
 						name: "Templates",
