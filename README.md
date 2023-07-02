@@ -4,7 +4,7 @@
 
 Tailbreeze is a powerful, lightweight, and fully responsive admin template/dashboard built using TailwindCSS. It boasts a sophisticated design that includes application views, sample pages, widgets, and components that have been meticulously designed and customized to perfectly align with the overall user interface.
 
-Live preview: https://tailbreeze.avidtemplates.com
+Live demo: https://tailbreeze.avidtemplates.com
 
 ## Key features:
 
@@ -57,6 +57,8 @@ Tailbreeze(free) is licensed under the [MIT](https://github.com/avidtemplates/ta
 ![Pro preview](https://github.com/avidtemplates/tailbreeze/assets/136823914/64d645dc-dbe2-4dc5-a448-45205808be74)
 
 If you're a fan of Tailbreeze, why not elevate your experience by upgrading to the pro version? By doing so, you'll unlock a whole new level of possibilities, including extra application views, pages, and a wide range of exciting features.
+
+Pro demo: https://tailbreeze-pro.avidtemplates.com
 
 ### Pro features:
 
